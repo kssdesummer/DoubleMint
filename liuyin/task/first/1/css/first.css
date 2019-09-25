@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    list-style: none;
+}
+h1{
+    margin: 20px auto;
+    text-align: center;
+}
+#div1{
+   margin:40px auto;
+   width: 900px;
+   height: 350px;
+   position: relative;
+}
+#div2{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 900px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 5px 5px 0px 0px ;
+}
+#imag{
+    position: absolute;
+    width: 6300px;
+    left:0;
+    top: 0;
+    list-style: none;
+}
+#imag li{
+    float: left;
+    cursor: pointer;
+    width:900;
+    height: 350px;
+}
+#div2 ul li img{
+    width:900px;
+    height: 350px;
+}
+#div3{
+    position: absolute;
+    right: 10px;
+    bottom: 14px;
+}
+.quiet{
+    float:left;
+    width: 10px;
+    height: 10px;
+    overflow: hidden;
+     margin: 0 3px; 
+     border-radius: 50%;
+     border:0.5px solid rgb(238, 235, 235);
+     background: rgba(0,0,0,0.5);
+     text-indent: 100px;
+     cursor: pointer;
+    }
+.active{
+   float:left;
+    width: 10px;
+    height: 10px;
+    overflow: hidden;
+     margin: 0 3px; 
+     border-radius: 50%;
+     border:0.5px solid rgb(238, 235, 235);
+     background: white;
+     cursor: pointer
+    }
+#div4 span{
+        position: absolute;
+        color: white;
+        width: 35px;
+        height: 65px;
+        top:50%; 
+        font-family: "黑体";
+        line-height: 65px;
+        font-size: 30px;
+        margin-top: -40px;
+        color:rgba(255,255,255,0.7);
+        text-align: center;cursor: pointer;
+}
+#div4 span:hover{
+    background: rgba(44, 44, 42,0.6);
+    color:white;
+}
+#div4 .prev{border-radius:0px 5px 5px 0px; }
+#div4 .next{right: 0px;border-radius:5px 0px 0px 5px; }

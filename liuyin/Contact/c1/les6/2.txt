@@ -1,0 +1,10 @@
+.
+├── \
+├── 2.txt
+├── a.out
+├── avg.c
+├── Makefile
+├── min.c
+└── min.out
+
+0 directories, 7 files

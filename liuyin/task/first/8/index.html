@@ -1,0 +1,224 @@
+<html>
+    <head>
+        <title>字符串处理</title>
+    </head>
+    <style>
+    h1{
+        display: block;
+        text-align: center;
+    }
+    div{
+        position: relative;
+        text-align: center;
+    }
+    </style>
+<script>
+  window.onload=function(){
+    var obtn=document.getElementById("but");
+    var out=document.getElementById("out");
+    var osel=document.getElementById("sel");    
+    var time=document.getElementById("time");
+    var time2=document.getElementById("time2");
+    var lenn=document.getElementById("len");
+    var lenn1=document.getElementById("len1");
+    var timers=null;
+    //长度
+    function settime(){
+    var s=lengs(time.value);
+    alert(s);
+    }  
+    function lengs(a){
+        var i=0;
+        var s=a[0];
+        if(s){
+            for(i;a[i] != null; ){
+                i++;
+            }
+        }
+        return i;
+    }
+
+//分割字符串为数组
+    function settime1(){
+        var value=time.value;
+        var value2=time2.value;
+        var leng=lengs(value2);
+        var arr=Array('');
+        var s=value[0];
+        var i=0;
+        var a=0;
+        var count=0;
+        var l=0;
+        if(s){
+            for(i;s!=null;){         
+                if(s==value2[0]){
+                    l=i+leng;
+                    for(var p=0;p<leng;p++){
+                        if(value[i]!=value2[p]){
+                            break;
+                        }
+                        i++;
+                    }
+                    if(l==i){
+                        arr[count]='';
+                        for(a;a<i-leng;a++){ 
+                            arr[count]=arr[count]+value[a];
+                        }
+                        count++;
+                        a=a+leng;  
+                }
+                }
+                i++;
+                s=value[i];
+            }
+        }
+        for(a;a<i;a++){
+            arr[count]='';
+                for(a;a<i;a++){             
+                           arr[count]=arr[count]+value[a];
+                       }
+             count++;
+            }
+            if(arr[count]==undefined){
+                var ass=new Array('');
+                for(var u=0;u<count-1;u++){
+                    ass[u]=arr[u];
+                }
+                alert(ass);
+            }else{
+                alert(arr);
+            }
+    }
+
+//合并字符串
+    function settime2(){
+        var arr=new Array("a","b")
+        var i=0;
+        var s=0;
+        var x='';
+        var l=lengs(arr);
+        var value2=time2.value;
+        var art=Array('');
+        for(i;arr[i]!='';i++){        
+            if(arr[i]){
+                if(i!=l-1){
+                 s=arr[i]+value2;
+                 x=x+s;
+                }else{
+                    s=arr[i];
+                    x=x+s
+                }
+           
+            }else{
+                break;
+            }
+        }
+        art[0]=x;
+        alert(art);
+        }
+
+    //搜索字符串
+    function settime3(){
+        var value=time.value;
+        var value2=time2.value;
+        var leng=lengs(value2);
+        var arr=Array('');
+        var s=value[0];
+        var i=0;
+        var a=0;
+        var count=0;
+        var l=0;
+        var ts=-2;
+        if(s){
+            for(i;s!=null;){         
+                s=value[i];
+                if(s==value2[0]){
+                    l=i+leng;
+                    for(var p=0;p<leng;p++){
+                        if(value[i]!=value2[p]){
+                            break;
+                        }
+                        i++;
+                    }
+                    if(l==i){
+                         ts=i+1-leng;
+                        alert("指定的"+value2+"字符，在字符串的出现的位置为："+ts);
+                    }
+                }
+                i++;
+            }
+            i=0;
+        }else{
+            alert("请输入字符串！！！！")
+        }
+}
+
+//截取字符串  索引
+    function settime4(){
+        var value=time.value;  
+        var len=lenn.value;
+        var len1=lenn1.value;
+        var s=value[0];
+        var leng=lengs(value);
+        var a=0;
+        var x=0;
+        var y=0;
+        var srr=Array();
+        srr[0]='';
+        if(s){
+            for(x;x<len;x++){}
+            for(y;y<len1;y++){}
+            var z=x+y;
+            var c=len1-1;
+            if(z<leng){
+                for(c;c<z-1;c++){
+                    srr[0]=srr[0]+value[c];
+                }           
+            }else{
+                for(c;c<leng;c++){
+                    srr[0]=srr[0]+value[c];
+                }
+            }
+            }else{
+                alert("字符串不能为空！！！");
+            }
+            alert(srr);
+    }
+
+
+
+    
+obtn.onclick=function(){
+if(osel.options[osel.selectedIndex].value=='字符串长度'){  
+    settime();
+    }else if(osel.options[osel.selectedIndex].value=='分割字符串成数组'){
+    settime1();
+    }else if (osel.options[osel.selectedIndex].value=='指定符合并数组'){
+    settime2();
+    }else if (osel.options[osel.selectedIndex].value=='字符串搜索'){
+    settime3();
+    }else if(osel.options[osel.selectedIndex].value=='截取字符串'){
+    settime4();
+    }
+}
+}
+</script>   
+    <body>
+        <h1>字符串</h1>
+        <div>
+            <select id='sel'>
+                    <option >字符串长度</option>
+                    <option >分割字符串成数组</option>
+                    <option >指定符合并数组</option>
+                    <option >字符串搜索</option>
+                    <option >截取字符串</option>
+                  </select>
+                  <button id="but">确定</button>
+                  <div>字符串为：<input id="time" /></div>
+                  <div>分割符为：<input id="time2" /></div>
+                  <div>截取的下标位置：<input id="len1" /></div>
+                  <div>截取的长度:<input id="len"/></div>
+        </div>
+
+    </body>
+</html>

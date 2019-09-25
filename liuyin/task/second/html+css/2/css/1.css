@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#css-zen-garden{
+    background: #e1ebed;
+}
+.page-wrapper{
+    width: 725px;
+    border: 1 solid red;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    background: white;
+}
+header{
+    margin-left: 40px;
+    height: 60px;
+    padding-top: 10px;
+}
+header h1{
+    background:url("../images/logo.gif");
+    background-repeat: no-repeat;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+}
+header h2{
+    font-size: 0.9em;
+    text-align: left;
+}
+.summary p:last-child{
+    position: absolute;
+    top: 54px;
+    right: 20px;
+    font-size: 0.85em;
+}
+.summary p:first-child{
+    text-align: left;
+    font-size: 0.85em;
+    width: 164px;
+    height: 141px; 
+    padding: 30px;
+    color: white;
+    /* border-radius: 20px 0px 0px 20px; */
+}
+.summary{
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+}
+.summary a{
+    color:#227081;
+}
+.summary a:hover{
+    color: red;
+}
+.preamble{
+    float:right;
+    width: 461px;
+    text-align: left;
+    color:#323232;
+    padding-right: 20px;
+    font-size: 0.9em;
+    background-color: white;
+}
+p{
+    padding: 10px 0; 
+}
+.preamble h3{
+    background-image: url("../images/heading01.gif");
+    text-indent: 1000%;
+    white-space: nowrap;
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.main{
+    background-color: #fff;
+}
+.main:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+    }
+.mian:after {
+zoom: 1;
+}
+.main div{
+    float:right;
+    width: 461px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color:#323232;
+    padding-right: 20px;
+    font-size: 0.9em;
+}
+.main h3{
+    margin-top: 10px;
+    text-indent: 1000%;
+    white-space: nowrap;
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.explanation h3{
+    background-image: url("../images/heading02.gif");
+}
+.participation h3{
+    background-image: url("../images/heading03.gif");
+}
+.benefits h3{
+    background-image: url("../images/heading04.gif");
+}
+.requirements h3{
+    background-image: url("../images/heading05.gif");
+}
+.requirements a{
+    color:#227081;
+}
+.requirements a:hover{
+    color: red;
+}
+
+.participation a{
+    color:#227081;
+}
+.participation a:hover{
+    color: red;
+}
+
+footer{
+    float: right;
+    width: 461px;
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    background-color: #4f8b99;
+    height: 30px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    padding-right: 1em;
+    margin-top: 15px;
+}
+footer a{
+    color:whitesmoke;
+    font-size: 0.85em;
+    text-decoration-line: none;
+    margin-right: 5px;
+}
+footer a:hover{
+    color: red;
+}
+.design-selection h3{
+    text-indent: 1000%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.sidebar li{
+    list-style: none;
+    border-bottom: 1px solid #e1ebed;
+}
+.sidebar{
+    position: absolute;
+    top:260px;
+    width: 160px;
+    text-align: left;
+    padding-left: 30px;
+}
+.design-archives{
+    text-align: left;  
+    width: 200px;
+    padding-top: 10px;  
+}
+.sidebar a{
+    font-size: 0.9em;
+}
+.sidebar a:hover{
+    color: red;
+}
+.design-name{
+display: block;
+color: #227081;
+}
+.designer-name{
+    text-decoration-line: none;
+    color: #323232;
+    font-size: 0.8em;
+}
+.design-archives h3{
+    margin-top: 10px;
+    background-image: url("../images/archives.gif");
+    text-indent: 1000%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+.design-archives a{
+    color: #227081;
+}
+.design-archives li{
+    line-height: 1.5em;
+    width: 160px;
+}
+.zen-resources h3{
+    margin-top: 20px;
+    background-image: url("../images/resources.gif");
+    text-indent: 1000%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+.zen-resources a{
+    color: #227081;
+}
+.zen-resources li{
+    line-height: 1.5em;
+    width: 160px;
+}
