@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <title>时间戳</title>
+    </head>
+    <style>
+    h1{
+        display: block;
+        text-align: center;
+    }
+    div{
+        position: relative;
+        text-align: center;
+    }
+    </style>
+<script>
+  window.onload=function(){
+    var obtn=document.getElementById("but");
+    var out=document.getElementById("out");
+    var osel=document.getElementById("sel");    
+    var timers=null;
+    function settime(){
+        var date = new Date();
+        var time=date.valueOf()
+            year = date.getFullYear();
+            month = date.getMonth() + 1;
+            day = date.getDate();
+            hours = date.getHours();
+            minutes = date.getMinutes();
+            seconds = date.getSeconds();
+            document.getElementById("time").innerHTML ="时间戳为："+time+"</br>"+date+"</br>"+  year + "-" + month + "-" + day + "" + "\t" + hours + ":" + minutes +":" + seconds + "\t";
+            timers=requestAnimationFrame(settime); 
+    }
+    function settime1(){
+        var date = new Date();
+        var time=date.valueOf()
+            year = date.getFullYear();
+            month = date.getMonth() + 1;
+            day = date.getDate();
+            hours = date.getHours();
+            minutes = date.getMinutes();
+            seconds = date.getSeconds();
+            document.getElementById("time").innerHTML ="时间戳为："+time+"</br>"+date+"</br>"+  year + "/" + month + "/" + day + "" + "\t" + hours + "/" + minutes +"/" + seconds + "\t";
+           timers= requestAnimationFrame(settime1); 
+    }
+    function settime2(){
+        var date = new Date();
+        var time=date.valueOf()
+            hours = date.getHours();
+            minutes = date.getMinutes();
+            seconds = date.getSeconds();
+            document.getElementById("time").innerHTML ="时间戳为："+time+"</br>"+date+"</br>"+hours + ":" + minutes +":" + seconds + "\t";
+            timers= requestAnimationFrame(settime2); 
+    }
+    function settime3(){
+        var date = new Date();
+        var time=date.valueOf()
+            hours = date.getHours();
+            minutes = date.getMinutes();
+            seconds = date.getSeconds();
+            document.getElementById("time").innerHTML ="时间戳为："+time+"</br>"+date+"</br>"+ hours + "/" + minutes +"/" + seconds + "\t";
+            timers= requestAnimationFrame(settime3); 
+    }
+obtn.onclick=function(){
+if(osel.options[osel.selectedIndex].value=='YY-MM-DD HH:MM:SS'){  
+    cancelAnimationFrame(timers);
+    settime();
+    }else if(osel.options[osel.selectedIndex].value=='YY/MM/DD HH/MM/SS'){
+    cancelAnimationFrame(timers);
+    settime1();
+    }else if (osel.options[osel.selectedIndex].value=='HH:MM:SS'){
+    cancelAnimationFrame(timers);
+    settime2();
+    }else if (osel.options[osel.selectedIndex].value=='HH/MM/SS'){
+    cancelAnimationFrame(timers);
+    settime3();
+    }
+    
+}
+}
+</script>   
+    <body>
+        <h1>时间戳演示</h1>
+        <div>
+            <select id='sel'>
+                    <option >YY-MM-DD HH:MM:SS</option>
+                    <option >YY/MM/DD HH/MM/SS</option>
+                    <option >HH:MM:SS</option>
+                    <option >HH/MM/SS</option>
+                  </select>
+                  <button id="but">确定</button>
+        </div>
+        <div id="time"></div>
+    </body>
+</html>

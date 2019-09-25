@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>验证手机及邮箱</title>
+    </head>
+    <style>
+    div{
+        position: relative;
+        text-align: center;
+    }
+    h1{
+        display: block;
+        margin-bottom: 50px;
+    }
+    </style>
+    <script>
+        window.onload=function(){
+            var but=document.getElementById('but');
+            var tel=document.getElementById("tel");
+            var mail=document.getElementById("mail");
+            but.onclick=function(){ 
+            var tell= tel.value;
+            var maill=mail.value;
+            if(!(/^1[3456789]\d{9}$/.test(tell))){ 
+                alert("手机号码有误，请重填");  
+                return false; 
+            } else if(!(/^\w+@[a-z0-9]+\.[a-z]{2,4}$/.test(maill))){
+                alert("邮箱有误，请重填");  
+                return false; 
+            }else{
+                alert("恭喜信息填写正确");
+            }     
+        }
+        }
+    </script>
+    <body>
+        <div>
+            <h1>手机号及邮箱验证</h1>
+            <form action="#" method="POST">
+                    <span>手机号</span><input value="" id='tel' >
+                    <span>邮箱</span><input value="" id='mail'>
+            </form>
+            <button type="submit " id='but'>验证</button>
+        </div>
+    </body>
+</html>
+
+
+
+

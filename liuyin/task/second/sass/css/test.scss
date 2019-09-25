@@ -1,0 +1,237 @@
+*{
+margin: 0;
+padding: 0;
+}
+$body_width:1000px;//body体宽度
+$body_bg:green;//背景颜色
+$header_h1:3em;//h1字体大小
+$header_h2:1.2em;//h2字体大小
+
+
+@mixin border_style {
+  border: 2px solid green;
+}
+@mixin qc{
+  text-indent: 1000%;
+  white-space:nowrap;
+  overflow: hidden;
+}
+@mixin content_typeset{
+  display: flex;
+  text-align: left;
+  flex-wrap: wrap;
+  line-height: 1.5em;
+  padding:2em;
+}
+@mixin content{
+  h3{
+    color: rgb(2, 100, 2);
+    font-size: 1.4em;
+    cursor: pointer;
+    text-shadow:1px 1px 2px #3c3c3c;
+  }
+  p{
+    font-size: 1.2em;
+  }
+}
+
+@mixin footer_type{
+  a{
+    font-size: 1.2em;
+  color:gray;
+  padding: 5px;
+  border-radius: 6px;
+  }
+  & a:hover{
+    background-color: #3c3c3c;
+    color: white;
+  }
+}
+
+@mixin sidebar_content{
+  display: flex;
+  flex-wrap: nowrap; 
+  flex-direction: column; 
+  text-align: left;
+  justify-content: flex-start;
+}
+
+
+//主题样式
+$themes:(
+  spring:(
+  bgi_header:url("../images/spring1.jpg"),
+  header_colorh1:yellow,
+  header_colorh2:black,
+  body_color:#ecffef,
+  h3_color: rgb(2, 100, 2),
+  h3_hovercolor:red,
+  ),
+  autumn:(
+    bgi_header:url('../images/autumn1.jpg'),
+    header_colorh1:red,
+    header_colorh2:white,
+    body_color:#f7d1c4,
+    h3_color: #a12c05,
+    h3_hovercolor:yellow,
+  ),
+  summer:(
+    bgi_header:url('../images/summer1.jpg'),
+    header_colorh1:#FF8C00,
+    header_colorh2:red,
+    body_color:	rgb(217, 238, 252),
+    h3_color:rgb(6, 108, 177),
+    h3_hovercolor:#72001d,
+  ),
+  winter:(
+    bgi_header:url('../images/winter1.jpg'),
+    header_colorh1:yellow ,
+    header_colorh2:white,
+    body_color:	#F5F5F5,
+    h3_color:#696969,
+    h3_hovercolor:#969696,
+  )
+);
+
+//主题样式输出
+@each $thems,$config in $themes {
+  .#{$thems}  .intro header{
+    background-image: map-get($config,'bgi_header');
+    background-size:cover;
+    background-repeat: no-repeat;
+  }
+  .#{$thems}  .page-wrapper{
+    width: $body_width;
+    background-color:map-get($config, 'body_color' );
+  }
+  .#{$thems} h1{
+    color: map-get($config, 'header_colorh1' );
+  }
+  .#{$thems} h2{
+    color: map-get($config, 'header_colorh2' );
+  }
+  .#{$thems} .main h3{
+    color: map-get($config, 'h3_color' );
+  }
+  .#{$thems} .main h3:hover{
+    color: map-get($config, 'h3_hovercolor' );
+  }
+  .#{$thems} .preamble h3{
+    color: map-get($config, 'h3_color' );
+  }
+  .#{$thems} .preamble h3:hover{
+    color: map-get($config, 'h3_hovercolor' );
+  }
+  .#{$thems} .sidebar h3{
+    color: map-get($config,'h3_color');
+  }
+  .#{$thems} .sidebar h3:hover{
+    color: map-get($config, 'h3_hovercolor' );
+  }
+  .#{$thems} .summary p:last-child{
+    color: map-get($config, 'header_colorh2' );
+  }
+}
+
+header{
+  height:200px;
+}
+header h1{
+  font-size: $header_h1;
+  position: relative;
+  left: -30%;
+  top: 40px;
+  text-shadow:2px 2px 2px #3c3c3c;
+}
+header h2{
+  font-size: $header_h2;
+  position: relative;
+  left: -23%;
+  top: 40px;
+  font-style: italic;
+}
+header div{
+  cursor: pointer;
+  display: inline;
+  position: relative;
+  right: -440px;
+  top: -80px;
+  color:red;
+}
+
+.summary p:first-child{
+  @include qc;
+}
+.summary p:last-child{
+  position: relative;
+  top: -40px;
+  left:30%;
+  color: rgb(102, 59, 59);
+}
+body{
+  width: $body_width;
+  text-align: center;
+  margin: auto;  
+  box-shadow:2px 3px 4px 3px grey;
+}
+.main div{
+  @include content_typeset();
+}
+.sidebar li{
+  list-style: none;
+}
+
+.main{
+  @include content;
+}
+.preamble {
+  @include content;
+  @include content_typeset;
+}
+footer{
+  @include footer_type;
+}
+.design-selection{
+  @include sidebar_content;
+}
+.design-archives{
+  @include sidebar_content;
+}
+.zen-resources{
+  @include sidebar_content;
+}
+
+.design-name{
+  display: block;
+}
+.sidebar div{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content:flex-start;
+  margin-left: 3em;
+  margin-top: 1.1em;
+  line-height: 1.5em;
+}
+
+.designer-name{
+  text-decoration-line: none;
+  color: #535353;
+}
+.design-name{
+  color: black;
+}
+.design-name:hover{
+  color: red;
+}
+.design-archives a{
+  color:black;
+}
+.design-archives a:hover{
+  color: red;
+}
+.zen-resources a{
+  color: black;
+}
+.zen-resources a:hover{
+  color: red;
+}

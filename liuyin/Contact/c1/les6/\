@@ -1,0 +1,21 @@
+#include <stdio.h>
+#define INT_MAX 2147483647
+int main()
+{
+	int flag=1;
+	int i;
+	int s;
+	int x=INT_MAX;
+	char a;
+	while(flag){
+		scanf("%d",&i);
+		if(a=='q') break;
+		if(i<x){
+		x=i;
+		s=i;
+		}
+	}
+	printf("%d,最小值为：%d",i,i);
+	return 0;
+}
+
