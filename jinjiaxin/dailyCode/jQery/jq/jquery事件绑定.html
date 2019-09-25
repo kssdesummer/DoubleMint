@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery事件绑定</title>
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script>
+        $(function () {
+           /*
+           1.eventName(fn)
+           编码有提示,部分js事件没有实现
+           2.on(eventName,fn)
+           所有js时间都实现了
+           注:
+           可以添加多个相同或不同类型的事件,不会覆盖
+           */
+           $("button").on("myClick",function () {
+               alert("hello");
+           })
+            $("button").trigger("myClick");
+
+        });
+    </script>
+</head>
+<body>
+<button class="1">我是按钮</button>
+
+</body>
+</html>

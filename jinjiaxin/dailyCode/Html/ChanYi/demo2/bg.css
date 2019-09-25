@@ -1,0 +1,19 @@
+p {
+background: #B2CF42;
+}
+h1 {
+    background: #18743b;
+
+}
+.intro  {
+background: #B373DA;
+}
+.intro .summary {
+    background: #00ff00;
+}
+.supporting {
+    background: blue;
+}
+.sidebar {
+    background: #FBD570;
+}

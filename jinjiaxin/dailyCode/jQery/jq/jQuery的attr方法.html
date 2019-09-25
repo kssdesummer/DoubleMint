@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery的attr方法</title>
+   <script src="../js/jquery-3.4.1.js"></script>
+   <script>
+       $(function () {
+            /*
+                1.attr(name|pro|key,val|fn)
+                 作用:获取或者设置属性节点的值
+                 可以传递一个参数,也可以传递两个参数
+                 如果传递一个参数,代表获取属性节点的值
+                 如果传递两个参数,代表设置属性节点是值
+                 注意:
+                 如果是获取:无论周到多少个元素,都只会返回第一个元素指定节点的值
+                 如果是设置:找到多少个元素就会设置多少个元素
+                 如果是设置:如果设置的节点不存在,那么系统会自动添加
+                2.removeAttr(name)
+                    删除属性节点
+                    注意点:
+                    会删除所有找到元素的指定的属性节点
+            */
+           var $s = $("span").attr("qwer","345");
+       });
+   </script>
+</head>
+<body>
+<span class="span1" name="123"></span>
+<span class="span2" name="456"></span>
+
+</body>
+</html>

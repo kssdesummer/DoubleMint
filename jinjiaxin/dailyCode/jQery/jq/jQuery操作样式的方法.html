@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery操作样式的方法</title>
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script>
+        $(function () {
+            //批量设置样式
+           $("div").css({
+               width:"100px",
+               height:"100px",
+               background:"blue"
+           });
+           //获取css样式
+            console.log($("div").css("width"));
+        });
+    </script>
+</head>
+<body>
+<div></div>
+</body>
+</html>

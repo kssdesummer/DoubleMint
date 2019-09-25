@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery中的其他静态方法</title>
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script>
+        var str = "    1`23    ";
+        /*
+        $.trim();
+        作用:去除字符串两端的空格;
+        参数:需要去出空格的字符串;
+        返回值:去除空格之后的字符串;
+        * */
+      /*  var t = $.trim(str);
+        console.log("---"+t+"---");*/
+      //真数组
+      var arr = [1,2,3,4,5];
+      //伪数组
+      var brr = {0:1,1:2,length:2};
+      //对象
+      var obj = {"name":"jin",age:"33"};
+      //函数
+      var fa = function () {};
+      //Window对象
+      var w = window;
+    /*
+        $.iswindow()
+        作用:判断传入对象是否是window对象;
+        返回值:true/false
+    * */
+      var i = $.isWindow(fa);
+      console.log(i);
+      var a = $.isArray(arr);
+      console.log(a);
+      var f = $.isFunction(fa);
+      console.log(f);
+      var t = $.type(1);
+      console.log(t);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

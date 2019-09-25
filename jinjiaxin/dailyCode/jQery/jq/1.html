@@ -1,0 +1,23 @@
+<!DOCTYPE　html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+</head>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+    $(function(){
+        //通过点击button来触发该方法
+        $("button").click(function() {
+            //该load方法，加载对应的数据内容到该元素中
+            $("#cc").load("https://www.runoob.com/try/ajax/demo_test.txt")});
+    });
+</script>
+<body>
+<div id="cc"><h3>接下来使用Jquery+Ajax来实现load方法</h3></div>
+<button  type="button">点击我，触发Jquery+Ajax的load方法</button>
+</body>
+</html>
+————————————————
+版权声明：本文为CSDN博主「Rapper_cl」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/m0_37510446/article/details/90291394

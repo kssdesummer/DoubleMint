@@ -1,0 +1,19 @@
+ $columns:6;
+
+@for $i from 1 through $columns {
+  .col-#{$columns}-#{$i} {
+    width: 100% / $columns * $i;
+    background-color: #18743b;
+
+
+  }
+}
+
+body {
+
+  margin: 0 auto;
+
+}
+ul{
+  display: inline;
+}

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="69bdf721-9ff3-4e18-9412-17a3cb45be21" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/HttpForm/http/Http.js" beforeDir="false" afterPath="$PROJECT_DIR$/HttpForm/http/Http.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HttpForm/http/HttpGet.js" beforeDir="false" afterPath="$PROJECT_DIR$/HttpForm/http/HttpGet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HttpForm/http/HttpPost.js" beforeDir="false" afterPath="$PROJECT_DIR$/HttpForm/http/HttpPost.js" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/HttpForm/http" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1RCfnzH2yBwXugaz5Vz3w9bsSII" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../MuKe" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Node.js.质数.js">
+    <configuration name="Copy.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="Copy.js" working-dir="$PROJECT_DIR$/node">
+      <method v="2" />
+    </configuration>
+    <configuration name="Diamond.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/LuoJi/Diamond.js" working-dir="$PROJECT_DIR$/LuoJi">
+      <method v="2" />
+    </configuration>
+    <configuration name="质数.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/质数.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.质数.js" />
+        <item itemvalue="Node.js.Diamond.js" />
+        <item itemvalue="Node.js.Copy.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="69bdf721-9ff3-4e18-9412-17a3cb45be21" name="Default Changelist" comment="" />
+      <created>1564909224668</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1564909224668</updated>
+      <workItem from="1564909229123" duration="645000" />
+      <workItem from="1564909889636" duration="224000" />
+      <workItem from="1564910132684" duration="178000" />
+      <workItem from="1564910331797" duration="251000" />
+      <workItem from="1564910594209" duration="216000" />
+      <workItem from="1565076906724" duration="1099000" />
+      <workItem from="1569176178587" duration="2878000" />
+      <workItem from="1569202373624" duration="54000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
