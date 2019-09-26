@@ -1,0 +1,120 @@
+.container{
+    height: 70px;
+    width: 1000px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.demo{
+    background-color: azure;
+    border: solid 1px red;
+    height: 70px;
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+}
+.demo .light{
+    border: solid 2px antiquewhite;
+    height: 65px;
+    width: 65px;
+    line-height: 65px;
+    font-size:40px ;
+    margin:0 40px ;
+    border-radius:50%;
+    display: block;
+    float: left;
+}
+.demo .start{
+    margin-top:7px;
+    margin-right:10px;
+}
+.demo .stop{
+    margin-top:5px;
+    margin-right:10px;
+}
+
+.hidden.stop{
+    position: absolute;
+    border-radius: 8px;
+    color: whitesmoke;
+    background-color: red;
+    top: 110px;
+    left: 673px;
+    width: 202px;
+    height: 90px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.hidden.stop .cur{
+    position: absolute;
+    top: -30px;
+    left: 90px;
+    right: 80px;
+    color:red;
+    font-size:40px;
+    width: 30px;
+    height: 30px;
+}
+.hidden.wait{
+    position: absolute;
+    border-radius: 8px;
+    color: dodgerblue;
+    background-color: yellow;
+    top: 110px;
+    left: 823px;
+    width: 202px;
+    height: 90px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.hidden.wait .cur{
+    position: absolute;
+    top: -30px;
+    left: 90px;
+    right: 80px;
+    color:yellow;
+    font-size:40px;
+    width: 30px;
+    height: 30px;
+}
+.hidden.move{
+    position: absolute;
+    border-radius: 8px;
+    color: white;
+    background-color: green;
+    top: 110px;
+    left: 972px;
+    width: 202px;
+    height: 90px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.hidden.move .cur{
+    position: absolute;
+    top: -30px;
+    left: 90px;
+    right: 80px;
+    color:green;
+    font-size:40px;
+    width: 30px;
+    height: 30px;
+}
+
+.purple.hidden{
+    background: #653ddd;
+}
+.purple.hidden span{
+    color: #653ddd;
+}
+.blue.hidden{
+    background: #008cc8;
+}
+.blue.hidden span{
+    color: #008cc8;
+}
+.purple img:hover{
+    border: 2px solid #653ddd;
+}
+img:hover{
+    border: 2px solid #008cc8;
+}
