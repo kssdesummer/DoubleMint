@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+  <!-- Demo styles -->
+  <style>
+    body  {
+      background: black;
+    }
+
+    .lecturer-container{
+
+      width: 1152px;
+      height: 352px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 40px;
+      overflow: hidden;
+    }
+
+    .swiper-slide {
+      margin-top: 40px;
+      float: left;
+      position: relative;
+      width: 216px;
+      height: 248px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.8);
+      box-shadow: 0 4px 8px 0 rgba(7, 17, 27, 0.05);
+      border-radius: 12px;
+      transition: all .3s;
+    }
+    .lecturer-uimg {
+      position: absolute;
+      top: -16.6px;
+      left: 50%;
+      margin-left: -48px;
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+    }
+    .lecturer-name {
+      display: block;
+      font-size: 16px;
+      line-height: 24px;
+      margin-top: 92px;
+      padding: 0 36px;
+      white-space: nowrap;
+      color: #07111b;
+      font-weight: 700;
+      text-overflow: ellipsis;
+      word-break: break-all;
+      word-wrap: break-word;
+      overflow: hidden;
+      text-overflow: -o-ellipsis-lastline;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+    }
+    .lecturer-title {
+      display: block;
+      font-size: 12px;
+      margin-bottom: 12px;
+      color: #4D555D;
+      height: 24px;
+      line-height: 24px;
+    }
+    .lecturer-p {
+      position: relative;
+      top: 0;
+      display: block;
+      font-size: 12px;
+      line-height: 24px;
+      color: #4D555D;
+      height: 72px;
+      padding: 0 36px;
+      text-overflow: ellipsis;
+      word-wrap: break-word;
+      overflow: hidden;
+      text-overflow: -o-ellipsis-lastline;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      text-align: justify;
+      word-break: break-all;
+      font-weight: 400;
+    }
+    .swiper-slide:hover {
+      background-color: #fff;
+      box-shadow: 0 8px 16px 0 rgba(7, 17, 27, 0.2);
+    }
+    .swiper-slide:hover .lecturer-uimg {
+      width: 60px;
+      height: 60px;
+      margin-left: -30px;
+      transition: all .3s;
+    }
+    .swiper-slide:hover .lecturer-name,
+    .swiper-slide:hover .lecturer-title {
+       opacity: 0;
+    }
+    .swiper-slide:hover .lecturer-p {
+      position: relative;
+      height: 168px;
+      top: -92px;
+      color: #07111B;
+      transition: all .3s;
+    }
+    .lecturer-container .swiper-button-prev {
+      left: -25px;
+    }
+    .lecturer-container .swiper-button-next {
+      right: -25px;
+    }
+    .lecturer-container .swiper-button-prev,
+    .lecturer-container .swiper-button-next {
+      position: absolute;
+      top: 50%;
+      width: 48px;
+      height: 48px;
+      z-index: 10;
+      cursor: pointer;
+      margin-top: -16px;
+      border-radius: 50%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 8px;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+      background-image:none !important;
+    }
+    .lecturer-container .swiper-button-prev:before,
+    .lecturer-container .swiper-button-next:before {
+      font-size: 32px;
+      color: #9199A1;
+      line-height: 32px;
+    }
+    .lecturer-container .swiper-button-prev:hover,
+    .lecturer-container .swiper-button-next:hover {
+      background: #fff;
+      box-shadow: 0 2px 4px 0 rgba(28, 31, 33, 0.1);
+    }
+    .swiper-button-prev::before {
+      font-style: normal;
+      font-family: moco;
+      content: "\e913";
+    }
+    .swiper-button-next::before{
+      font-style: normal;
+      font-family: moco;
+      content: "\e914";
+    }
+
+
+    .swiper-pagination-bullet-active {
+      background: #fff;
+
+    }
+  </style>
+</head>
+<body>
+  <!-- Swiper -->
+  <div class="lecturer-container">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <a href="#" >
+          <img class="lecturer-uimg" src="img/5a54b58f0001c07902000200-100-100.jpg" title="Oscar">
+          <span class="lecturer-name">Oscar</span>
+          <span class="lecturer-title">软件工程师</span>
+          <span class="lecturer-p" title="曾就职于Intel、Amadeus等知名IT企业，专业是嵌入式软件和移动开发，目前从事Android物联网开发，拥有十多年的Linux使用经验。擅长领域：嵌入式、Linux、Android、物联网、人工智能等。">
+            曾就职于Intel、Amadeus等知名IT企业，专业是嵌入式软件和移动开发，目前从事Android物联网开发，拥有十多年的Linux使用经验。擅长领域：嵌入式、Linux、Android、物联网、人工智能等。
+          </span>
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#" >
+          <img class="lecturer-uimg" src="img/5d0f17ca0001439405540534-100-100.jpg" title="张小喜">
+          <span class="lecturer-name">张小喜</span>
+          <span class="lecturer-title">JAVA开发工程师</span>
+          <span class="lecturer-p" title="目前职于一线互联网公司，负责高并发订单系统设计、架构、开发，也曾常常成为公司“救火队员”。曾任职架构师、研发经理，先后在大型国企，知名互联网企业任职。深知初出茅庐的小伙伴成长过程的各种弯路，以此借慕课网平台，分享多年开发经验，希望帮大家编程路上走得更远，飞得更高。">
+            目前职于一线互联网公司，负责高并发订单系统设计、架构、开发，也曾常常成为公司“救火队员”。曾任职架构师、研发经理，先后在大型国企，知名互联网企业任职。深知初出茅庐的小伙伴成长过程的各种弯路，以此借慕课网平台，分享多年开发经验，希望帮大家编程路上走得更远，飞得更高。
+          </span>
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#" >
+          <img class="lecturer-uimg" src="img/5458640c0001b0a702200220-100-100.jpg" title="JoJo">
+          <span class="lecturer-name">JoJo</span>
+          <span class="lecturer-title">全栈工程师</span>
+          <span class="lecturer-p" title="具有15年开发和技术培训经验。致力于前后端技术和架构领域，有丰富的理论、实践经验。曾多次参与大型银行和互联网公司核心系统的架构设计和开发">
+            具有15年开发和技术培训经验。致力于前后端技术和架构领域，有丰富的理论、实践经验。曾多次参与大型银行和互联网公司核心系统的架构设计和开发
+          </span>
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#" >
+        <img class="lecturer-uimg" src="img/5c38493b08230e7c07200720-100-100.jpg" title="咚咚呛">
+        <span class="lecturer-name">咚咚呛</span>
+        <span class="lecturer-title">全栈工程师</span>
+        <span class="lecturer-p" title="目前就职于BAT的大数据部门，超过4年的技术研发经验，熟悉java、python研发，担任过多个系统研发主程，目前专注于分布式系统研发，在高并发、分布式系统有丰富的经验。">
+            目前就职于BAT的大数据部门，超过4年的技术研发经验，熟悉java、python研发，担任过多个系统研发主程，目前专注于分布式系统研发，在高并发、分布式系统有丰富的经验。
+          </span>
+      </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#" >
+        <img class="lecturer-uimg" src="img/545847e20001163c02200220-100-100.jpg" title="CrazyCodeBoy">
+        <span class="lecturer-name">CrazyCodeBoy</span>
+        <span class="lecturer-title"></span>
+        <span class="lecturer-p" title="深耕移动端领域8年有余，全栈技术专家，CSDN 博客专家，擅长Android、iOS、Flutter、React Native以及小程序项目开发，负责过前端、Java、Android、iOS等多平台项目的研发，有多款React Native App上线及管理经验。他享受编程、热爱开源、酷爱分享，平时除了写写博客外，也分享一些开源技术干货 · Github">
+           深耕移动端领域8年有余，全栈技术专家，CSDN 博客专家，擅长Android、iOS、Flutter、React Native以及小程序项目开发，负责过前端、Java、Android、iOS等多平台项目的研发，有多款React Native App上线及管理经验。他享受编程、热爱开源、酷爱分享，平时除了写写博客外，也分享一些开源技术干货 · Github
+          </span>
+      </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#" >
+        <img class="lecturer-uimg" src="img/54584e2c00010a2c02200220-100-100.jpg" title="7七月">
+        <span class="lecturer-name">7七月</span>
+        <span class="lecturer-title">全栈工程师</span>
+        <span class="lecturer-p" title="十年研发及团队管理经验，对程序员面临的各种问题深有体会；精通Python、Java、Node.js、JavaScript等语言，对Web的基础研发、高并发处理与分布式有非常深入的理解。课程讲解深入浅出，极为擅长培养学生的编程思维。">
+            十年研发及团队管理经验，对程序员面临的各种问题深有体会；精通Python、Java、Node.js、JavaScript等语言，对Web的基础研发、高并发处理与分布式有非常深入的理解。课程讲解深入浅出，极为擅长培养学生的编程思维。
+          </span>
+      </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#" >
+        <img class="lecturer-uimg" src="img/5a9fd02e00018e3308000751-100-100.jpg" title="廖师兄">
+        <span class="lecturer-name">廖师兄</span>
+        <span class="lecturer-title">JAVA开发工程师</span>
+        <span class="lecturer-p" title="载着干货的老司机。微服务，分布式架构方面经验丰富。">
+            载着干货的老司机。微服务，分布式架构方面经验丰富。
+          </span>
+      </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#" >
+        <img class="lecturer-uimg" src="img/5347593e00010cfb01400140-100-100.jpg" title="liuyubobobo">
+        <span class="lecturer-name">liuyubobobo</span>
+        <span class="lecturer-title">全栈工程师</span>
+        <span class="lecturer-p" title="创业者，全栈工程师，持续学习者。对技术开发，产品设计、前后端，ios，html5，智能算法等领域均有接触；拥有多款独立App作品；对一切可编程的东西有浓厚兴趣，对游戏编程格外感兴趣。相信编程改变一切。">
+            创业者，全栈工程师，持续学习者。对技术开发，产品设计、前后端，ios，html5，智能算法等领域均有接触；拥有多款独立App作品；对一切可编程的东西有浓厚兴趣，对游戏编程格外感兴趣。相信编程改变一切。
+          </span>
+      </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#" >
+        <img class="lecturer-uimg" src="img/5b88f1f50001688401500150-100-100.jpg" title="慕课官方号">
+        <span class="lecturer-name">慕课官方号</span>
+        <span class="lecturer-title">页面重构设计</span>
+        <span class="lecturer-p" title="慕课，Massive（大规模）Open（开放）Online（在线）Course（课程）。专注做好IT技能教育的MOOC，符合互联网发展潮流接地气儿的MOOC。我们有更多免费资源，我们只教有用的，我们专心做教育。">
+            慕课，Massive（大规模）Open（开放）Online（在线）Course（课程）。专注做好IT技能教育的MOOC，符合互联网发展潮流接地气儿的MOOC。我们有更多免费资源，我们只教有用的，我们专心做教育。
+          </span>
+      </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#" >
+        <img class="lecturer-uimg" src="img/53855e6f0001034501400140-100-100.jpg" title="Oeasy">
+        <span class="lecturer-name">Oeasy</span>
+        <span class="lecturer-title">页面重构设计</span>
+        <span class="lecturer-p" title="他，授课风趣幽默，激情四射，自称屌丝青年，中国传媒大学计算机教师；他，专注于网页制作、平面设计、多媒体等多个领域的软件以及应用的挖掘与创新，热爱分享，是新鲜热门软件和应用的导航标，他就是众粉丝心中的“Oeasy老湿”">
+            他，授课风趣幽默，激情四射，自称屌丝青年，中国传媒大学计算机教师；他，专注于网页制作、平面设计、多媒体等多个领域的软件以及应用的挖掘与创新，热爱分享，是新鲜热门软件和应用的导航标，他就是众粉丝心中的“Oeasy老湿”
+          </span>
+      </a>
+      </div>
+    </div>
+  </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+  </div>
+  <!-- Swiper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      // autoplay:true,
+      slidesPerView: 5,
+      spaceBetween: 30,
+      slidesPerGroup: 5,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+</body>
+</html>

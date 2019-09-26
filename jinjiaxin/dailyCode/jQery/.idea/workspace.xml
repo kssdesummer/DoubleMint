@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c0a9c8ea-8dc8-4dda-ab66-92f43ebac79f" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="jQery" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1Q2MTkkMEkB6Qv3j8KDuJo4BRw7" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/jq" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Node.js.File.js">
+    <configuration name="1.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jQery/pinglun/1.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="PingLun.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jQery/pinglun/PingLun.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="File.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="File.js" working-dir="$PROJECT_DIR$/pinglun">
+      <method v="2" />
+    </configuration>
+    <configuration name="jq.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="jq.js" working-dir="$PROJECT_DIR$/pinglun">
+      <method v="2" />
+    </configuration>
+    <configuration name="json.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="json.js" working-dir="$PROJECT_DIR$/jq">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.File.js" />
+        <item itemvalue="JavaScript Debug.PingLun.html" />
+        <item itemvalue="JavaScript Debug.1.html" />
+        <item itemvalue="Node.js.jq.js" />
+        <item itemvalue="Node.js.json.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c0a9c8ea-8dc8-4dda-ab66-92f43ebac79f" name="Default Changelist" comment="" />
+      <created>1566964247436</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1566964247436</updated>
+      <workItem from="1566964248588" duration="3388000" />
+      <workItem from="1566975401091" duration="2073000" />
+      <workItem from="1566979273225" duration="574000" />
+      <workItem from="1566979862308" duration="251000" />
+      <workItem from="1566980126220" duration="35000" />
+      <workItem from="1566980175769" duration="125000" />
+      <workItem from="1566980315129" duration="77000" />
+      <workItem from="1566980405780" duration="2203000" />
+      <workItem from="1567144443367" duration="20000" />
+      <workItem from="1567215407181" duration="1028000" />
+      <workItem from="1567220422955" duration="4053000" />
+      <workItem from="1567264745758" duration="65152000" />
+      <workItem from="1567827881363" duration="34156000" />
+      <workItem from="1568031484328" duration="97000" />
+      <workItem from="1568031598218" duration="6315000" />
+      <workItem from="1568079969813" duration="468000" />
+      <workItem from="1568105505967" duration="300000" />
+      <workItem from="1569217713296" duration="613000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

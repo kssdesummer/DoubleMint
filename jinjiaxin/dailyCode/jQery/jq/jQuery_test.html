@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery_test</title>
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script>
+        $(function () {
+            $("button").on("click",function () {
+                json = {
+                    Name: $("input[name = name]").val(),
+                    Email: $("input[name = email]").val(),
+                    Password: $("input[name = password]").val(),
+                    //Gender: $('input[name = gender] this.checked').val(),
+                    City: $('option:selected').val()
+                };
+                s  = JSON.stringify(json, null, '  ');
+                console.log(s);
+            })
+        });
+    </script>
+</head>
+<body>
+    <form id="test-form" action="#0" onsubmit="return false;">
+        <p><label>Name: <input name="name"></label></p>
+        <p><label>Email: <input name="email"></label></p>
+        <p><label>Password: <input name="password" type="password"></label></p>
+        <p>Gender: <label><input name="gender" type="radio" value="m" checked> Male</label> <label><input name="gender" type="radio" value="f"> Female</label></p>
+        <p><label>City: <select name="city">
+            <option value="BJ" selected>Beijing</option>
+            <option value="SH">Shanghai</option>
+            <option value="CD">Chengdu</option>
+            <option value="XM">Xiamen</option>
+        </select></label></p>
+        <p><button type="submit">Submit</button></p>
+    </form>
+</body>
+</html>

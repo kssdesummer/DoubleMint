@@ -1,0 +1,111 @@
+/* css Zen Garden submission - 'spring360', by Rene Hornig, http://www.medialab360.com/ */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2006, Rene Hornig */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the
+   designer's written permission. However, feel free to study the CSS and use
+   techniques you learn from it elsewhere. */
+
+
+/* basic elements */
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #DFDBD3 url("./timg.jpeg")   no-repeat fixed;
+    background-size: cover;//背景图平铺；
+    color: #4C4C4C;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+}
+p {
+
+    font-size: 0.9em;
+    line-height: 1.5em;
+    margin-top: .2em;
+    margin-bottom: .2em;
+
+}
+h3 {
+    background: #18743b;
+    color: white;
+    font-weight: bold;
+    padding: 3px;
+    font-style: italic;
+    margin-bottom: .6em;
+    margin-top: 1.5em;
+}
+
+
+abbr {
+    font-style: italic;
+    cursor: help;
+
+
+}
+h2 {
+   // background: #CFCCC4;
+}
+h1 {
+   // background: #B2CF42;
+    font-size: 3em;
+    font-style: italic;
+
+
+}
+a {
+    text-decoration: none;
+    font-style: italic;
+}
+a:link,
+a:visited {
+    color: #18743b;
+
+}
+a:hover,
+a:active,
+a:focus {
+    color: goldenrod;
+}
+.page-wrapper {
+
+    padding-left: 7%;
+    width: 30%;
+}
+.sidebar .wrapper{
+    //background: top right red;
+    //float: right;
+    position: absolute;
+    top: 14%;
+    left: 38%;
+
+}
+.sidebar .wrapper ul {
+    list-style-type: none;
+    padding-left: 0.5em;
+}
+.sidebar .wrapper li{
+    padding-top: .5em;
+}
+footer element.style {
+    color: chartreuse;
+}
+footer a:link,
+footer a:visited{
+    color: chartreuse;
+}
+footer a:hover,
+footer a:active,
+footer a:focus {
+    color: gold;
+}
+footer {
+    font-style: oblique;
+    font-size: 1.1em;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    text-align: center;
+}

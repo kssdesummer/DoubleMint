@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery内容选择器</title>
+    <style>
+        div{
+           width: 50px;
+           height: 100px;
+           background-color: aqua;
+           margin-top: 5px;
+        }
+    </style>
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script>
+        $(function () {
+
+            //:empty:作用:找到既没有文本内容也没有子元素的指定元素
+            //var $div = $("div:empty");
+            //console.log($div);
+
+            //:parent作用:找到有文本内容或子元素的指定元素
+            // var $div = $("div:parent");
+            // console.log($div);
+
+            //:contains(text) 作用:找到包含指定文本内容的指定元素
+            // var $div = $("div:contains(3)");
+            // console.log($div);
+
+            //:has(selector) 作用:找到包含指定子元素的指定元素
+            var $div = $("div:has('span')");
+            console.log($div);
+        });
+    </script>
+
+</head>
+<body>
+<div></div>
+<div>3</div>
+<div>woshi div3</div>
+<div><span></span></div>
+<div><p></p><span></span></div>
+</body>
+</html>

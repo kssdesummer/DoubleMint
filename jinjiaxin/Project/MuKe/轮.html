@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="轮.css">
+
+</head>
+<body>
+<div id="main">
+    <div class="bgfff banner-box">
+        <div class="g-banner pr" >
+            <div class="g-banner-content">
+                <div class="g-banner-box">
+                    <a href="#" class="click-help">
+                        <div class="banner-slide">
+                            <img src="img/5d7f7fdf0001990818720632.jpg">
+                        </div>
+                    </a>
+
+                    <a href="#" class="click-help">
+                        <div class="banner-slide" >
+                            <img src="img/5d88277a0001953816000540.jpg">
+                        </div>
+                    </a>
+
+                    <a href="#" class="click-help">
+                        <div class="banner-slide" >
+                            <img src="img/5d82e426000128de18720632.jpg">
+                        </div>
+                    </a>
+
+                    <a href="#" class="click-help">
+                        <div class="banner-slide" >
+                            <img src="img/5d7f7fdf0001990818720632.jpg">
+                        </div>
+                    </a>
+
+                    <a href="#" class="click-help">
+                        <div class="banner-slide" >
+                            <img src="img/5d67be940001b2c518720632.jpg">
+                        </div>
+                    </a>
+
+                    <a href="#" class="click-help">
+                        <div class="banner-slide" >
+                            <img src="img/5d79998b0001a15618720632.jpg">
+                        </div>
+                    </a>
+                    <div class="banner-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <a href="#" class="banner-anchor prev icon-left2"></a>
+                    <a href="#" class="banner-anchor next icon-right2"></a>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+<script>
+
+    var img = document.getElementsByClassName("banner-slide");//获取图片
+    var dian = document.getElementsByClassName("banner-dots");//获取圆点
+    var zuo = document.getElementsByClassName("prev");//左箭头
+    var you = document.getElementsByClassName("next");//右箭头
+    var index = 0;/
+//重置所有类
+    var removeActive = function () {
+        for(int i = 0;i<img.length;i++){
+            img[i].className="banner-slide";
+
+        }
+        for(int i = 0;i<dian.length;i++){
+            dian[i].className="banner-dots";
+
+        }
+    };
+    var getindex = function () {
+        removeActive();
+        img[index].classList.add("active");
+        dian[index].classList.add("poActive");
+    };
+
+
+    you.addEventListener("click",function () {
+        if(index < img.length-1){
+            index++;
+        }else{
+            index = 0;
+        }
+        getindex();
+    });
+    zuo.addEventListener("click",function () {
+        if(index == 0){
+            index = img.length-1;
+        }else{
+            index--;
+        }
+        getindex();
+    });
+
+
+    var goZuo = function () {
+
+    }
+    var goPoint = function () {
+
+    }
+
+</script>
+</body>
+</html>

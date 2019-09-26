@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery事件委托</title>
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script>
+        $(function () {
+
+            $("button").on("click",function () {
+                $("ul").append("<li>woshi xinzengd </li>");
+            })
+            
+        });
+    </script>
+</head>
+<body>
+<ul>
+    <li>我是第1li</li>
+    <li>我是第2li</li>
+    <li>我是第3li</li>
+</ul>
+<button>添加一个li</button>
+</body>
+</html>
