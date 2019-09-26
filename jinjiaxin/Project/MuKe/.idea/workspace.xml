@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="76979129-20e9-4a87-afc1-d3fd0ca1c4ff" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="SCSS File" />
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1Qe4tZgY0CLywIr28GkUu9FvRIq" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.webservices" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.MuKe.html">
+    <configuration name="MuKe.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/MuKe/MuKe.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="Binary_Search.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="Binary_Search.js" working-dir="$USER_HOME$/桌面">
+      <method v="2" />
+    </configuration>
+    <configuration name="File.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/../jQery/pinglun/File.js" working-dir="$PROJECT_DIR$/../jQery/pinglun">
+      <method v="2" />
+    </configuration>
+    <configuration name="jq.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/../jQery/pinglun/jq.js" working-dir="$PROJECT_DIR$/../jQery/pinglun">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.MuKe.html" />
+        <item itemvalue="Node.js.Binary_Search.js" />
+        <item itemvalue="Node.js.File.js" />
+        <item itemvalue="Node.js.jq.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="76979129-20e9-4a87-afc1-d3fd0ca1c4ff" name="Default Changelist" comment="" />
+      <created>1568117943093</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1568117943093</updated>
+      <workItem from="1568117947101" duration="31125000" />
+      <workItem from="1568251214891" duration="17196000" />
+      <workItem from="1568597815546" duration="50400000" />
+      <workItem from="1568943836306" duration="27682000" />
+      <workItem from="1569033016456" duration="25988000" />
+      <workItem from="1569202425304" duration="5374000" />
+      <workItem from="1569210158397" duration="923000" />
+      <workItem from="1569211111302" duration="50000" />
+      <workItem from="1569211176004" duration="2009000" />
+      <workItem from="1569219335926" duration="5794000" />
+      <workItem from="1569229287490" duration="179000" />
+      <workItem from="1569250645127" duration="599000" />
+      <workItem from="1569289787621" duration="60367000" />
+      <workItem from="1569417399560" duration="4846000" />
+      <workItem from="1569423093729" duration="242000" />
+      <workItem from="1569463290664" duration="950000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>
