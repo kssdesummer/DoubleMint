@@ -1,0 +1,17 @@
+.Focus{
+    margin: 0 auto;
+    width: 1000px;
+}
+.Focus input{
+    margin: 20px;
+}
+.Focus button{
+    width: 40px;
+    height: 40px;
+}
+.onfocus{
+    border-bottom: red solid 1px;
+}
+.onfocus button{
+    background: pink;
+}

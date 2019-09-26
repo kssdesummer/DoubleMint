@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>白鹭科技</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <style>
+        /*给轮播图设置100%填充*/
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+        /*设置横幅的鼠标悬停阴影*/
+        .td1:hover
+        {
+            background-color:rgba(255,255,255,0.3);
+        }
+        /*清除a标签的所有样式*/
+        a,a:link,a:visited,a:hover,a:active{
+            text-decoration: none;
+            color:white;
+        }
+        /*将轮播图设置在后面*/
+        #myCarousel1{
+            position:absolute;
+            z-index:-1
+        }
+        #commony div img{
+            height: 48px;
+            width: 131px;
+            margin: 0 0 17px 0;
+        }
+
+    </style>
+</head>
+<body class="body-white">
+<!--头部导航栏-->
+<header class="bg-dark" style="height: 58px;text-align: center;">
+    <div style="height: 40px;position: relative;top: 9px;">
+        <div class="container-fluid">
+            <div class="row align-items-centerjustify-content-center login-center">
+                <div class="col-md-2 text-center">
+                    <img src="logo.png" style="height:40px; width: 126px;"/>
+                </div>
+                <div class="col-md-8">
+                    <ul class="nav justify-content-center" style="color: white;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.egret.com/index">首页</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.egret.com/products/">产品</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.egret.com/solution/">解决方案</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://developer.egret.com/cn/">开发者中心</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.egret.com/case">案例</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.egret.com/playable">众包平台</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://edu.egret.com/">教育</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.egret.com/egretia">区块链实验室</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://bbs.egret.com/portal.php">社区</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.egret.com/about">关于我们</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <div style="height: 40px;width: 40px;line-height:40px;border-radius:100%;border: none;background: #487AF6;position: relative;left:50%;text-align: center;">
+                        <a href="https://www.egret.com/en/" style="font-size: small;color: #fff;position: relative;top: -1px; ">EN</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--轮播图上横幅-->
+<div class="container-fluid" style="position: absolute;top: 400px;">
+    <div class="row" style="align-content: center">
+        <div class="col" style="height:86px;text-align: center;width: 100%">
+            <table class="table table-bordered" style=" border: 2px solid transparent;margin:0;position: relative;width:1905px;left:-24px">
+                <tr style="background-color: rgba(0,0,0,0.2); line-height: 62px;height: 62px;">
+                    <td style="border-left: 1px solid transparent;width: 372.5px"></td>
+                    <td class="td1" style="width: 300px">
+                        <img src="bottom1.png" alt="科技" style="height: 57px;width: 57px;margin: 0 30px 0 35px;">
+                        <a href="https://www.egret.com/about" style="font-size: 20px">白鹭科技优势</a>
+                    </td>
+                    <td class="td1" style="width: 300px">
+                        <img src="bottom2.png" alt="引擎"  style="height: 57px;width: 57px;margin: 0 30px 0 35px;">
+                        <a href="https://www.egret.com/support" style="font-size: 20px">白鹭引擎服务</a>
+                    </td>
+                    <td class="td1" style="width: 300px">
+                        <img src="bottom3.png" alt="优势" style="height: 57px;width: 57px;margin: 0 30px 0 35px;">
+                        <a href="https://www.egret.com/case" style="font-size: 20px">白鹭科技优势</a>
+                    </td>
+                    <td class="td1" style="width: 300px">
+                        <img src="bottom4.png" alt="入门" style="height: 57px;width: 57px;margin: 0 30px 0 35px;">
+                        <a href="http://developer.egret.com/cn/" style="font-size: 20px">开发者快速入门</a>
+                    </td>
+                    <td style="border-right: 1px solid transparent;width: 372.5px"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<!--轮播图顶部-->
+<div id="myCarousel1" class="carousel slide egret-game clearfix" style="width: 100%;position: relative;" data-interval="3000" data-ride="carousel">
+    <!-- 指示符 -->
+    <ul class="carousel-indicators">
+        <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel1" data-slide-to="1"></li>
+        <li data-target="#myCarousel1" data-slide-to="2"></li>
+    </ul>
+    <!-- 轮播图片 -->
+    <div class="carousel-inner">
+        <div class="carousel-item active" style="height: 476.5px;background-image: url('kv1.jpg');background-repeat:no-repeat; background-size:100% 100%;-moz-background-size:100% 100%;"></div>
+        <div class="carousel-item" style="height: 476.5px;background-image: url('kv2.jpg');	background-repeat:no-repeat;background-size:100% 100%;-moz-background-size:100% 100%;"></div>
+        <div class="carousel-item" style="height: 476.5px;background-image: url('kv3.jpg');background-repeat:no-repeat;background-size:100% 100%;-moz-background-size:100% 100%;"></div>
+    </div>
+</div>
+<!--白鹭引擎-->
+<div class="container" style="position: relative;top: 60px;">
+    <h2 style="line-height: 60px"><img src="pen.png" style="width: 20px;height: 30px; margin: 0 16px 0 0;">白鹭引擎</h2>
+    <div class="card" style="background-color: #F7FAFC;">
+        <div class="card-body">
+            <h4 class="card-title" style="text-align: center">效率至上的一站式完整开发工作流</h4>
+            <p class="card-text" >2D/3D双核心渲染，开发工具链闭环整合，全流程开发，由此开始</p>
+            <img class="card-img-bottom" src="engineLeft.png" alt="left" style="width:285px;height:22px;margin: 0 38px 0 0;">
+            <img class="card-img-bottom" src="ap.png" alt="card-img-bottom" style="width:39px;height:39px;margin: 0 28px 0 0;">
+            <img class="card-img-bottom" src="an.png" alt="card-img-bottom" style="width:39px;height:39px;margin: 0 28px 0 0;">
+            <img class="card-img-bottom" src="h5.png" alt="card-img-bottom" style="width:39px;height:39px;margin: 0 28px 0 0;">
+            <img class="card-img-bottom" src="fb.png" alt="card-img-bottom" style="width:39px;height:39px;margin: 0 28px 0 0;">
+            <img class="card-img-bottom" src="qz.png" alt="card-img-bottom" style="width:39px;height:39px;margin: 0 28px 0 0;">
+            <img class="card-img-bottom" src="wx.png" alt="card-img-bottom" style="width:39px;height:39px;margin: 0 28px 0 0;">
+            <img class="card-img-bottom" src="engineRight.png" alt="card-img-bottom" style="width:285px;height:22px;margin: 0 27px 0 0px;">
+        </div>
+        <div id="mycarousel2" class="carousel slide" style="height:600px;width: 790px;position: relative;left: 15%" data-interval="2000" data-ride="carousel">
+            <!-- 指示符 -->
+            <ul class="carousel-indicators">
+                <li data-target="#mycarousel2" data-slide-to="0" class="active"></li>
+                <li data-target="#mycarousel2" data-slide-to="1"></li>
+                <li data-target="#mycarousel2" data-slide-to="2"></li>
+            </ul>
+            <!-- 轮播图片 -->
+            <div class="carousel-inner" >
+                <div class="carousel-item active">
+                    <img src="engine1.png">
+                </div>
+                <div class="carousel-item">
+                    <img src="engine2.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="engine3.png">
+                </div>
+            </div>
+            <!-- 左右切换按钮 -->
+            <a class="carousel-control-prev" href="#mycarousel2" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#mycarousel2" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+</div>
+<!--案例推荐-->
+<div class="container" style="background-color: #FAFAFA; position: relative;top:100px">
+    <h2 style="line-height: 60px;width: 1110px"><img src="pen.png" style="width: 20px;height: 30px; margin: 0 16px 0 0;">案例推荐</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card" >
+                <img class="card-img-bottom" src="chuanqi1.jpg" alt="left" >
+                <div class="card-body">
+                    <h4 class="card-title">传奇来了</h4>
+                    <p class="card-text" >微信小程序版还原经典传奇，采用无缝跨屏模式，画面清晰精致，打击感实足。游戏效果写实逼真，角色形象霸气十足！</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" >
+                <img class="card-img-bottom" src="nvhuang1.png" alt="left" >
+                <div class="card-body">
+                    <h4 class="card-title">女皇陛下</h4>
+                    <p class="card-text" >后宫美男恋爱养成游戏，以历史美男收集，角色换装为主展开宫廷恋爱之旅，兼具古典唯美的画风和丰富的游戏剧情！</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" >
+                <img class="card-img-bottom" src="haidao1.jpg" alt="left" >
+                <div class="card-body">
+                    <h4 class="card-title">海盗来了</h4>
+                    <p class="card-text" >以海盗为题材的社交类小游戏，玩家可以通过转盘获得金币和道具建造属于自己的海岛，探索新的世界，结交新的朋友！</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="position: relative;top: 25px;">
+        <div class="col-md-4">
+            <div class="card" >
+                <img class="card-img-bottom" src="shiguang1.png" alt="left" >
+                <div class="card-body">
+                    <h4 class="card-title">时光幻境</h4>
+                    <p class="card-text" >史诗级魔幻手游，多人同屏真实PK。神秘的魔幻大陆上，有造型华丽的不同种族，也有举世无双的惊世神兵！</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" >
+                <img class="card-img-bottom" src="mengdao1.png" alt="left" >
+                <div class="card-body">
+                    <h4 class="card-title">梦道</h4>
+                    <p class="card-text" >以仙侣、宠物、酷炫造型为特色的回合制挂置游戏。浓郁的仙侠气息，酷炫的坐骑与翅膀系统！好礼相送，快人一步！</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" >
+                <img class="card-img-bottom" src="chufang1.png" alt="left" >
+                <div class="card-body">
+                    <h4 class="card-title">幸福厨房</h4>
+                    <p class="card-text" >腾讯独代的趣味经营社交游戏，玩家可根据菜谱烹制菜品，经营饭店，收集生活百感，品尝好友的美食，与好友交换食材。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--新闻动态-->
+<div class="container" style="background-color: #FAFAFA; position: relative;top:150px">
+    <h2 style="line-height: 60px;width: 1110px"><img src="pen.png" style="width: 20px;height: 30px; margin: 0 16px 0 0;">新闻动态</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card" >
+                <img class="card-img-bottom" src="news1.jpg" alt="新闻1" >
+                <div class="card-body">
+                    <p class="card-text" >白鹭、凯撒、国金看准5G风口，诚邀各路豪杰共赢云游戏 </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" >
+                <img class="card-img-bottom" src="news2.jpg" alt="新闻2" >
+                <div class="card-body">
+                    <p class="card-text" >白鹭引擎团队即将发布 Egret Pro，并公布后续路线图</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" >
+                <img class="card-img-bottom" src="news3.png" alt="新闻3" >
+                <div class="card-body">
+                    <p class="card-text" >Egret Wing全新形态开启内测，发布全新工具</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--合作伙伴-->
+<div class="container-fluid" id="commony" style="position: relative;top: 200px;background-color: #F7FAFC;height: 263px;">
+    <h2 style="line-height: 60px;width:80%;position: relative;left: 20%;"><img src="pen.png" style="width: 20px;height: 30px; margin: 0 16px 0 0;">合作伙伴</h2>
+    <div class="row" style="width:60%;text-align: center;position: relative;left: 20%">
+        <div class="col-md-2"><img src="360.png"></div>
+        <div class="col-md-2"><img src="apple.png"></div>
+        <div class="col-md-2"><img src="apus.png"></div>
+        <div class="col-md-2"><img src="baidu.png"></div>
+        <div class="col-md-2"><img src="cu.png"></div>
+        <div class="col-md-2"><img src="fbc.png"></div>
+    </div>
+    <div class="row" style="width:60%;text-align: center;position: relative;left: 20%">
+        <div class="col-md-2"><img src="google.png"></div>
+        <div class="col-md-2"><img src="k.png"></div>
+        <div class="col-md-2"><img src="kun.png"></div>
+        <div class="col-md-2"><img src="lie.png"></div>
+        <div class="col-md-2"><img src="mi.png"></div>
+        <div class="col-md-2"><img src="ms.png"></div>
+    </div>
+    <div class="row" style="width:60%;text-align: center;position: relative;left: 20%">
+        <div class="col-md-2"><img src="oppo.png"></div>
+        <div class="col-md-2"><img src="tap.png"></div>
+        <div class="col-md-2"><img src="tc.png"></div>
+        <div class="col-md-2"><img src="we.png"></div>
+        <div class="col-md-2"><img src="ya.png"></div>
+        <div class="col-md-2"><img src="yz.png"></div>
+    </div>
+</div>
+<!--页脚-关于我们-->
+<footer>
+    <div class="container-fluid" style="position: relative;top: 200px;">
+        <div class="row" style="background-image: url('footer.png');line-height: 118px">
+            <div class="col-md-10" style="color: white;text-align: center;font-size: 20px">
+                <a href="https://www.egret.com/about" style="margin: 0 55px 0 0">关于我们</a>
+                <a href="https://www.egret.com/products/" style="margin: 0 55px 0 0">产品下载</a>
+                <a href="https://www.egret.com/support" style="margin: 0 55px 0 0">技术支持</a>
+                <a href="https://www.egret.com/Cooperation" style="margin: 0 55px 0 0">商务合作</a>
+                <a href="https://www.egret.com/join.html" style="margin: 0 55px 0 0">加入我们</a>
+            </div>
+            <div class="col-md-2">
+                <div class="row" style="position: relative;top: 30px;">
+                    <img src="qq.png" style="margin: 0 12px 0 0;width: 33px;height: 33px;">
+                    <img src="wxf.png" style="margin: 0 12px 0 0;width: 33px;height: 33px;">
+                    <img src="sina.png" style="margin: 0 12px 0 0;width: 33px;height: 33px;">
+                    <img src="zhi.png" style="margin: 0 12px 0 0;width: 33px;height: 33px;">
+                </div>
+                <div class="row" style="color: white;line-height: 100px">邮箱：bd@egret.com</div>
+
+            </div>
+        </div>
+        <div class="row" style="background-color: #5C6679;color: white;text-align: center;line-height: 35px">
+            <div class="col">Copyright © 2014-2018 egret.com 京网文[2014]0791-191号 京ICP备14025619号-2 京ICP证150115号 京公网安备11010502027089</div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

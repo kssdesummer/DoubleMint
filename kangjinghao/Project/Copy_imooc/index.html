@@ -1,0 +1,2994 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>慕课网-程序员梦工厂</title>
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script src="index.js" type="text/javascript"></script>
+</head>
+<body id="index">
+<!--    顶部导航-->
+<div id="header">
+    <div id="logo">
+        <img title="慕课网" src="./img/logo.png">
+    </div>
+    <div class="sort1">
+        <ul class="list1">
+            <li class="item"><a class="link" href="#">免费课程</a></li>
+            <li class="item"><a class="link" href="#">实战课程</a></li>
+            <li class="item"><a class="link" href="#">就业班</a></li>
+            <li class="item"><a class="link" href="#">专栏<img class="icn-new" src="./img/new.png"></a></li>
+            <li class="item"><a class="link" href="#">猿问</a></li>
+            <li class="item"><a class="link" href="#">手记</a></li>
+        </ul>
+    </div>
+    <div class="search clearfix">
+        <div class="search-default">
+            <a href="#" target="_blank">Java入门</a>
+            <a href="#" target="_blank">前端入门</a>
+        </div>
+        <div class="search-area">
+            <input class="search-input" data-suggest-trigger="suggest-trigger" type="text" autocomplete="off"/>
+            <!--                <input type="hidden"/>-->
+
+        </div>
+        <div class="showhide-search" data-show="no">
+            <i class="icon-search"></i>
+        </div>
+    </div>
+    <div class="sort2">
+        <ul class="list2">
+            <li class="download">
+                <a href="#">下载APP</a>
+                <div class="app-load-box clearfix js-load-box" style="display: none">
+                    <div class="mobile-load-box">
+                        <h4>慕课网APP - 随时随地学编程</h4>
+                        <img src="./img/appload.png" class="l">
+                        <div class="r">
+                            <a class="app-load-btn" href="#" target="_blank">
+                                <i class="icon-apple"></i>
+                                App Store下载
+                            </a>
+                            <a class="app-load-btn" href="#" target="_blank">
+                                <i class="icon-android"></i>
+                                Android下载
+                            </a>
+                            <p>扫描下载慕课网APP</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="shop-cart">
+                <a href="#">
+                    <span class="icon-cart"></span>
+                    <span class="shopping">购物车</span>
+                    <span class="shopping_icon"></span>
+                </a>
+                <div class="my-cart" id="js-my-cart" style="display: none;">
+                    <div class="cart-title-box clearfix">
+                        <h2 class="l">我的购物车</h2>
+                        <h5 class="r">
+                            已加入
+                            <span class="js-incart-num">0</span>
+                            门课程
+                        </h5>
+                    </div>
+                    <div class="cart-wrap">
+                        <div class="clear-cart">
+                            <span class="cartIcon icon-shopping-cart"></span>
+                            <h3>购物车空空如也</h3>
+                            <div class="text">快去这里选购你中意的课程</div>
+                            <p>
+                                <a href="#" class="go-link" target="_blank">实战课程</a>
+                            </p>
+                            <p>
+                                <a href="#" class="go-link" target="_blank">就业班</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="more-box clearfix">
+                        <div class="l show-box">
+                            <span class="text">
+                                <a href="#" target="_blank">我的订单中心</a>
+                            </span>
+                        </div>
+                        <a href="#" class="r moco-btn moco-btn-red go-cart" target="_blank">去购物车</a>
+                    </div>
+                </div>
+            </li>
+            <li class="signin">
+                <a href="#" id="js-login">登录</a>
+                &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+                <a href="#" id="js-logup">注册</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="main">
+<!--主体部分-->
+<div class="bk" style="background-image: url('./img/slide_1.jpg');"></div>
+<div class="box-1">
+    <div class="g-banner pr">
+            <!--轮播图菜单栏-->
+            <div class="menuContent">
+                <div class="item" id="a">
+                    <a href="#">
+                        <span class="group">前沿 / 区块链 / 人工智能</span>
+                        <i class="imv2-arrow1-r"></i>
+                    </a>
+                </div>
+                <div class="item" id="b">
+                    <a href="#">
+                        <span class="group">前端 / 小程序 / JS</span>
+                        <i class="imv2-arrow1-r"></i>
+                    </a>
+                </div>
+                <div class="item" id="c">
+                    <a href="#">
+                        <span class="group">后端 / JAVA / Python</span>
+                        <i class="imv2-arrow1-r"></i>
+                    </a>
+                </div>
+                <div class="item" id="d">
+                    <a href="#">
+                        <span class="group">移动 / Android / iOS</span>
+                        <i class="imv2-arrow1-r"></i>
+                    </a>
+                </div>
+                <div class="item" id="e">
+                    <a href="#">
+                        <span class="group">云计算 / 大数据 / 容器</span>
+                        <i class="imv2-arrow1-r"></i>
+                    </a>
+                </div>
+                <div class="item" id="f">
+                    <a href="#">
+                        <span class="group">运维 / 测试 / 数据库</span>
+                        <i class="imv2-arrow1-r"></i>
+                    </a>
+                </div>
+                <div class="item" id="g">
+                    <a href="#">
+                        <span class="group">UI设计 / 3D动画 / 游戏</span>
+                        <i class="imv2-arrow1-r"></i>
+                    </a>
+                </div>
+            </div>
+            <!--菜单栏悬停内容-->
+            <div class="menuHidden a" style="display: none;">
+                <div class="innerBox clearfix">
+                    <div class="subinnerBox">
+                        <div class="hiddenUp clearfix">
+                            <div class="hidden_part">
+                                <div class="title_part">
+                                    <span class="bold mr10 l small-title">前沿技术</span>
+                                </div>
+                                <div class="hidden_part_box">
+                                    <a target="_blank" href="#">微服务</a>
+                                    <a target="_blank" href="#">区块链</a>
+                                    <a target="_blank" href="#">以太坊</a>
+                                    <a target="_blank" href="#">机器学习</a>
+                                    <a target="_blank" href="#">深度学习</a>
+                                    <a target="_blank" href="#">计算机视觉</a>
+                                    <a target="_blank" href="#">自然语言处理</a>
+                                    <a target="_blank" href="#">数据分析&挖掘</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hiddenDown">
+                    <div class="l hiddenDown_part">
+                        <a href="#" target="_blank" title="OpenCV+TensorFlow 入门人工智能图像处理" class="clearfix">
+                            <img src="./img/part_a1.jpg" class="l">
+                            <div class="l course-card">
+                                <h3 class="course-card-name">OpenCV+TensorFlow 入门人工智能图像处理</h3>
+                                <div class="course-card-price l">￥299.00</div>
+                                <div class="course-card-dot l">
+                                    <i class="imv2-dot_samll"></i>
+                                </div>
+                                <div class="course-card-info l">中级</div>
+                                <div class="course-card-dot l">
+                                    <i class="imv2-dot_samll"></i>
+                                </div>
+                                <div class="course-card-info l">
+                                    <i class="icon-set_sns"></i>670
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="l hiddenDown_part">
+                        <a href="#" target="_blank" title="区块链技术核心概念与原理讲解" class="clearfix">
+                            <img src="./img/part_a2.jpg" class="l">
+                            <div class="l course-card">
+                                <h3 class="course-card-name">区块链技术核心概念与原理讲解</h3>
+                                <div class="course-card-info l">入门</div>
+                                <div class="course-card-dot l">
+                                    <i class="imv2-dot_samll"></i>
+                                </div>
+                                <div class="course-card-info l">
+                                    <i class="icon-set_sns"></i>44853
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="l hiddenDown_part">
+                        <a href="#" target="_blank" title="Python人工智能常用库Numpy使用入门" class="clearfix">
+                            <img src="./img/part_a3.jpg" class="l">
+                            <div class="l course-card">
+                                <h3 class="course-card-name">Python人工智能常用库Numpy使用入门</h3>
+                                <div class="course-card-price l">￥499.00</div>
+                                <div class="course-card-dot l">
+                                    <i class="imv2-dot_samll"></i>
+                                </div>
+                                <div class="course-card-info l">初级</div>
+                                <div class="course-card-dot l">
+                                    <i class="imv2-dot_samll"></i>
+                                </div>
+                                <div class="course-card-info l">
+                                    <i class="icon-set_sns"></i>23933
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="l hiddenDown_part">
+                        <a href="#" target="_blank" title="HBase入门" class="clearfix">
+                            <img src="./img/part_a4.jpg" class="l">
+                            <div class="l course-card">
+                                <h3 class="course-card-name">HBase入门</h3>
+                                <div class="course-card-info l">初级</div>
+                                <div class="course-card-dot l">
+                                    <i class="imv2-dot_samll"></i>
+                                </div>
+                                <div class="course-card-info l">
+                                    <i class="icon-set_sns"></i>24434
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="menuHidden b" style="display: none;">
+                <div class="innerBox clearfix">
+                    <div class="subinnerBox">
+                        <div class="hiddenUp clearfix">
+                            <div class="hidden_part">
+                                <div class="title_part">
+                                    <span class="bold mr10 l small-title">前端开发</span>
+                                </div>
+                                <div class="hidden_part_box">
+                                    <a target="_blank" href="#">HTML/CSS</a>
+                                    <a target="_blank" href="#">JavaScript</a>
+                                    <a target="_blank" href="#">Vue.js</a>
+                                    <a target="_blank" href="#">React.JS</a>
+                                    <a target="_blank" href="#">Angular</a>
+                                    <a target="_blank" href="#">Node.js</a>
+                                    <a target="_blank" href="#">jQuery</a>
+                                    <a target="_blank" href="#">Bootstrap</a>
+                                    <a target="_blank" href="#">WebApp</a>
+                                    <a target="_blank" href="#">小程序</a>
+                                    <a target="_blank" href="#">前端工具</a>
+                                    <a target="_blank" href="#">CSS</a>
+                                    <a target="_blank" href="#">Html5</a>
+                                    <a target="_blank" href="#">CSS3</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hiddenDown">
+                    <div class="l hiddenDown_part">
+                        <a href="#" target="_blank" title="前端零基础入门 " class="clearfix">
+                            <img src="./img/part_b1.jpg" class="l">
+                            <div class="l course-card">
+                                <h3 class="course-card-name">前端零基础入门 </h3>
+                                <div class="course-card-price l">￥399.00</div>
+                                <div class="course-card-dot l">
+                                    <i class="imv2-dot_samll"></i>
+                                </div>
+                                <div class="course-card-info l">中级</div>
+                                <div class="course-card-dot l">
+                                    <i class="imv2-dot_samll"></i>
+                                </div>
+                                <div class="course-card-info l">
+                                    <i class="icon-set_sns"></i>4295
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="l hiddenDown_part">
+                        <a href="#" target="_blank" title="微信小程序入门与实战 常用组件API开发技巧项目实战" class="clearfix">
+                            <img src="./img/part_b2.jpg" class="l">
+                            <div class="l course-card">
+                                <h3 class="course-card-name">微信小程序入门与实战 常用组件API开发技巧项目实战</h3>
+                                <div class="course-card-info l">中级</div>
+                                <div class="course-card-dot l">
+                                    <i class="imv2-dot_samll"></i>
+                                </div>
+                                <div class="course-card-info l">
+                                    <i class="icon-set_sns"></i>2978
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="l hiddenDown_part">
+                        <a href="#" target="_blank" title="Vue核心技术Vue+Vue-Router+Vuex+SSR实战精讲" class="clearfix">
+                            <img src="./img/part_b3.jpg" class="l">
+                            <div class="l course-card">
+                                <h3 class="course-card-name">Vue核心技术Vue+Vue-Router+Vuex+SSR实战精讲</h3>
+                                <div class="course-card-price l">￥466.00</div>
+                                <div class="course-card-dot l">
+                                    <i class="imv2-dot_samll"></i>
+                                </div>
+                                <div class="course-card-info l">初级</div>
+                                <div class="course-card-dot l">
+                                    <i class="imv2-dot_samll"></i>
+                                </div>
+                                <div class="course-card-info l">
+                                    <i class="icon-set_sns"></i>1933
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="l hiddenDown_part">
+                        <a href="#" target="_blank" title="Vue2.5开发去哪儿网App 从零基础入门到实战项目" class="clearfix">
+                            <img src="./img/part_b4.jpg" class="l">
+                            <div class="l course-card">
+                                <h3 class="course-card-name">Vue2.5开发去哪儿网App 从零基础入门到实战项目</h3>
+                                <div class="course-card-info l">初级</div>
+                                <div class="course-card-dot l">
+                                    <i class="imv2-dot_samll"></i>
+                                </div>
+                                <div class="course-card-info l">
+                                    <i class="icon-set_sns"></i>2434
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="menuHidden c" style="display: none;">
+                <div class="innerBox clearfix">
+                    <div class="subinnerBox">
+                        <div class="hiddenUp clearfix">
+                            <div class="hidden_part">
+                                <div class="title_part">
+                                    <span class="bold mr10 l small-title">后端开发</span>
+                                </div>
+                                <div class="hidden_part_box">
+                                    <a target="_blank" href="#">Java</a>
+                                    <a target="_blank" href="#">SpringBoot</a>
+                                    <a target="_blank" href="#">Spring Cloud</a>
+                                    <a target="_blank" href="#">Python</a>
+                                    <a target="_blank" href="#">爬虫</a>
+                                    <a target="_blank" href="#">Django</a>
+                                    <a target="_blank" href="#">Tornado</a>
+                                    <a target="_blank" href="#">Go</a>
+                                    <a target="_blank" href="#">C</a>
+                                    <a target="_blank" href="#">C++</a>
+                                    <a target="_blank" href="#">C#</a>
+                                    <a target="_blank" href="#">Ruby</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hiddenDown">
+                    <div class="l hiddenDown_part">
+                        <a href="#" target="_blank" title="Java 零基础入门" class="clearfix">
+                            <img src="./img/part_c1.jpg" class="l">
+                            <div class="l course-card">
+                                <h3 class="course-card-name">Java 零基础入门</h3>
+                                <div class="course-card-price l">￥3599.00</div>
+                                <div class="course-card-dot l">
+                                    <i class="imv2-dot_samll"></i>
+                                </div>
+                                <div class="course-card-info l">中级</div>
+                                <div class="course-card-dot l">
+                                    <i class="imv2-dot_samll"></i>
+                                </div>
+                                <div class="course-card-info l">
+                                    <i class="icon-set_sns"></i>4529
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="l hiddenDown_part">
+                        <a href="#" target="_blank" title="Spring Boot2.0深度实践之核心技术篇" class="clearfix">
+                            <img src="./img/part_c2.jpg" class="l">
+                            <div class="l course-card">
+                                <h3 class="course-card-name">Spring Boot2.0深度实践之核心技术篇</h3>
+                                <div class="course-card-info l">中级</div>
+                                <div class="course-card-dot l">
+                                    <i class="imv2-dot_samll"></i>
+                                </div>
+                                <div class="course-card-info l">
+                                    <i class="icon-set_sns"></i>278
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="l hiddenDown_part">
+                        <a href="#" target="_blank" title="Socket网络编程进阶与实战" class="clearfix">
+                            <img src="./img/part_c3.jpg" class="l">
+                            <div class="l course-card">
+                                <h3 class="course-card-name">Socket网络编程进阶与实战</h3>
+                                <div class="course-card-price l">￥256.00</div>
+                                <div class="course-card-dot l">
+                                    <i class="imv2-dot_samll"></i>
+                                </div>
+                                <div class="course-card-info l">初级</div>
+                                <div class="course-card-dot l">
+                                    <i class="imv2-dot_samll"></i>
+                                </div>
+                                <div class="course-card-info l">
+                                    <i class="icon-set_sns"></i>93
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="l hiddenDown_part">
+                        <a href="#" target="_blank" title="Java设计模式精讲  Debug方式+内存分析 " class="clearfix">
+                            <img src="./img/part_c4.jpg" class="l">
+                            <div class="l course-card">
+                                <h3 class="course-card-name">Java设计模式精讲  Debug方式+内存分析 </h3>
+                                <div class="course-card-info l">初级</div>
+                                <div class="course-card-dot l">
+                                    <i class="imv2-dot_samll"></i>
+                                </div>
+                                <div class="course-card-info l">
+                                    <i class="icon-set_sns"></i>434
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="menuHidden d" style="display: none;">
+                <div class="innerBox clearfix">
+                    <div class="subinnerBox">
+                        <div class="hiddenUp clearfix">
+                            <div class="hidden_part">
+                                <div class="title_part">
+                                    <span class="bold mr10 l small-title">移动开发</span>
+                                </div>
+                                <div class="hidden_part_box">
+                                    <a target="_blank" href="#">Android</a>
+                                    <a target="_blank" href="#">iOS</a>
+                                    <a target="_blank" href="#">React native</a>
+                                    <a target="_blank" href="#">WEEX</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hiddenDown">
+                    <div class="l hiddenDown_part">
+                        <a href="#" target="_blank" title="Android 零基础入门" class="clearfix">
+                            <img src="./img/part_d1.jpg" class="l">
+                            <div class="l course-card">
+                                <h3 class="course-card-name">Android 零基础入门</h3>
+                                <div class="course-card-price l">￥699.00</div>
+                                <div class="course-card-dot l">
+                                    <i class="imv2-dot_samll"></i>
+                                </div>
+                                <div class="course-card-info l">5步／40课</div>
+                                <div class="course-card-dot l">
+                                    <i class="imv2-dot_samll"></i>
+                                </div>
+                                <div class="course-card-info l">
+                                    <i class="icon-set_sns"></i>519
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="l hiddenDown_part">
+                        <a href="#" target="_blank" title="新版React Native+Redux打造高质量上线App" class="clearfix">
+                            <img src="./img/part_d2.jpg" class="l">
+                            <div class="l course-card">
+                                <h3 class="course-card-name">新版React Native+Redux打造高质量上线App</h3>
+                                <div class="course-card-info l">中级</div>
+                                <div class="course-card-dot l">
+                                    <i class="imv2-dot_samll"></i>
+                                </div>
+                                <div class="course-card-info l">
+                                    <i class="icon-set_sns"></i>29780
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="l hiddenDown_part">
+                        <a href="#" target="_blank" title="Flutter从入门到进阶 实战携程网App" class="clearfix">
+                            <img src="./img/part_d3.jpg" class="l">
+                            <div class="l course-card">
+                                <h3 class="course-card-name">Flutter从入门到进阶 实战携程网App</h3>
+                                <div class="course-card-price l">￥266.00</div>
+                                <div class="course-card-dot l">
+                                    <i class="imv2-dot_samll"></i>
+                                </div>
+                                <div class="course-card-info l">初级</div>
+                                <div class="course-card-dot l">
+                                    <i class="imv2-dot_samll"></i>
+                                </div>
+                                <div class="course-card-info l">
+                                    <i class="icon-set_sns"></i>933
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="l hiddenDown_part">
+                        <a href="#" target="_blank" title="Top团队大牛带你玩转Android性能分析与优化" class="clearfix">
+                            <img src="./img/part_d4.jpg" class="l">
+                            <div class="l course-card">
+                                <h3 class="course-card-name">Top团队大牛带你玩转Android性能分析与优化</h3>
+                                <div class="course-card-price l">￥286.00</div>
+                                <div class="course-card-dot l">
+                                    <i class="imv2-dot_samll"></i>
+                                </div>
+                                <div class="course-card-info l">初级</div>
+                                <div class="course-card-dot l">
+                                    <i class="imv2-dot_samll"></i>
+                                </div>
+                                <div class="course-card-info l">
+                                    <i class="icon-set_sns"></i>544
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="menuHidden e" style="display: none;">
+                <div class="innerBox clearfix">
+                    <div class="subinnerBox">
+                        <div class="hiddenUp clearfix">
+                            <div class="hidden_part">
+                                <div class="title_part">
+                                    <span class="bold mr10 l small-title">计算机基础</span>
+                                </div>
+                                <div class="hidden_part_box">
+                                    <a target="_blank" href="#">计算机网络</a>
+                                    <a target="_blank" href="#">算法与数据结构</a>
+                                    <a target="_blank" href="#">数学</a>
+                                </div>
+                            </div>
+                            <div class="hidden_part">
+                                <div class="title_part">
+                                    <span class="bold mr10 l small-title">云计算&大数据</span>
+                                </div>
+                                <div class="hidden_part_box">
+                                    <a target="_blank" href="#">大数据</a>
+                                    <a target="_blank" href="#">Hadoop</a>
+                                    <a target="_blank" href="#">Spark</a>
+                                    <a target="_blank" href="#">Hbase</a>
+                                    <a target="_blank" href="#">Storm</a>
+                                    <a target="_blank" href="#">云计算</a>
+                                    <a target="_blank" href="#">AWS</a>
+                                    <a target="_blank" href="#">Docker</a>
+                                    <a target="_blank" href="#">Kubernetes</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hiddenDown">
+                    <div class="l hiddenDown_part">
+                        <a href="#" target="_blank" title="BAT大牛亲授 个性化推荐算法实战" class="clearfix">
+                            <img src="./img/part_d1.jpg" class="l">
+                            <div class="l course-card">
+                                <h3 class="course-card-name">BAT大牛亲授 个性化推荐算法实战</h3>
+                                <div class="course-card-price l">￥399.00</div>
+                                <div class="course-card-dot l">
+                                    <i class="imv2-dot_samll"></i>
+                                </div>
+                                <div class="course-card-info l">中级</div>
+                                <div class="course-card-dot l">
+                                    <i class="imv2-dot_samll"></i>
+                                </div>
+                                <div class="course-card-info l">
+                                    <i class="icon-set_sns"></i>429
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="l hiddenDown_part">
+                        <a href="#" target="_blank" title="轻松愉快之玩转SpringData" class="clearfix">
+                            <img src="./img/part_d2.jpg" class="l">
+                            <div class="l course-card">
+                                <h3 class="course-card-name">轻松愉快之玩转SpringData</h3>
+                                <div class="course-card-info l">中级</div>
+                                <div class="course-card-dot l">
+                                    <i class="imv2-dot_samll"></i>
+                                </div>
+                                <div class="course-card-info l">
+                                    <i class="icon-set_sns"></i>29780
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="l hiddenDown_part">
+                        <a href="#" target="_blank" title="高等数学-学习算法/人工智能/大数据的第一步" class="clearfix">
+                            <img src="./img/part_d3.jpg" class="l">
+                            <div class="l course-card">
+                                <h3 class="course-card-name">高等数学-学习算法/人工智能/大数据的第一步</h3>
+                                <div class="course-card-price l">￥266.00</div>
+                                <div class="course-card-dot l">
+                                    <i class="imv2-dot_samll"></i>
+                                </div>
+                                <div class="course-card-info l">初级</div>
+                                <div class="course-card-dot l">
+                                    <i class="imv2-dot_samll"></i>
+                                </div>
+                                <div class="course-card-info l">
+                                    <i class="icon-set_sns"></i>933
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="l hiddenDown_part">
+                        <a href="#" target="_blank" title="HBase入门" class="clearfix">
+                            <img src="./img/part_d4.jpg" class="l">
+                            <div class="l course-card">
+                                <h3 class="course-card-name">HBase入门</h3>
+                                <div class="course-card-info l">初级</div>
+                                <div class="course-card-dot l">
+                                    <i class="imv2-dot_samll"></i>
+                                </div>
+                                <div class="course-card-info l">
+                                    <i class="icon-set_sns"></i>24434
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="menuHidden f" style="display: none;">
+                <div class="innerBox clearfix">
+                    <div class="subinnerBox">
+                        <div class="hiddenUp clearfix">
+                            <div class="hidden_part">
+                                <div class="title_part">
+                                    <span class="bold mr10 l small-title">运维&测试</span>
+                                </div>
+                                <div class="hidden_part_box">
+                                    <a target="_blank" href="#">运维</a>
+                                    <a target="_blank" href="#">自动化运维</a>
+                                    <a target="_blank" href="#">中间件</a>
+                                    <a target="_blank" href="#">Linux</a>
+                                    <a target="_blank" href="#">测试</a>
+                                    <a target="_blank" href="#">功能测试</a>
+                                    <a target="_blank" href="#">性能测试</a>
+                                    <a target="_blank" href="#">自动化测试</a>
+                                    <a target="_blank" href="#">接口测试</a>
+                                    <a target="_blank" href="#">安全测试</a>
+                                </div>
+                            </div>
+                            <div class="hidden_part">
+                                <div class="title_part">
+                                    <span class="bold mr10 l small-title">数据库</span>
+                                </div>
+                                <div class="hidden_part_box">
+                                    <a target="_blank" href="#">MySQL</a>
+                                    <a target="_blank" href="#">Redis</a>
+                                    <a target="_blank" href="#">MongoDB</a>
+                                    <a target="_blank" href="#">SQL Server</a>
+                                    <a target="_blank" href="#">Oracle</a>
+                                    <a target="_blank" href="#">NoSql</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hiddenDown">
+                    <div class="l hiddenDown_part">
+                        <a href="#" target="_blank" title="一站式学习Redis  从入门到高可用分布式实践" class="clearfix">
+                            <img src="./img/part_e1.jpg" class="l">
+                            <div class="l course-card">
+                                <h3 class="course-card-name">一站式学习Redis  从入门到高可用分布式实践</h3>
+                                <div class="course-card-price l">￥348.00</div>
+                                <div class="course-card-dot l">
+                                    <i class="imv2-dot_samll"></i>
+                                </div>
+                                <div class="course-card-info l">中级</div>
+                                <div class="course-card-dot l">
+                                    <i class="imv2-dot_samll"></i>
+                                </div>
+                                <div class="course-card-info l">
+                                    <i class="icon-set_sns"></i>1376
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="l hiddenDown_part">
+                        <a href="#" target="_blank" title="使用java构建和维护接口自动化测试框架" class="clearfix">
+                            <img src="./img/part_e2.jpg" class="l">
+                            <div class="l course-card">
+                                <h3 class="course-card-name">使用java构建和维护接口自动化测试框架</h3>
+                                <div class="course-card-info l">中级</div>
+                                <div class="course-card-dot l">
+                                    <i class="imv2-dot_samll"></i>
+                                </div>
+                                <div class="course-card-info l">
+                                    <i class="icon-set_sns"></i>22593
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="menuHidden g" style="display: none;">
+                <div class="innerBox clearfix">
+                    <div class="subinnerBox">
+                        <div class="hiddenUp clearfix">
+                            <div class="hidden_part">
+                                <div class="title_part">
+                                    <span class="bold mr10 l small-title">UI设计&多媒体</span>
+                                </div>
+                                <div class="hidden_part_box">
+                                    <a target="_blank" href="#">模型制作</a>
+                                    <a target="_blank" href="#">动效动画</a>
+                                    <a target="_blank" href="#">设计基础</a>
+                                    <a target="_blank" href="#">设计工具</a>
+                                    <a target="_blank" href="#">APPUI设计</a>
+                                    <a target="_blank" href="#">产品交互</a>
+                                </div>
+                            </div>
+                            <div class="hidden_part">
+                                <div class="title_part">
+                                    <span class="bold mr10 l small-title">游戏</span>
+                                </div>
+                                <div class="hidden_part_box">
+                                    <a target="_blank" href="#">Unity 3D</a>
+                                    <a target="_blank" href="#">Cocos2d-x</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hiddenDown">
+                    <div class="l hiddenDown_part">
+                        <a href="#" target="_blank" title="产品交互设计快速入门与实战" class="clearfix">
+                            <img src="./img/part_g1.jpg" class="l">
+                            <div class="l course-card">
+                                <h3 class="course-card-name">产品交互设计快速入门与实战</h3>
+                                <div class="course-card-price l">￥199.00</div>
+                                <div class="course-card-dot l">
+                                    <i class="imv2-dot_samll"></i>
+                                </div>
+                                <div class="course-card-info l">中级</div>
+                                <div class="course-card-dot l">
+                                    <i class="imv2-dot_samll"></i>
+                                </div>
+                                <div class="course-card-info l">
+                                    <i class="icon-set_sns"></i>630
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="l hiddenDown_part">
+                        <a href="#" target="_blank" title="高薪设计师必修课 AE移动UI动效设计从入门到实战" class="clearfix">
+                            <img src="./img/part_g2.jpg" class="l">
+                            <div class="l course-card">
+                                <h3 class="course-card-name">高薪设计师必修课 AE移动UI动效设计从入门到实战</h3>
+                                <div class="course-card-price l">￥199.00</div>
+                                <div class="course-card-dot l">
+                                    <i class="imv2-dot_samll"></i>
+                                </div>
+                                <div class="course-card-info l">中级</div>
+                                <div class="course-card-dot l">
+                                    <i class="imv2-dot_samll"></i>
+                                </div>
+                                <div class="course-card-info l">
+                                    <i class="icon-set_sns"></i>284
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="l hiddenDown_part">
+                        <a href="#" target="_blank" title="Axure入门初体验" class="clearfix">
+                            <img src="./img/part_g3.jpg" class="l">
+                            <div class="l course-card">
+                                <h3 class="course-card-name">Axure入门初体验</h3>
+                                <div class="course-card-info l">初级</div>
+                                <div class="course-card-dot l">
+                                    <i class="imv2-dot_samll"></i>
+                                </div>
+                                <div class="course-card-info l">
+                                    <i class="icon-set_sns"></i>62771
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="l hiddenDown_part">
+                        <a href="#" target="_blank" title="前端工程师必备的PS技能——切图篇" class="clearfix">
+                            <img src="./img/part_g4.jpg" class="l">
+                            <div class="l course-card">
+                                <h3 class="course-card-name">前端工程师必备的PS技能——切图篇</h3>
+                                <div class="course-card-info l">初级</div>
+                                <div class="course-card-dot l">
+                                    <i class="imv2-dot_samll"></i>
+                                </div>
+                                <div class="course-card-info l">
+                                    <i class="icon-set_sns"></i>252605
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--顶部轮播图部分-->
+            <div class="g-banner-content">
+                <div class="g-banner-box">
+                    <div id="demo" class="carousel slide" data-ride="carousel">
+                        <!-- 指示符 -->
+                        <ul class="carousel-indicators">
+                            <li data-target="#demo" data-slide-to="0" class="active"></li>
+                            <li data-target="#demo" data-slide-to="1"></li>
+                            <li data-target="#demo" data-slide-to="2"></li>
+                            <li data-target="#demo" data-slide-to="3"></li>
+                            <li data-target="#demo" data-slide-to="4"></li>
+                            <li data-target="#demo" data-slide-to="5"></li>
+                        </ul>
+                        <!-- 轮播图片 -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./img/slide_1.jpg">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/slide_2.jpg">                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/slide_3.jpg">                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/slide_4.jpg">                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/slide_5.jpg">                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/slide_6.jpg">                            </div>
+                        </div>
+                        <!-- 左右切换按钮 -->
+                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div>
+                <!--轮播图底下-->
+                <div class="path-banner">
+                    <a href="#" class="pic-1">
+                        <i class="i-web"></i>
+                        <p class="title">Web前端攻城狮</p>
+                        <p class="desc">从未接触编程也可以学好</p>
+                    </a>
+                    <a href="#" class="pic-2">
+                        <i class="i-java"></i>
+                        <p class="title">Java攻城狮</p>
+                        <p class="desc">综合就业排名第一</p>
+                    </a>
+                    <a href="#" class="pic-3">
+                        <i class="i-python"></i>
+                        <p class="title">Python攻城狮</p>
+                        <p class="desc">应用领域最为广泛的语言</p>
+                    </a>
+                    <a href="#" class="pic-4">
+                        <i class="i-android"></i>
+                        <p class="title">Android攻城狮</p>
+                        <p class="desc">移动设备市场份额第一</p>
+                    </a>
+                    <a href="#" class="pic-5">
+                        <i class="i-php"></i>
+                        <p class="title">PHP攻城狮</p>
+                        <p class="desc">Web开发首选语言</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+</div>
+<!--实践推荐-->
+<div class="bgfff">
+    <div class="container-types clearfix">
+        <h3 class="types-title">
+            <span class="title-icon icon-shizhan-l tit-icon-l"></span>
+            <span>实</span>／<span>战</span>／<span>推</span>／<span>荐</span>
+            <span class="title-icon icon-shizhan-r tit-icon-r"></span>
+        </h3>
+        <div class="types-content clearfix">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="s-logo new">新课</div>
+                            <img class="card-img-top" src="./img/body_up1.jpg">
+                            <div class="card-body" style="background-color: #F8FAFC">
+                                <div class="card-content">
+                                    <h3>大前端—前端全能进阶</h3>
+                                    <div class="course-card-bottom">
+                                        <div class="card-info">
+                                            <span>就业班</span>
+                                            <span>5步／23课</span>
+                                            <span>
+                                                <i class="imv2-set-sns"></i>98
+                                            </span>
+                                        </div>
+                                        <div class="course-card-price sales">
+                                            ￥1999.00
+                                            <span class="cost-price">￥2680.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="course-card-lable">
+                                <span>Python</span>
+                            </div>
+                            <img class="card-img-top" src="./img/body_up2.jpg">
+                            <div class="card-body" style="background-color: #F8FAFC">
+                                <div class="card-content">
+                                    <h3>全面系统python3入门+进阶课程 小白也能听懂</h3>
+                                    <div class="course-card-bottom">
+                                        <div class="card-info">
+                                            <span>实战</span>
+                                            <span>初级</span>
+                                            <span>
+                                                <i class="imv2-set-sns"></i>9342
+                                            </span>
+                                            <span class="course-star-box">
+                                                <i class="icon-star2 on"></i>
+                                                <i class="icon-star2 on"></i>
+                                                <i class="icon-star2 on"></i>
+                                                <i class="icon-star2 on"></i>
+                                                <i class="icon-star2 on"></i>
+                                            </span>
+                                            <div class="course-card-price sales">
+                                                ￥366.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="s-logo updata">升级</div>
+                            <div class="course-card-lable">
+                                <span>微服务</span>
+                                <span>Spring Cloud</span>
+                            </div>
+                            <img class="card-img-top" src="./img/body_up3.jpg">
+                            <div class="card-body" style="background-color: #F8FAFC">
+                                <div class="card-content">
+                                    <h3>SpringCloud  Finchley三版本(M2+RELEASE+SR2)微服务实战</h3>
+                                    <div class="course-card-bottom">
+                                        <div class="card-info">
+                                            <span>实战</span>
+                                            <span>高级</span>
+                                            <span>
+                                                <i class="imv2-set-sns"></i>4354
+                                            </span>
+                                            <span class="course-star-box">
+                                                <i class="icon-star2 on"></i>
+                                                <i class="icon-star2 on"></i>
+                                                <i class="icon-star2 on"></i>
+                                                <i class="icon-star2 on"></i>
+                                                <i class="icon-star2 on"></i>
+                                            </span>
+                                            <div class="course-card-price sales">
+                                                ￥366.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="course-card-lable">
+                                <span>Java</span>
+                                <span>算法与数据结构</span>
+                            </div>
+                            <img class="card-img-top" src="./img/body_up4.jpg">
+                            <div class="card-body" style="background-color: #F8FAFC">
+                                <div class="card-content">
+                                    <h3>剑指Java面试-Offer直通车</h3>
+                                    <div class="course-card-bottom">
+                                        <div class="card-info">
+                                            <span>实战</span>
+                                            <span>中级</span>
+                                            <span>
+                                                <i class="imv2-set-sns"></i>4183
+                                            </span>
+                                            <span class="course-star-box">
+                                                <i class="icon-star2 on"></i>
+                                                <i class="icon-star2 on"></i>
+                                                <i class="icon-star2 on"></i>
+                                                <i class="icon-star2 on"></i>
+                                                <i class="icon-star2 on"></i>
+                                            </span>
+                                            <div class="course-card-price sales">
+                                                ￥299.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="course-card-lable">
+                                <span>计算机网络</span>
+                            </div>
+                            <img class="card-img-top" src="./img/body_up5.jpg">
+                            <div class="card-body" style="background-color: #F8FAFC">
+                                <div class="card-content">
+                                    <h3>编程必备基础知识 计算机组成原理+操作系统+计算机网络</h3>
+                                    <div class="course-card-bottom">
+                                        <div class="card-info">
+                                            <span>实战</span>
+                                            <span>中级</span>
+                                            <span>
+                                                <i class="imv2-set-sns"></i>1528
+                                            </span>
+                                            <span class="course-star-box">
+                                                <i class="icon-star2 on"></i>
+                                                <i class="icon-star2 on"></i>
+                                                <i class="icon-star2 on"></i>
+                                                <i class="icon-star2 on"></i>
+                                                <i class="icon-star2 on"></i>
+                                            </span>
+                                            <div class="course-card-price sales">
+                                                ￥236.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--新上好课-->
+<div class="bg000">
+    <div class="container-types clearfix">
+        <h3 class="types-title">
+            <span class="title-icon icon-haoke-l tit-icon-l"></span>
+            <span>新</span>／<span>上</span>／<span>好</span>／<span>课</span>
+            <span class="title-icon icon-haoke-r tit-icon-r"></span>
+        </h3>
+        <div class="types-content clearfix">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="s-logo new">新课</div>
+                            <div class="course-card-lable">
+                                <span>Android</span>
+                            </div>
+                            <img class="card-img-top" src="./img/haoke1.png">
+                            <div class="card-body" style="background-color: #F8FAFC">
+                                <div class="card-content">
+                                    <h3>企业级Android应用架构设计与开发</h3>
+                                    <div class="course-card-bottom">
+                                        <div class="card-info">
+                                            <span>实战</span>
+                                            <span>中级</span>
+                                            <span>
+                                            <i class="imv2-set-sns"></i>78
+                                        </span>
+                                            <span class="course-star-box">
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                        </span>
+                                        </div>
+                                        <div class="course-card-price sales">
+                                            ￥249.00
+                                            <span class="cost-price">￥280.00</span>
+                                            <span class="sales-tip">限时优惠</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="course-card-lable">
+                                <span>接口测试</span>
+                            </div>
+                            <img class="card-img-top" src="./img/haoke2.jpg">
+                            <div class="card-body" style="background-color: #F8FAFC">
+                                <div class="card-content">
+                                    <h3>Python接口自动化测试框架实战 从设计到开发</h3>
+                                    <div class="course-card-bottom">
+                                        <div class="card-info">
+                                            <span>实战</span>
+                                            <span>中级</span>
+                                            <span>
+                                            <i class="imv2-set-sns"></i>127
+                                        </span>
+                                            <span class="course-star-box">
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                        </span>
+                                            <div class="course-card-price sales">
+                                                ￥299.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="course-card-lable">
+                                <span>算法</span>
+                                <span>算法与数据结构</span>
+                            </div>
+                            <img class="card-img-top" src="./img/haoke3.jpg">
+                            <div class="card-body" style="background-color: #F8FAFC">
+                                <div class="card-content">
+                                    <h3>玩转算法系列--图论精讲  面试升职必备（Java版）</h3>
+                                    <div class="course-card-bottom">
+                                        <div class="card-info">
+                                            <span>实战</span>
+                                            <span>中级</span>
+                                            <span>
+                                            <i class="imv2-set-sns"></i>424
+                                        </span>
+                                            <span class="course-star-box">
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                        </span>
+                                            <div class="course-card-price sales">
+                                                ￥348.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="course-card-lable">
+                                <span>微服务</span>
+                                <span>Spring Cloud</span>
+                            </div>
+                            <div class="s-logo new">新课</div>
+                            <img class="card-img-top" src="./img/haoke4.jpg">
+                            <div class="card-body" style="background-color: #F8FAFC">
+                                <div class="card-content">
+                                    <h3>Spring Cloud微服务实战 打造企业级优惠券系统</h3>
+                                    <div class="course-card-bottom">
+                                        <div class="card-info">
+                                            <span>实战</span>
+                                            <span>中级</span>
+                                            <span>
+                                            <i class="imv2-set-sns"></i>68
+                                        </span>
+                                            <span class="course-star-box">
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                        </span>
+                                            <div class="course-card-price sales">
+                                                ￥255.00
+                                                <span class="cost-price">￥299.00</span>
+                                                <span class="sales-tip">限时优惠</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="course-card-lable">
+                                <span>Java</span>
+                            </div>
+                            <div class="s-logo new">新课</div>
+                            <img class="card-img-top" src="./img/haoke5.jpg">
+                            <div class="card-body" style="background-color: #F8FAFC">
+                                <div class="card-content">
+                                    <h3>一站式学习Java网络编程 全面理解BIO/NIO/AIO</h3>
+                                    <div class="course-card-bottom">
+                                        <div class="card-info">
+                                            <span>实战</span>
+                                            <span>初级</span>
+                                            <span>
+                                            <i class="imv2-set-sns"></i>97
+                                        </span>
+                                            <span class="course-star-box">
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                        </span>
+                                            <div class="course-card-price sales">
+                                                ￥255.00
+                                                <span class="cost-price">￥299.00</span>
+                                                <span class="sales-tip">限时优惠</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="course-card-lable">
+                                <span>Python</span>
+                                <span>深度学习</span>
+                            </div>
+                            <img class="card-img-top" src="./img/haoke6.jpg">
+                            <div class="card-body" style="background-color: #F8FAFC">
+                                <div class="card-content">
+                                    <h3>Google老师亲授 TensorFlow2.0 入门到进阶</h3>
+                                    <div class="course-card-bottom">
+                                        <div class="card-info">
+                                            <span>实战</span>
+                                            <span>中级</span>
+                                            <span>
+                                            <i class="imv2-set-sns"></i>517
+                                        </span>
+                                            <span class="course-star-box">
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                        </span>
+                                        </div>
+                                        <div class="course-card-price sales">
+                                            ￥399.00
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="course-card-lable">
+                                <span>数学</span>
+                            </div>
+                            <img class="card-img-top" src="./img/haoke7.jpg">
+                            <div class="card-body" style="background-color: #F8FAFC">
+                                <div class="card-content">
+                                    <h3>【思维提升】程序员的高数入门课</h3>
+                                    <div class="course-card-bottom">
+                                        <div class="card-info">
+                                            <span>慕课小课</span>
+                                            <span>入门</span>
+                                            <span>
+                                            <i class="imv2-set-sns"></i>587
+                                        </span>
+                                            <div class="course-card-price sales">
+                                                ￥6.6.00
+                                                <span class="cost-price">￥36.00</span>
+                                                <span class="sales-tip">优惠价</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="course-card-lable">
+                                <span>AWS</span>
+                                <span>Docker</span>
+                            </div>
+                            <img class="card-img-top" src="./img/haoke8.jpg">
+                            <div class="card-body" style="background-color: #F8FAFC">
+                                <div class="card-content">
+                                    <h3>AWS summit 2019精华：关于人工智能、应用程序开发、DevOps			</h3>
+                                    <div class="course-card-bottom">
+                                        <div class="card-info">
+                                            <span>入门</span>
+                                            <span>
+                                            <i class="imv2-set-sns"></i>496
+                                        </span>
+                                            <div class="course-card-price sales">
+                                                免费
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="s-logo new">新课</div>
+                            <div class="course-card-lable">
+                                <span>iOS</span>
+                                <span>Vue.js</span>
+                            </div>
+                            <img class="card-img-top" src="./img/haoke9.png">
+                            <div class="card-body" style="background-color: #F8FAFC">
+                                <div class="card-content">
+                                    <h3>混合开发入门 主流开发方案实战京东移动端APP</h3>
+                                    <div class="course-card-bottom">
+                                        <div class="card-info">
+                                            <span>实战</span>
+                                            <span>初级</span>
+                                            <span>
+                                            <i class="imv2-set-sns"></i>183
+                                        </span>
+                                            <span class="course-star-box">
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                        </span>
+                                            <div class="course-card-price sales">
+                                                ￥229.00
+                                                <span class="cost-price">￥266.00</span>
+                                                <span class="sales-tip">限时优惠</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="s-logo new">升级</div>
+                            <div class="course-card-lable">
+                                <span>Android</span>
+                                <span>iOS</span>
+                            </div>
+                            <img class="card-img-top" src="./img/haoke10.jpg">
+                            <div class="card-body" style="background-color: #F8FAFC">
+                                <div class="card-content">
+                                    <h3>Flutter从入门到进阶 实战携程网App</h3>
+                                    <div class="course-card-bottom">
+                                        <div class="card-info">
+                                            <span>实战</span>
+                                            <span>中级</span>
+                                            <span>
+                                            <i class="imv2-set-sns"></i>1614
+                                        </span>
+                                            <span class="course-star-box">
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                        </span>
+                                            <div class="course-card-price sales">
+                                                ￥348.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--新手入门-->
+<div class="bgfff">
+    <div class="container-types clearfix">
+            <h3 class="types-title">
+                <span class="title-icon icon-rumen-l tit-icon-l"></span>
+                <span>新</span>／<span>手</span>／<span>入</span>／<span>门</span>
+                <span class="title-icon icon-rumen-r tit-icon-r"></span>
+            </h3>
+            <div class="types-content clearfix">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="card">
+                                <div class="course-up">
+                                    <h3>站上微信小程序风口，实现职业华丽转身</h3>
+                                    <p>入门技能+项目开发，逐步深入学习微信小程序开发</p>
+                                </div>
+                                <img class="card-img-top" src="./img/xinshou1.jpg">
+                                <div class="card-body course-down"></div>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="card">
+                                <div class="course-up">
+                                    <h3>盘点最主流的前端框架有哪些？</h3>
+                                    <p>上万人的选择打消你对主流框架的疑惑</p>
+                                </div>
+                                <img class="card-img-top" src="./img/xinshou2.jpg">
+                                <div class="card-body course-down"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="card">
+                                <div class="course-card-lable">
+                                    <span>JAVA攻城狮培养计划</span>
+                                </div>
+                                <img class="card-img-top" src="./img/rumen1.jpg">
+                                <div class="card-body">
+                                    <div class="card-content">
+                                        <h3>Java 零基础入门</h3>
+                                        <div class="course-card-bottom">
+                                            <div class="card-info">
+                                                <span>就业班</span>
+                                                <span>3步／28课</span>
+                                                <span>
+                                                <i class="imv2-set-sns"></i>1585
+                                            </span>
+                                            </div>
+                                            <div class="course-card-price sales">
+                                                ￥568.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="card">
+                                <div class="course-card-lable">
+                                    <span>Web前端攻城狮培养计划</span>
+                                </div>
+                                <img class="card-img-top" src="./img/rumen2.jpg">
+                                <div class="card-body" style="background-color: #F8FAFC">
+                                    <div class="card-content">
+                                        <h3>前端零基础入门 </h3>
+                                        <div class="course-card-bottom">
+                                            <div class="card-info">
+                                                <span>就业班</span>
+                                                <span>6步／42课</span>
+                                                <span>
+                                                <i class="imv2-set-sns"></i>2217
+                                            </span>
+                                                <div class="course-card-price sales">
+                                                    ￥669.00
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="card">
+                                <div class="course-card-lable">
+                                    <span>PHP攻城狮培养计划</span>
+                                </div>
+                                <img class="card-img-top" src="./img/rumen3.jpg">
+                                <div class="card-body">
+                                    <div class="card-content">
+                                        <h3>PHP小白零基础入门</h3>
+                                        <div class="course-card-bottom">
+                                            <div class="card-info">
+                                                <span>就业班</span>
+                                                <span>5步／26课</span>
+                                                <span>
+                                                <i class="imv2-set-sns"></i>979
+                                            </span>
+                                                <div class="course-card-price sales">
+                                                    ￥658.00
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="card">
+                                <div class="course-card-lable">
+                                    <span>Python</span>
+                                    <span>爬虫</span>
+                                </div>
+                                <img class="card-img-top" src="./img/body_up4.jpg">
+                                <div class="card-body" style="background-color: #F8FAFC">
+                                    <div class="card-content">
+                                        <h3>从零起步 系统入门Python爬虫工程师</h3>
+                                        <div class="course-card-bottom">
+                                            <div class="card-info">
+                                                <span>实战</span>
+                                                <span>中级</span>
+                                                <span>
+                                                <i class="imv2-set-sns"></i>560
+                                            </span>
+                                                <span class="course-star-box">
+                                                <i class="icon-star2 on"></i>
+                                                <i class="icon-star2 on"></i>
+                                                <i class="icon-star2 on"></i>
+                                                <i class="icon-star2 on"></i>
+                                                <i class="icon-star2 on"></i>
+                                            </span>
+                                                <div class="course-card-price sales">
+                                                    ￥399.00
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="card">
+                                <div class="course-card-lable">
+                                    <span>JavaScript</span>
+                                    <span>计算机网络</span>
+                                </div>
+                                <img class="card-img-top" src="./img/rumen5.jpg">
+                                <div class="card-body" style="background-color: #F8FAFC">
+                                    <div class="card-content">
+                                        <h3>HTTP协议原理+实践Web开发工程师必学</h3>
+                                        <div class="course-card-bottom">
+                                            <div class="card-info">
+                                                <span>实战</span>
+                                                <span>中级</span>
+                                                <span>
+                                                <i class="imv2-set-sns"></i>2732
+                                            </span>
+                                                <span class="course-star-box">
+                                                <i class="icon-star2 on"></i>
+                                                <i class="icon-star2 on"></i>
+                                                <i class="icon-star2 on"></i>
+                                                <i class="icon-star2 on"></i>
+                                                <i class="icon-star2 on"></i>
+                                            </span>
+                                                <div class="course-card-price sales">
+                                                    ￥99.00
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="card">
+                                <div class="course-card-lable">
+                                    <span>Python攻城狮培养计划</span>
+                                </div>
+                                <img class="card-img-top" src="./img/rumen6.jpg">
+                                <div class="card-body" style="background-color: #F8FAFC">
+                                    <div class="card-content">
+                                        <h3>Python零基础入门</h3>
+                                        <div class="course-card-bottom">
+                                            <div class="card-info">
+                                                <span>就业班</span>
+                                                <span>5步／23课</span>
+                                                <span>
+                                                <i class="imv2-set-sns"></i>1176
+                                            </span>
+                                            </div>
+                                            <div class="course-card-price sales">
+                                                ￥666.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="card">
+                                <div class="s-logo updata">升级</div>
+                                <div class="course-card-lable">
+                                    <span>Android</span>
+                                    <span>iOS</span>
+                                </div>
+                                <img class="card-img-top" src="./img/rumen7.jpeg">
+                                <div class="card-body" style="background-color: #F8FAFC">
+                                    <div class="card-content">
+                                        <h3>Flutter从入门到进阶 实战携程网App</h3>
+                                        <div class="course-card-bottom">
+                                            <div class="card-info">
+                                                <span>实战</span>
+                                                <span>高级</span>
+                                                <span>
+                                                <i class="imv2-set-sns"></i>9342
+                                            </span>
+                                                <span class="course-star-box">
+                                                <i class="icon-star2 on"></i>
+                                                <i class="icon-star2 on"></i>
+                                                <i class="icon-star2 on"></i>
+                                                <i class="icon-star2 on"></i>
+                                                <i class="icon-star2 on"></i>
+                                            </span>
+                                                <div class="course-card-price sales">
+                                                    ￥348.00
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="card">
+                                <div class="course-card-lable">
+                                    <span>Android攻城狮培养计划</span>
+                                </div>
+                                <img class="card-img-top" src="./img/rumen8.jpg">
+                                <div class="card-body" style="background-color: #F8FAFC">
+                                    <div class="card-content">
+                                        <h3>Android 零基础入门</h3>
+                                        <div class="course-card-bottom">
+                                            <div class="card-info">
+                                                <span>就业班</span>
+                                                <span>5步／40课</span>
+                                                <span>
+                                                    <i class="imv2-set-sns"></i>4354
+                                                </span>
+                                                <div class="course-card-price sales">
+                                                    ￥366.00
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="card">
+                                <div class="course-card-lable">
+                                    <span>小程序</span>
+                                </div>
+                                <img class="card-img-top" src="./img/rumen9.jpg">
+                                <div class="card-body" style="background-color: #F8FAFC">
+                                    <div class="card-content">
+                                        <h3>轻松入门微信小程序与云开发</h3>
+                                        <div class="course-card-bottom">
+                                            <div class="card-info">
+                                                <span>初级</span>
+                                                <span>
+                                                    <i class="imv2-set-sns"></i>26284
+                                                </span>
+                                                <div class="course-card-price sales">
+                                                    免费
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="card">
+                                <div class="course-card-lable">
+                                    <span>Java</span>
+                                    <span>Android</span>
+                                </div>
+                                <img class="card-img-top" src="./img/body_up5.jpg">
+                                <div class="card-body" style="background-color: #F8FAFC">
+                                    <div class="card-content">
+                                        <h3>Android首选开发语言Kotlin入门与进阶</h3>
+                                        <div class="course-card-bottom">
+                                            <div class="card-info">
+                                                <span>实战</span>
+                                                <span>初级</span>
+                                                <span>
+                                                <i class="imv2-set-sns"></i>2937
+                                            </span>
+                                                <span class="course-star-box">
+                                                <i class="icon-star2 on"></i>
+                                                <i class="icon-star2 on"></i>
+                                                <i class="icon-star2 on"></i>
+                                                <i class="icon-star2 on"></i>
+                                                <i class="icon-star2 on"></i>
+                                            </span>
+                                                <div class="course-card-price sales">
+                                                    ￥188.00
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+<!--技能提升-->
+<div class="bg000">
+    <div class="container-types clearfix">
+        <h3 class="types-title">
+            <span class="title-icon icon-jineng-l tit-icon-l"></span>
+            <span>技</span>／<span>能</span>／<span>提</span>／<span>升</span>
+            <span class="title-icon icon-jineng-r tit-icon-r"></span>
+        </h3>
+        <div class="types-content clearfix">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="course-up">
+                                <h3>Vue高级工程师实战之路</h3>
+                                <p>从Vue基础语法入门最流行的SSR技术实现，完美学习路线打造快速晋升之路！</p>
+                            </div>
+                            <img class="card-img-top" src="./img/jineng-up1.jpg">
+                            <div class="card-body course-down"></div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="course-up">
+                                <h3>Python开发一站式学习</h3>
+                                <p>从入门到开发，学习 好玩 好用 好未来的Python语言</p>
+                            </div>
+                            <img class="card-img-top" src="./img/jineng-up2.jpg">
+                            <div class="card-body course-down"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="course-card-lable">
+                                <span>Node.js</span>
+                            </div>
+                            <img class="card-img-top" src="./img/jineng1.jpg">
+                            <div class="card-body">
+                                <div class="card-content">
+                                    <h3>Node.js从零开发Web Server博客项目  前端晋升全栈工程师必备</h3>
+                                    <div class="course-card-bottom">
+                                        <div class="card-info">
+                                            <span>实战</span>
+                                            <span>中级</span>
+                                            <span>
+                                            <i class="imv2-set-sns"></i>1182
+                                            <span class="course-star-box">
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                        </span>
+                                        </span>
+                                        </div>
+                                        <div class="course-card-price sales">
+                                            ￥288.00
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="course-card-lable">
+                                <span>C++</span>
+                                <span>算法</span>
+                            </div>
+                            <img class="card-img-top" src="./img/jineng2.jpg">
+                            <div class="card-body" style="background-color: #F8FAFC">
+                                <div class="card-content">
+                                    <h3>算法与数据结构--综合提升篇（c++版） </h3>
+                                    <div class="course-card-bottom">
+                                        <div class="card-info">
+                                            <span>实战</span>
+                                            <span>中级</span>
+                                            <span>
+                                            <i class="imv2-set-sns"></i>8627
+                                            <span class="course-star-box">
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                        </span>
+                                        </span>
+                                            <div class="course-card-price sales">
+                                                ￥166.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="course-card-lable">
+                                <span>Android</span>
+                                <span>C</span>
+                            </div>
+                            <img class="card-img-top" src="./img/jineng3.jpg">
+                            <div class="card-body">
+                                <div class="card-content">
+                                    <h3>FFmpeg音视频核心技术精讲与实战</h3>
+                                    <div class="course-card-bottom">
+                                        <div class="card-info">
+                                            <span>实战</span>
+                                            <span>中级</span>
+                                            <span>
+                                            <i class="imv2-set-sns"></i>767
+                                            <span class="course-star-box">
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                        </span>
+                                        </span>
+                                            <div class="course-card-price sales">
+                                                ￥299.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="course-card-lable">
+                                <span>Vue.js</span>
+                            </div>
+                            <img class="card-img-top" src="./img/jineng4.jpg">
+                            <div class="card-body" style="background-color: #F8FAFC">
+                                <div class="card-content">
+                                    <h3>Vue.js源码全方位深入解析 </h3>
+                                    <div class="course-card-bottom">
+                                        <div class="card-info">
+                                            <span>实战</span>
+                                            <span>高级</span>
+                                            <span>
+                                            <i class="imv2-set-sns"></i>2280
+                                        </span>
+                                            <span class="course-star-box">
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                        </span>
+                                            <div class="course-card-price sales">
+                                                ￥488.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="course-card-lable">
+                                <span>深度学习</span>
+                                <span>计算机深度</span>
+                            </div>
+                            <img class="card-img-top" src="./img/jineng5.jpg">
+                            <div class="card-body" style="background-color: #F8FAFC">
+                                <div class="card-content">
+                                    <h3>Python3+TensorFlow打造人脸识别智能小程序</h3>
+                                    <div class="course-card-bottom">
+                                        <div class="card-info">
+                                            <span>实战</span>
+                                            <span>中级</span>
+                                            <span>
+                                            <i class="imv2-set-sns"></i>324
+                                        </span>
+                                            <span class="course-star-box">
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                        </span>
+                                            <div class="course-card-price sales">
+                                                ￥466.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="course-card-lable">
+                                <span>Go</span>
+                            </div>
+                            <img class="card-img-top" src="./img/jineng6.png">
+                            <div class="card-body" style="background-color: #F8FAFC">
+                                <div class="card-content">
+                                    <h3>Go开发短地址服务</h3>
+                                    <div class="course-card-bottom">
+                                        <div class="card-info">
+                                            <span>高级</span>
+                                            <span>
+                                            <i class="imv2-set-sns"></i>894
+                                        </span>
+                                        </div>
+                                        <div class="course-card-price sales">
+                                            免费
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="course-card-lable">
+                                <span>Node.js</span>
+                                <span>React.JS</span>
+                            </div>
+                            <img class="card-img-top" src="./img/jineng7.jpg">
+                            <div class="card-body" style="background-color: #F8FAFC">
+                                <div class="card-content">
+                                    <h3>全栈进阶课程 React16.8+Next.js+Koa2一步到位开发Github</h3>
+                                    <div class="course-card-bottom">
+                                        <div class="card-info">
+                                            <span>实战</span>
+                                            <span>高级</span>
+                                            <span>
+                                            <i class="imv2-set-sns"></i>278
+                                        </span>
+                                            <span class="course-star-box">
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                        </span>
+                                            <div class="course-card-price sales">
+                                                ￥399.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="s-logo new">新课</div>
+                            <div class="course-card-lable">
+                                <span>Android</span>
+                            </div>
+                            <img class="card-img-top" src="./img/jineng8.png">
+                            <div class="card-body" style="background-color: #F8FAFC">
+                                <div class="card-content">
+                                    <h3>Android应用内升级App</h3>
+                                    <div class="course-card-bottom">
+                                        <div class="card-info">
+                                            <span>中级</span>
+                                            <span>
+                                                <i class="imv2-set-sns"></i>697
+                                            </span>
+                                            <div class="course-card-price sales">
+                                                免费
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="course-card-lable">
+                                <span>C++</span>
+                                <span>算法</span>
+                            </div>
+                            <img class="card-img-top" src="./img/jineng9.jpg">
+                            <div class="card-body" style="background-color: #F8FAFC">
+                                <div class="card-content">
+                                    <h3>玩转算法面试-- Leetcode真题分门别类讲解</h3>
+                                    <div class="course-card-bottom">
+                                        <div class="card-info">
+                                            <span>实战</span>
+                                            <span>中级</span>
+                                            <span>
+                                                <i class="imv2-set-sns"></i>4264
+                                            </span>
+                                            <span class="course-star-box">
+                                                <i class="icon-star2 on"></i>
+                                                <i class="icon-star2 on"></i>
+                                                <i class="icon-star2 on"></i>
+                                                <i class="icon-star2 on"></i>
+                                                <i class="icon-star2 on"></i>
+                                            </span>
+                                            <div class="course-card-price sales">
+                                                ￥266.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="course-card-lable">
+                                <span>React.JS</span>
+                            </div>
+                            <img class="card-img-top" src="./img/jineng10.jpg">
+                            <div class="card-body" style="background-color: #F8FAFC">
+                                <div class="card-content">
+                                    <h3>React高级教程之高阶组件</h3>
+                                    <div class="course-card-bottom">
+                                        <div class="card-info">
+                                            <span>高级</span>
+                                            <span>
+                                            <i class="imv2-set-sns"></i>8976
+                                        </span>
+                                            <span class="course-star-box">
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                        </span>
+                                            <div class="course-card-price sales">
+                                                免费
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--前沿技术-->
+<div class="bgfff">
+    <div class="container-types clearfix">
+        <h3 class="types-title">
+            <span class="title-icon icon-jishu-l tit-icon-l"></span>
+            <span>前</span>／<span>沿</span>／<span>技</span>／<span>术</span>
+            <span class="title-icon icon-jishu-r tit-icon-r"></span>
+        </h3>
+        <div class="types-content clearfix">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="course-up">
+                                <h3>慕课微课</h3>
+                                <p>超值课程最低一元体验</p>
+                            </div>
+                            <img class="card-img-top" src="./img/jishu-up1.jpg">
+                            <div class="card-body course-down"></div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="course-up">
+                                <h3>改变职场命运，修炼全栈工程师的必修课</h3>
+                                <p>练就编程十八般武艺，快速转型全栈开发，做全能型工程师！</p>
+                            </div>
+                            <img class="card-img-top" src="./img/jishu-up2.jpg">
+                            <div class="card-body course-down"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="course-card-lable">
+                                <span>AWS</span>
+                                <span>Docker</span>
+                            </div>
+                            <img class="card-img-top" src="./img/jishu1.jpg">
+                            <div class="card-body">
+                                <div class="card-content">
+                                    <h3>AWS summit 2019精华：关于人工智能、应用程序开发、DevOps			</h3>
+                                    <div class="course-card-bottom">
+                                        <div class="card-info">
+                                            <span>入门</span>
+                                            <span>
+                                            <i class="imv2-set-sns"></i>499
+                                        </span>
+                                        </div>
+                                        <div class="course-card-price sales">
+                                            免费
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="course-card-lable">
+                                <span>Java</span>
+                                <span>SpringBoot</span>
+                            </div>
+                            <img class="card-img-top" src="./img/jishu2.jpg">
+                            <div class="card-body" style="background-color: #F8FAFC">
+                                <div class="card-content">
+                                    <h3>精讲Elastic-job + Quartz实现企业级定时任务</h3>
+                                    <div class="course-card-bottom">
+                                        <div class="card-info">
+                                            <span>实战</span>
+                                            <span>中级</span>
+                                            <span>
+                                            <i class="imv2-set-sns"></i>133
+                                            <span class="course-star-box">
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                        </span>
+                                        </span>
+                                            <div class="course-card-price sales">
+                                                ￥384.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="course-card-lable">
+                                <span>Java</span>
+                            </div>
+                            <img class="card-img-top" src="./img/jishu3.jpg">
+                            <div class="card-body">
+                                <div class="card-content">
+                                    <h3>MyBatis-Plus入门</h3>
+                                    <div class="course-card-bottom">
+                                        <div class="card-info">
+                                            <span>高级</span>
+                                            <span>
+                                            <i class="imv2-set-sns"></i>12896
+                                        </span>
+                                            <div class="course-card-price sales">
+                                                免费
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="course-card-lable">
+                                <span>性能测试</span>
+                            </div>
+                            <img class="card-img-top" src="./img/jishu4.jpg">
+                            <div class="card-body" style="background-color: #F8FAFC">
+                                <div class="card-content">
+                                    <h3>LoadRunner性能测试实战训练营</h3>
+                                    <div class="course-card-bottom">
+                                        <div class="card-info">
+                                            <span>实战</span>
+                                            <span>中级</span>
+                                            <span>
+                                            <i class="imv2-set-sns"></i>261
+                                        </span>
+                                            <span class="course-star-box">
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                        </span>
+                                            <div class="course-card-price sales">
+                                                ￥299.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="course-card-lable">
+                                <span>JavaScript</span>
+                            </div>
+                            <img class="card-img-top" src="./img/jishu5.jpg">
+                            <div class="card-body" style="background-color: #F8FAFC">
+                                <div class="card-content">
+                                    <h3>下一代前端开发语言 TypeScript从零重构axios</h3>
+                                    <div class="course-card-bottom">
+                                        <div class="card-info">
+                                            <span>实战</span>
+                                            <span>中级</span>
+                                            <span>
+                                            <i class="imv2-set-sns"></i>1393
+                                        </span>
+                                            <span class="course-star-box">
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                        </span>
+                                            <div class="course-card-price sales">
+                                                ￥388.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="course-card-lable">
+                                <span>Go</span>
+                                <span>区块链</span>
+                            </div>
+                            <img class="card-img-top" src="./img/jishu6.jpg">
+                            <div class="card-body" style="background-color: #F8FAFC">
+                                <div class="card-content">
+                                    <h3>私有区块链，我们一起GO</h3>
+                                    <div class="course-card-bottom">
+                                        <div class="card-info">
+                                            <span>中级</span>
+                                            <span>
+                                            <i class="imv2-set-sns"></i>15455
+                                        </span>
+                                        </div>
+                                        <div class="course-card-price sales">
+                                            免费
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="course-card-lable">
+                                <span>SpringBoot</span>
+                                <span>Spark</span>
+                            </div>
+                            <img class="card-img-top" src="./img/jishu7.jpg">
+                            <div class="card-body" style="background-color: #F8FAFC">
+                                <div class="card-content">
+                                    <h3>Spark Streaming实时流处理项目实战 </h3>
+                                    <div class="course-card-bottom">
+                                        <div class="card-info">
+                                            <span>实战</span>
+                                            <span>中级</span>
+                                            <span>
+                                            <i class="imv2-set-sns"></i>1026
+                                        </span>
+                                            <span class="course-star-box">
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                            <i class="icon-star2 on"></i>
+                                        </span>
+                                            <div class="course-card-price sales">
+                                                ￥388.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="course-card-lable">
+                                <span>深度学习</span>
+                                <span>计算机视觉</span>
+                            </div>
+                            <img class="card-img-top" src="./img/jishu8.jpg">
+                            <div class="card-body" style="background-color: #F8FAFC">
+                                <div class="card-content">
+                                    <h3>TensorFlow与Flask结合打造手写体数字识别</h3>
+                                    <div class="course-card-bottom">
+                                        <div class="card-info">
+                                            <span>中级</span>
+                                            <span>
+                                                <i class="imv2-set-sns"></i>15334
+                                            </span>
+                                            <div class="course-card-price sales">
+                                                免费
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="course-card-lable">
+                                <span>大数据</span>
+                                <span>Hadoop</span>
+                            </div>
+                            <img class="card-img-top" src="./img/jishu9.jpg">
+                            <div class="card-body" style="background-color: #F8FAFC">
+                                <div class="card-content">
+                                    <h3>大数据入门第一课 Hadoop基础知识与电商网站日志数据分析</h3>
+                                    <div class="course-card-bottom">
+                                        <div class="card-info">
+                                            <span>实战</span>
+                                            <span>中级</span>
+                                            <span>
+                                                <i class="imv2-set-sns"></i>722
+                                            </span>
+                                            <span class="course-star-box">
+                                                <i class="icon-star2 on"></i>
+                                                <i class="icon-star2 on"></i>
+                                                <i class="icon-star2 on"></i>
+                                                <i class="icon-star2 on"></i>
+                                                <i class="icon-star2 on"></i>
+                                            </span>
+                                            <div class="course-card-price sales">
+                                                ￥288.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="course-card-lable">
+                                <span>机器学习</span>
+                                <span>自然语言处理</span>
+                            </div>
+                            <img class="card-img-top" src="./img/jishu10.jpeg">
+                            <div class="card-body" style="background-color: #F8FAFC">
+                                <div class="card-content">
+                                    <h3>自然语言处理（NLP）入门与实践</h3>
+                                    <div class="course-card-bottom">
+                                        <div class="card-info">
+                                            <span>初级</span>
+                                            <span>
+                                                <i class="imv2-set-sns"></i>8592
+                                            </span>
+                                            <div class="course-card-price sales">
+                                                免费
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--精彩手记及猿问-->
+<div class="bg000">
+    <div class="container-types">
+        <h3 class="types-title">
+            <span class="title-icon icon-shouji-l tit-icon-l"></span>
+            <span>精</span>／<span>彩</span>／<span>手</span>／<span>记</span>／<span>及</span>／<span>猿</span>／<span>问</span>
+            <span class="title-icon icon-shouji-r tit-icon-r"></span>
+        </h3>
+        <div class="types-content note">
+            <div class="part">
+                <div class="part1">
+                    <div class="part-up">
+                        <h4>热门话题</h4>
+                        <div class="title">
+                            <a class="w-title l">
+                                #【内推第2波】#<br/>
+                                打工奋斗7万落京户VS自主创业牧马城市，如何抉择？
+                            </a>
+                            <img class="r" src="./img/note1.jpg" />
+                        </div>
+                        <p class="content clearfix">毕业求职？跳槽加薪？纠结滋润加班还是苦练x年自主创业？速速提问互撩，你在撩的极有可能就是你的Boss！激不激动？惊不惊喜？Offer已在这里！你的简历在哪里？Scott老师邮箱：wolf18387@qq.comJeson老师邮箱：jeson@imoocc.com</p>
+                    </div>
+                    <div class="bottom-info clearfix">
+                        <a>了解详情<i class="icon-right"></i></a>
+                    </div>
+                    <div class="title-line">
+                        <div class="title">
+                            往期回顾
+                        </div>
+                    </div>
+                    <div class="part-down">
+                        <div class="title">
+                            <a class="w-title l">
+                                #【获奖名单戳查看更多】#<br/>
+                                当我们谈论Java时，我们都谈些什么？
+                            </a>
+                            <img class="r" src="./img/note2.jpg" />
+                        </div>
+                    </div>
+                    <div class="part-down">
+                        <div class="title">
+                            <a class="w-title l">
+                                #【内推第1波】#<br/>
+                                直击BAT面试机会！行业大佬在线答疑
+                            </a>
+                            <img class="r" src="./img/note3.jpg" />
+                        </div>
+                    </div>
+                    <div class="part-down">
+                        <div class="title">
+                            <a class="w-title l">
+                                #【花式填坑】第23期#<br/>
+                                运维进化篇：成为Python DevOps工程师有哪些必备条件？
+                            </a>
+                            <img class="r" src="./img/note4.jpg" />
+                        </div>
+                    </div>
+                    <div class="bottom-info clearfix">
+                        <a>更多往期话题<i class="icon-right"></i></a>
+                    </div>
+                </div>
+                <div class="part2">
+                    <div class="part-up">
+                        <div class="header"><i class="icon-blog"></i><span>手记文章</span></div>
+                        <div class="title">
+                            <a class="w-title l">
+                                【React学习路线】从零进阶前端核心工程师
+                            </a>
+                            <img class="r" src="./img/note9.jpg" />
+                        </div>
+                        </div>
+                    <div class="part-down">
+                        <p class="content">哈喽，良心推荐小慕又来跟大家分享啦，今天分享的是React~ 面向工资编程，前端核心框架、加薪神器React了解一下！ React毫无疑问是前端界主流的框架，而框架本身就是热点，可以说是前端工程师们能力提升、快速晋升高级开发工程师的必备技能。 还不知道如何入门？ 技术提升遇到瓶颈？ 别担心，下面小慕就跟大家详细聊一下React的学习路线，入门到进阶的秘籍都在这里啦！ 第一阶段：React快速入门 ...</p>
+                        <div class="footer">
+                            <span>浏览 15109</span>
+                            <span>推荐 99</span>
+                            <a>阅读全文<i class="icon-right"></i> </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="part3">
+                    <div class="part-up">
+                        <div class="header"><i class="icon-yuanwen"></i>相关猿问</div>
+                        <div class="title">
+                            <a class="w-title l">
+                                大大们,问个困扰许久的问题,构造方法的作用到底是什么?
+                            </a>
+                        </div>
+                    </div>
+                    <div class="part-down">
+                        <span>最赞回答</span>
+                        <p class="content">构造函数作用是成员变量的初始化。抽象类就是用来继承的，子类实例化时，需要调用父类构造方法来初始化父类中的成员变量，抽象类中也可能有成员变量。所以抽象类中必须支持构造函数。</p>
+                        <div class="footer">
+                            <a>共2个回答<i class="icon-right"></i> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div  class="part">
+                <div class="part2">
+                    <div class="part-up">
+                        <div class="header"><i class="icon-blog"></i><span>手记文章</span></div>
+                        <div class="title">
+                            <a class="w-title l">
+                                【干货合辑】都2019年下半年了， 抓紧上车 ，今年新热技术都在这里！
+                            </a>
+                            <img class="r" src="./img/note5.jpg" />
+                        </div>
+                    </div>
+                    <div class="part-down">
+                        <p class="content">互联网发展迅速，不进步就等于在落后，2019年前半年都要过去了，热门新技术你掌握了吗？ 还不知道该学什么怎么学？ 别担心，小慕给大家整理了一篇各大方向的新技术学习干货，点赞收藏走起！ 前端方向 热门技术：TypeScript、Vue、微信小程序 干货文章： 《从今天开始，拿起 TypeScript 做一个轮子的制造者》 《TypeScript应该怎么学》 《TypeScript入门》 《TypeS...</p>
+                        <div class="footer">
+                            <span>浏览 12876</span>
+                            <span>推荐 97</span>
+                            <a>阅读全文<i class="icon-right"></i> </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="part2">
+                    <div class="part-up">
+                        <div class="header"><i class="icon-blog"></i><span>手记文章</span></div>
+                        <div class="title">
+                            <a class="w-title l">
+                                【涨薪秘籍】安卓工程师的进阶实战之路
+                            </a>
+                            <img class="r" src="./img/note7.jpg" />
+                        </div>
+                    </div>
+                    <div class="part-down">
+                        <p class="content">Android知识杂乱无章，不知道从哪入手？ 技术更新频繁，学不动了，从业者该何去何从？ 工作多年，年龄上升工资却迟迟不涨，危机感满满，该如何破解？ 是时候该开启你的安卓实战之路啦！涨薪的奥秘都在这里！ 今天小慕给大家带来安卓三个阶段的学习路线，从项目入手，逐步深入的带你理解并掌握Android的核心技术，帮助你成为具备高薪实力的Android开发者，顺利破解职场危机！ 不多说啦，上干货。 第一阶...</p>
+                        <div class="footer">
+                            <span>浏览 9697</span>
+                            <span>推荐 39</span>
+                            <a>阅读全文<i class="icon-right"></i> </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="part3">
+                    <div class="part-up">
+                        <div class="header"><i class="icon-yuanwen"></i>相关猿问</div>
+                        <div class="title">
+                            <a class="w-title l">
+                                【有奖问答】与大咖交流前端JS与框架开发，免费赢取前端图书（11.28-12.4）
+                            </a>
+                        </div>
+                    </div>
+                    <div class="part-down">
+                        <span>最赞回答</span>
+                        <p class="content">我觉得不管学习哪门语言，到后面总还是要学习一下规范，程序员的素养必不可少啊！！</p>
+                        <div class="footer">
+                            <a>共158个回答<i class="icon-right"></i> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="part3">
+                    <div class="part-up">
+                        <div class="header"><i class="icon-yuanwen"></i>相关猿问</div>
+                        <div class="title">
+                            <a class="w-title l">
+                                各位猿或者媛，一般几点睡啊。有时忍住头痛看java到很晚，第二天就头痛一整天
+                            </a>
+                        </div>
+                    </div>
+                    <div class="part-down">
+                        <span>最赞回答</span>
+                        <p class="content">没有什么事情是需要熬夜完成的</p>
+                        <div class="footer">
+                            <a>共373个回答<i class="icon-right"></i> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="part3">
+                    <div class="part-up">
+                        <div class="header"><i class="icon-yuanwen"></i>相关猿问</div>
+                        <div class="title">
+                            <a class="w-title l">
+                                话说，大家想编程的最初初衷是什么
+                            </a>
+                        </div>
+                    </div>
+                    <div class="part-down">
+                        <span>最赞回答</span>
+                        <p class="content">说兴趣的话有没有人打我....</p>
+                        <div class="footer">
+                            <a>共501个回答<i class="icon-right"></i> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div  class="part">
+                <div class="part2">
+                    <div class="part-up">
+                        <div class="header"><i class="icon-blog"></i><span>手记文章</span></div>
+                        <div class="title">
+                            <a class="w-title l">
+                                前端技能点学习路线分享，职场进阶的奥秘都在这里了                            </a>
+                            <img class="r" src="./img/note6.jpg" />
+                        </div>
+                    </div>
+                    <div class="part-down">
+                        <p class="content">前端怎样入门？ 这一波良心推荐的【前端学习路线】干货，不谈虚的，直接来谈每个阶段要学习的内容 想入门前端的小伙伴们，那就放马过来吧！     首先，给大家分享一张最新的以 企业岗位需求为导向前端技能点图，如下   根据前端工程师技能点图，我们分为四个阶段： 第一阶段：前端基础 （HTML / CSS / HTML5 / CSS3 / JavaScript ） 干货文章： 初识HTML+CSS 【学...</p>
+                        <div class="footer">
+                            <span>浏览 27817</span>
+                            <span>推荐 248</span>
+                            <a>阅读全文<i class="icon-right"></i> </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="part2">
+                    <div class="part-up">
+                        <div class="header"><i class="icon-blog"></i><span>手记文章</span></div>
+                        <div class="title">
+                            <a class="w-title l">
+                                【面试技巧系列】找工作、涨薪、跳槽都得来一份                            </a>
+                            <img class="r" src="./img/note8.jpg" />
+                        </div>
+                    </div>
+                    <div class="part-down">
+                        <p class="content">面试是程序员求职过程中最重要的一步 别以为面试技巧很虚 很多技术不错的人 恰恰输在了面试技巧上 知识点怎么复习、问题如何回答 怎么在面试时避免采坑、惊艳面试官 怎么与HR谈论薪资待遇…… 往往这些问题决定你能否成功应聘。 敲黑板划重点： 以下面试技巧神器你值得拥有！ 大量干货文章袭来预警~ 一、通用篇 干货文章： 聪明人喜欢这样写简历 如何有效地备战面试 【程序员】在面...</p>
+                        <div class="footer">
+                            <span>浏览 28241</span>
+                            <span>推荐 125</span>
+                            <a>阅读全文<i class="icon-right"></i> </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="part2">
+                    <div class="part-up">
+                        <div class="header"><i class="icon-blog"></i><span>手记文章</span></div>
+                        <div class="title">
+                            <a class="w-title l">
+                                【干货推荐】java学习进入瓶颈？大牛带你快速攻克！                            </a>
+                            <img class="r" src="./img/note10.jpg" />
+                        </div>
+                    </div>
+                    <div class="part-down">
+                        <p class="content">java新手不知如何入门？ 经验多却面临上升瓶颈期？ 想进阶高级工程师还差点火候？ 今天这波最实用的java实战之路 以战养兵 为你打通职业发展脉络 沿着Java大牛们的思路， 逐步成长为一名业务与思想同样优秀的Java开发者。 就业、晋升、管理均游刃有余！ 不多说了，上干货！ 阅读指南：本文专为Java开发行业人员设计，分为四个阶段，循序渐进的带你进行SSM框架、SpringBoot框架、微服务...</p>
+                        <div class="footer">
+                            <span>浏览 28867</span>
+                            <span>推荐 159</span>
+                            <a>阅读全文<i class="icon-right"></i> </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="part3">
+                    <div class="part-up">
+                        <div class="header"><i class="icon-yuanwen"></i>相关猿问</div>
+                        <div class="title">
+                            <a class="w-title l">
+                                java好学吗.??pp
+                            </a>
+                        </div>
+                    </div>
+                    <div class="part-down">
+                        <span>最赞回答</span>
+                        <p class="content">挺好的!</p>
+                        <div class="footer">
+                            <a>共273个回答<i class="icon-right"></i> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--精英讲师模块-->
+<div class="elite-bg">
+    <div class="container-types clearfix" style="padding-bottom: 0px">
+        <h3 class="types-title">
+            <span class="title-icon icon-mingshi-l tit-icon-l"></span>
+            <span>慕</span>／<span>课</span>／<span>精</span>／<span>英</span>／<span>名</span>／<span>师</span>
+            <span class="title-icon icon-mingshi-r tit-icon-r"></span>
+            <a class="lots">查看更多<i class="imv2-arrow2_r"></i></a>
+        </h3>
+    </div>
+    <div class="lunbo container-types">
+        <div class="part1">
+            <div class="pic0 pic1">
+                <div class="pic">
+                    <img src="./img/foot-lunbo2-xiongmao.jpg" />
+                    <span class="name">7七月</span>
+                    <span class="job">全栈工程师</span>
+                    <span class="desc">十年研发及团队管理经验，对程序员面临的各种问题深有体会；精通Python、Java、Node.js、JavaScript等语言，对Web的基础研发、高并发处理与分布式有非常深入的理解。课程讲解深入浅出，极为擅长培养学生的编程思维。</span>
+                </div>
+                <div class="pic">
+                    <img src="./img/foot-lunbo1-2.jpg" />
+                    <span class="name">廖师兄</span>
+                    <span class="job">JAVA开发工程师</span>
+                    <span class="desc">载着干货的老司机。微服务，分布式架构方面经验丰富。</span>
+                </div>
+                <div class="pic">
+                    <img src="./img/foot-lunbo1-3.jpg" />
+                    <span class="name">liuyubobobo</span>
+                    <span class="job">全栈工程师</span>
+                    <span class="desc">创业者，全栈工程师，持续学习者。对技术开发，产品设计、前后端，ios，html5，智能算法等领域均有接触；拥有多款独立App作品；对一切可编程的东西有浓厚兴趣，对游戏编程格外感兴趣。相信编程改变一切。</span>
+                </div>
+
+                <div class="pic">
+                    <img src="./img/foot-lunbo1-4.jpg" />
+                    <span class="name">慕课官方号</span>
+                    <span class="job">页面重构设计</span>
+                    <span class="desc">title="慕课，Massive（大规模）Open（开放）Online（在线）Course（课程）。专注做好IT技能教育的MOOC，符合互联网发展潮流接地气儿的MOOC。我们有更多免费资源，我们只教有用的，我们专心做教育。"</span>
+                </div>
+                <div class="pic">
+                    <img src="./img/foot-lunbo1-5.jpeg" />
+                    <span class="name">Oeasy</span>
+                    <span class="job">页面重构设计</span>
+                    <span class="desc">他，授课风趣幽默，激情四射，自称屌丝青年，中国传媒大学计算机教师；他，专注于网页制作、平面设计、多媒体等多个领域的软件以及应用的挖掘与创新，热爱分享，是新鲜热门软件和应用的导航标，他就是众粉丝心中的“Oeasy老湿”</span>
+                </div>
+            </div>
+            <div class="pic0 pic2">
+                <div class="pic">
+                    <img src="./img/foot-lunbo2-1.jpg" />
+                    <span class="name">Stannum</span>
+                    <span class="job">软件工程师</span>
+                    <span class="desc">目前在财经界俗称的“大摩”，一家成立于美国纽约的国际金融服务公司-摩根士丹利担任软件工程师和敏捷开发专家。 主攻Event Sourcing架构模式的应用。是一个“只有男同事,没有女同事”的程序媛一枚,先后就职于多家投资银行，负责开发“每一个bug都很贵”的内部交易系统,主导了股票交易执行系统和衍生品交易风险控制系统。</span>
+                </div>
+                <div class="pic">
+                    <img src="./img/foot-lunbo2-2.jpg" />
+                    <span class="name">qndroid</span>
+                    <span class="job">移动开发工程师</span>
+                    <span class="desc">多年Android开发经验，曾任职于优酷等一线互联网企业，现就职于快手基础架构部，有丰富的Android应用架构和SDK开发经验，喜欢分享，授课风格循序渐进，擅长培养学生的编程思维，深受学员好评。</span>
+                </div>
+                    <div class="pic">
+                    <img src="./img/foot-lunbo2-3.jpg" />
+                    <span class="name">张勤一</span>
+                    <span class="job">JAVA开发工程师</span>
+                    <span class="desc">高级研发工程师，曾就职于小米、春雨医生，目前就职于某大型互联网（BAT）公司，拥有丰富的大型项目开发经验。多年IT从业经验，一线软件设计、研发，熟悉C、CPP、Java、Python等开发语言，对Web框架、数据存储、架构设计等有深入的理解和实践。</span>
+                </div>
+                    <div class="pic">
+                    <img src="./img/foot-lunbo2-4.jpg" />
+                    <span class="name">咚咚呛</span>
+                    <span class="job">JAVA开发工程师</span>
+                    <span class="desc">目前就职于BAT的大数据部门，超过4年的技术研发经验，熟悉java、python研发，担任过多个系统研发主程，目前专注于分布式系统研发，在高并发、分布式系统有丰富的经验。</span>
+                </div>
+                <div class="pic">
+                    <img src="./img/foot-lunbo2-5.jpg" />
+                    <span class="name">hyman</span>
+                    <span class="job">移动开发工程师</span>
+                    <span class="desc">同大千攻城狮般无异，本狮有着巨大的火热的不灭的技术热情，痴迷于Android开发。乐于分享，善于将技术生活化，唯愿与大千男女攻城狮共同进步</span>
+                </div>
+            </div>
+        </div>
+        <div class="btn">
+            <div class="left-btn icon-left2"></div>
+            <div class="right-btn icon-right2"></div>
+            <div class="first-btn"></div>
+            <div class="last-btn"></div>
+        </div>
+    </div>
+</div>
+<!--全明星模块-->
+<div class="bgfff">
+    <div class="container-types clearfix" style="padding-bottom: 0px">
+        <h3 class="types-title">
+            <span class="title-icon icon-mingxing-l tit-icon-l"></span>
+            <span>吊</span>／<span>炸</span>／<span>天</span>／<span>全</span>／<span>明</span>／<span>星</span>
+            <span class="title-icon icon-mingxing-r tit-icon-r"></span>
+        </h3>
+    </div>
+    <div class="container-types star">
+        <div class="part1">
+            <div class="person">
+                <img src="./img/star1.jpg">
+                <span class="purple"></span>
+                <div class="name">峰逝</div>
+                <div class="desc">风骚课程学霸</div>
+            </div>
+            <div class="person">
+                <img src="./img/star2.jpg">
+                <span class="blue"></span>
+                <div class="name">黄小斜</div>
+                <div class="desc">智慧文章王者</div>
+            </div>
+            <div class="person">
+                <img src="./img/star3.png">
+                <span class="yellow"></span>
+                <div class="name">weixin_慕莱坞8497452</div>
+                <div class="desc">慕课第一土豪</div>
+            </div>
+        </div>
+        <div class="part2">
+            <div class="student purple">
+                <img src="./img/stu1.jpg">
+                <div class="hidden" style="display: none">
+                    <p class="title">="智慧文章王者"=</p>
+                    <p class="id">慕课网官方_运营中心</p>
+                    <p class="desc">一周发布手记 11 篇</p>
+                    <span class="cur">◆</span>
+                </div>
+            </div>
+            <div class="student blue">
+                <img src="./img/stu2.jpg">
+                <div class="hidden" style="display: none">
+                    <p class="title">="风骚课程学霸"=</p>
+                    <p class="id">慕UI9386421</p>
+                    <p class="desc">一周获得 176积分</p>
+                    <span class="cur">◆</span>
+                </div>
+            </div>
+            <div class="student purple">
+                <img src="./img/stu3.jpg">
+                <div class="hidden" style="display: none">
+                    <p class="title">="智慧文章王者"=</p>
+                    <p class="id">慕课网官方_运营中心</p>
+                    <p class="desc">一周发布手记 11 篇</p>
+                    <span class="cur">◆</span>
+                </div>
+            </div>
+            <div class="student blue">
+                <img src="./img/stu4.jpg">
+                <div class="hidden" style="display: none">
+                    <p class="title">="风骚课程学霸"=</p>
+                    <p class="id">慕UI9386421</p>
+                    <p class="desc">一周获得 176积分</p>
+                    <span class="cur">◆</span>
+                </div>
+            </div>
+            <div class="student blue">
+                <img src="./img/stu5.jpg">
+                <div class="hidden" style="display: none">
+                    <p class="title">="风骚课程学霸"=</p>
+                    <p class="id">慕UI9386421</p>
+                    <p class="desc">一周获得 176积分</p>
+                    <span class="cur">◆</span>
+                </div>
+            </div>
+            <div class="student blue">
+                <img src="./img/stu6.jpg">
+                <div class="hidden" style="display: none">
+                    <p class="title">="风骚课程学霸"=</p>
+                    <p class="id">慕UI9386421</p>
+                    <p class="desc">一周获得 176积分</p>
+                    <span class="cur">◆</span>
+                </div>
+            </div>
+            <div class="student purple">
+                <img src="./img/stu7.jpg">
+                <div class="hidden" style="display: none">
+                    <p class="title">="智慧文章王者"=</p>
+                    <p class="id">慕课网官方_运营中心</p>
+                    <p class="desc">一周发布手记 11 篇</p>
+                    <span class="cur">◆</span>
+                </div>
+            </div>
+            <div class="student blue">
+                <img src="./img/stu8.jpg">
+                <div class="hidden" style="display: none">
+                    <p class="title">="风骚课程学霸"=</p>
+                    <p class="id">慕UI9386421</p>
+                    <p class="desc">一周获得 176积分</p>
+                    <span class="cur">◆</span>
+                </div>
+            </div>
+            <div class="student blue">
+                <img src="./img/stu9.jpeg">
+                <div class="hidden" style="display: none">
+                    <p class="title">="风骚课程学霸"=</p>
+                    <p class="id">慕UI9386421</p>
+                    <p class="desc">一周获得 176积分</p>
+                    <span class="cur">◆</span>
+                </div>
+            </div>
+            <div class="student purple">
+                <img src="./img/stu10.jpg">
+                <div class="hidden" style="display: none">
+                    <p class="title">="智慧文章王者"=</p>
+                    <p class="id">慕课网官方_运营中心</p>
+                    <p class="desc">一周发布手记 11 篇</p>
+                    <span class="cur">◆</span>
+                </div>
+            </div>
+            <div class="student blue">
+                <img src="./img/stu11.jpg">
+                <div class="hidden" style="display: none">
+                    <p class="title">="风骚课程学霸"=</p>
+                    <p class="id">慕UI9386421</p>
+                    <p class="desc">一周获得 176积分</p>
+                    <span class="cur">◆</span>
+                </div>
+            </div>
+            <div class="student purple" style="margin-left: 40px">
+                <img src="./img/stu12.jpg">
+                <div class="hidden" style="display: none">
+                    <p class="title">="智慧文章王者"=</p>
+                    <p class="id">慕课网官方_运营中心</p>
+                    <p class="desc">一周发布手记 11 篇</p>
+                    <span class="cur">◆</span>
+                </div>
+            </div>
+            <div class="student purple">
+                <img src="./img/stu14.jpg">
+                <div class="hidden" style="display: none">
+                    <p class="title">="智慧文章王者"=</p>
+                    <p class="id">慕课网官方_运营中心</p>
+                    <p class="desc">一周发布手记 11 篇</p>
+                    <span class="cur">◆</span>
+                </div>
+            </div>
+            <div class="student purple">
+                <img src="./img/stu13.jpg">
+                <div class="hidden" style="display: none">
+                    <p class="title">="智慧文章王者"=</p>
+                    <p class="id">慕课网官方_运营中心</p>
+                    <p class="desc">一周发布手记 11 篇</p>
+                    <span class="cur">◆</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</div>
+<!--页脚-->
+<div class="foot">
+    <div class="container">
+        <div class="f-link">
+            <a>企业合作</a>
+            <a>人才招聘</a>
+            <a>联系我们</a>
+            <a>讲师招募</a>
+            <a>帮助中心</a>
+            <a>意见反馈</a>
+            <a>慕课大学</a>
+            <a>代码托管</a>
+            <a>友情链接</a>
+        </div>
+        <div class="f-contact">
+            <div class="qq-wechat">
+                <div class="qq l">
+                    <a title="微信" class="footer-sns-weixin">
+                        <i class="footer-sns-weixin-expand"></i>
+                    </a>
+                    <p>官方公众号</p>
+                    </div>
+                <div class="wechat l">
+                    <a title="新浪微博" class="footer-sns-weibo hide-text"></a>
+                    <p>官方微博</p>
+                </div>
+            </div>
+        </div>
+        <div class="f-remark">
+            <p> ©2019 imooc.com  京ICP备 12003892号-11 北京奥鹏文化传媒有限公司</p>
+        </div>
+    </div>
+
+</div>
+<!--返回顶部-->
+<div id="gotop1" class="elevator">
+    <a href="#" class="info">
+        <i class="icon-feedback"></i>
+        <span class="">意见反馈</span>
+    </a>
+    <a href="#" class="invite">
+        <i class=""></i>
+        <span class="">邀请有奖</span>
+    </a>
+    <a href="#" class="faq">
+        <i class="icon-ques"></i>
+        <span class="">帮助中心</span>
+    </a>
+    <a href="#" class="app">
+        <i class="icon-appdownload"></i>
+        <span class="">APP下载</span>
+        <div class="download-box"></div>
+    </a>
+    <a href="#" class="wechat">
+        <i class="icon-wxgzh"></i>
+        <span class="">官方微信</span>
+        <div class="wechat-box"></div>
+    </a>
+    <a href="JavaScript:;" class="gototop">
+        <i class="icon-up2" id="gotop"></i>
+        <span class="">返回顶部</span>
+    </a>
+</div>
+</body>
+</html>

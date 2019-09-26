@@ -1,0 +1,22 @@
+body{
+    position: relative;
+    min-height: 100vh;
+    background: url(./image/view.jpg) no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body .card form input {
+    display: block;
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    margin-bottom: 1rem; }
+body .card form input:last-child {
+    color: #fff;
+    background: #27ae60;
+    transition: all 0.4s; }
+body .card form input:last-child:hover {
+    background: #2ecc71; }
+body .card form input:focus {
+    outline: 1px solid #2ecc71; }

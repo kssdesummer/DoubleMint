@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.star .part2{
+    width: 888px;
+    height: 152px;
+    margin: 0 132px;
+    border: solid 1px red;
+}
+.star .part2 .student img{
+    height: 48px;
+    width: 48px;
+    border-radius: 48px;
+    box-sizing: border-box;
+    padding: 2px;
+    background-color: #f3f5f7;
+    border: 2px solid #fff;
+}
+.star .part2 .student{
+    position: relative;
+    float: left;
+    border-radius: 48px;
+    font-size: 0;
+    margin-right: 28px;
+    margin-bottom: 24px;
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    transition: all .3s;
+}
+.star .part2 .student .hidden{
+    position: absolute;
+    border-radius: 8px;
+    color: #FFFFFF;
+    top: -110px;
+    left: -83px;
+    width: 202px;
+    height: 90px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.star .part2 .student .hidden p{
+    font-size: 14px;
+    line-height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.star .part2 .student .hidden span{
+    position: absolute;
+    bottom: -9px;
+    font-size: 40px;
+    left: 93px;
+    line-height: 20px;
+}
+.star .part2 .student.purple .hidden{
+    background: #653ddd;
+}
+.star .part2 .student.purple .hidden span{
+    color: #653ddd;
+}
+.star .part2 .student.blue .hidden{
+    background: #008cc8;
+}
+.star .part2 .student.blue .hidden span{
+    color: #008cc8;
+}
+.star .part2 .student.purple img:hover{
+    cursor:pointer;
+    border: 2px solid #653ddd;
+}
+.star .part2 .student.blue img:hover{
+    cursor:pointer;
+    border: 2px solid #008cc8;
+}

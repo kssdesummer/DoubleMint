@@ -1,0 +1,195 @@
+
+body{
+    /*width: 100%;*/
+    background: url("b4.jpeg") no-repeat;
+    background-size:100%;
+    /*background-color: #D3D3D3;*/
+    background-attachment:fixed;
+}
+/*设置p标签中的文字格式*/
+p{
+    width: 40%;
+    font-family: Georgia, serif;
+    font-style: oblique;
+    font-size: 16px;
+    color: #5F9EA0;
+    margin: 10px 0 20px 0;
+    line-height: 26px;
+    text-indent: 1em;
+}
+
+/*border-radius 圆化直径*/
+header h1{
+    font-style: oblique;
+    font-size: 40px;
+    line-height: 300px;
+    color: #F5F5DC;
+    width: 200px;
+    height: 200px;
+    border-radius:200px;
+    background: url("z.jpg");
+    margin: -180px 0 0 -120px;
+    padding: 100px 100px;
+    white-space: nowrap;
+    /*溢出隐藏*/
+    overflow: hidden;
+}
+/*header里的h2以及div里的第一个p标签 隐藏*/
+header h2, .summary p:first-child {
+    display: none;
+}
+
+.page-wrapper {
+    position: relative;
+    margin: auto;
+    text-align: left;
+    background: #F0FFF0 center top fixed;
+    background-size: cover;
+    width: 1000px;
+    border: 4px;
+    border-color: #2a2636;
+    border-style: outset;
+}
+.preamble,.explanation,.participation,.benefits,.requirements{
+    background-color: #ADD8E6;
+    width: 50%;
+    left: 7%;
+    position: relative;
+    margin: 40px 0;
+}
+
+.summary p{
+    font-style: oblique;
+    font-size: 16px;
+    color: #2a2636;
+    position: relative;
+    left: 15%;
+    line-height: 50px;
+    /*background:url(d.jpg) no-repeat left center;*/
+    /*padding-left: 50px;*/
+}
+
+h3 {
+    font-style: oblique;
+    font-size: 22px;
+    text-indent:4em;
+    padding: 35px 0 0 0;
+    color:#87CEFA;
+}
+.preamble h3{
+    background:url("zi.jpg") #4682B4 no-repeat left top;
+    width: 370px;
+    height: 10px;
+    margin: 0;
+    border-radius:50px;
+    line-height: 0;
+    padding: 15px 0 5px 0;
+}
+
+.requirements h3,.participation h3 {
+    background:url("zi.jpg") no-repeat left top;
+    /*left: 50px;*/
+    width: 230px;
+    height: 10px;
+    margin: 0;
+    border-radius:50px;
+    line-height: 0;
+    padding: 15px 0 5px 0;
+}
+.explanation h3{
+    background:url("zong.jpg") no-repeat left top;
+    width: 320px;
+    height: 10px;
+    border-radius:50px 50px;
+    line-height: 0;
+    padding: 15px 0 5px 0;
+}
+.benefits h3{
+    background:url("zong.jpg") no-repeat left top;
+    width: 180px;
+    height: 10px;
+    border-radius:50px 50px;
+    line-height: 0;
+    padding: 15px 0 5px 0;
+}
+.participation a, .requirements a, .summary a, footer a,aside a{
+    color: black;
+    text-decoration: underline;
+}
+.participation a:hover, .requirements a:hover, .summary a:hover ,aside a:hover{
+    text-decoration: none;
+    color: red;
+}
+
+footer a:hover {
+    color: #FFF;
+    text-decoration: none;
+    background: #9933CC;
+}
+
+.supporting p,.preamble p{
+    position: relative;
+    width:86%;
+    left: 7%;
+    text-align: justify;
+}
+.supporting h3,.preamble h3{
+    position: relative;
+    top: -14px;
+    left:-24%;
+}
+aside{
+    clear: both;
+    color: black;
+    width:16%;
+    top: 0;
+    position: fixed;
+    left: 56%;
+    font-style: oblique;
+    font-size: 16px;
+    margin: 10px 15px 20px 10px;
+    line-height: 20px;
+}
+aside h3{
+    text-indent: 0;
+    color: #23aaff;
+    background:url(d1.gif) no-repeat left center;
+    padding-left: 50px;
+    border-bottom: 2px solid #7D8965;
+    line-height: 20px;
+}
+.design-archives h3{
+    background:url(d5.gif) no-repeat left center;
+    padding-left: 50px;
+}
+.zen-resources h3{
+    background:url(d6.gif) no-repeat left center;
+    padding-left: 50px;
+}
+ul{
+    padding: 10px;
+    border: 4px;
+    border-style: outset;
+    border-color: #A9A9A9;
+}
+ul li{
+    /*background:url(link.png) no-repeat left center;*/
+    line-height: 30px;
+    /*padding-left: 50px;*/
+    list-style: none;
+    border-bottom: 1px solid #7D8965;
+}
+
+footer{
+    clear:both;
+    left: 0;
+    padding: 20px;
+    text-align:center;
+    word-spacing: 5px;
+}
+.requirements p:last-child{
+    clear:both;
+    left: 6%;
+    text-align:center;
+    text-indent: 0;
+}
