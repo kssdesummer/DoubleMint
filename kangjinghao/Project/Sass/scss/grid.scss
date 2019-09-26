@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+$main-color:red;
+$second-color:pink;
+
+#div1 {
+  .row{
+    text-align: center;
+  }
+  @for $col from 1 through 20{
+    @for $i from 1 through $col {
+      @if($i%2==0){
+        .col-#{$col}-#{$i}{
+          background-color: $main-color;
+        }
+      }
+      .col-#{$col}-#{$i} {
+        line-height: 24px;
+        width: $i/$col * 100%;
+        float: left;
+        overflow: hidden;
+      }
+  }
+}
+
+}
