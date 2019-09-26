@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>导航栏练习</title>
+    </head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0; 
+        }
+        .container{
+        width: 100%;
+        height: 400px;
+        background:url("./bg.jpg");  
+        background-size: 100%;
+
+        }
+    .nev{
+        margin: 0 auto;
+        width: 800px;
+        height: 50px;
+        background: #999999;
+        text-align: center;
+        line-height: 50px;
+    }
+    .nev ul li{
+        list-style:none;
+        width: 80px;
+        height: 50px;
+        border: 1px solid green;
+        display: block;
+        float:left;
+        text-align: center;
+        border-radius: 4px; 
+        cursor: pointer;
+    }
+    .container ul li:hover .child{
+        display: block;
+    }
+    .container ul li:hover{
+        background: rgb(245, 163, 69);   
+    }
+    .container ul li:hover a{
+        color: black;
+    }
+    .container ul li a{
+        color: red;
+        text-decoration: none;
+    }
+    .child li a{
+        color: red;
+    }
+    .child{
+        display: none;
+    }
+    </style>
+    <body>
+        <div class="container">
+            <div class="nev">
+                    <ul>
+                            <li><a href="#">首页</a></li>
+                            <li><a href="#">博客</a>
+                                <ul class="child">
+                                    <li><a href="#">新浪博客</a></li>
+                                    <li><a href="#">腾讯博客</a></li>
+                                    <li><a href="#">京东博客</a></li>
+                                </ul> 
+                            </li>       
+                            <li><a href="#">标记</a></li>
+                            <li><a href="#">帮助</a></li>
+                            <li><a href="#">帮助</a></li>
+                            <li><a href="#">帮助</a></li>
+                            <li><a href="#">帮助</a></li>
+                        </ul>
+            </div>
+        </div>
+    </body>
+</html>

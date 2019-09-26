@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <title>表单练习</title>
+    </head>
+    <!-- <frameset rows="50%,*">
+            <frame src="http://www.baidu.com"></frame>
+            <frame src="http://www.taobao.com"></frame>
+        </frameset> -->
+    <body>
+        <form action="http://www.baidu.com">
+            <fieldset>
+            <legend>表单</legend>
+                name：<input type="text" name="name" id=""><br>
+                password: <input type="password" name="password" id=""><br>
+                radio: 男<input type="radio" name="sex" value="nan" id="" checked> 女<input type="radio" name="sex" id="" value="nv">
+                多选框: 
+                <input type="checkbox" name="pic">
+                <input type="checkbox" name="pic">
+                <input type="checkbox" name="pic">
+                <input type="checkbox" name="pic"><br>
+                <select name="xuke" id="">
+                    <optgroup  label="第一">
+                        <option value="" selected>默认</option>
+                        <option value="" >历史</option>
+                        <option value="" >地理 </option>
+                    </optgroup>
+                    <optgroup label="第二">
+                            <option value="" >数学</option>
+                            <option value="" ></option>物理</option>
+                            <option value="" >化学 </option>
+                        </optgroup>
+                </select>
+                文件上传：<input type="file" name="image">
+                隐藏域: <input type="hidden">
+                <input type="submit" value="提交">
+                <input type="reset" value="重置">
+            </fieldset>
+        </form>
+        <iframe src="http://www.baidu.com" frameborder="1" style="width: 100%;height:300px;"></iframe>
+    <object data="计算机网络.pdf" type=""></object>
+    </body>
+</html>
