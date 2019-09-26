@@ -1,0 +1,155 @@
+/*初始化*/
+*{
+    padding: 0;
+    margin: 0;
+}
+/*为body增加一个背景图,并设置字体*/
+body{
+    padding: 30px;
+    background: url(b1.jpg);
+    background-position:0 0;
+    /*background-repeat: no-repeat;*/
+    background-attachment:fixed;
+    background-size:100%;
+}
+#css-zen-garden{
+    width:60%;
+}
+/*为p设置文字类型,颜色,字间距*/
+p{
+    border:4px;
+    border-color: red;
+    font-family: "Calibri";
+    word-spacing: 5px;
+    color: #FFFFFF;
+    padding: 5px;
+    background-color: rgba(0,0,0,0.2);
+}
+
+h2,h3{
+    font-style: oblique;
+}
+h3{
+    padding: 20px;
+    font-size: 24px;
+    line-height: 40px;
+    color: black;
+    /*text-align:center;*/
+}
+h2{
+    font-size: 32px;
+    top: 20px;
+    position:relative;
+    width: 100%;
+    color: black;
+    text-align:center;
+    line-height: 50px;
+}
+h1{
+    width: 1000px;
+    font-size: 80px;
+    font-style: oblique;
+    background: -webkit-linear-gradient(45deg,white, white, #bed5f5,#70f7fe, #fbd7c6);
+    /*设置渐变色*/
+    color: transparent;
+    /*设置字体颜色透明*/
+    -webkit-background-clip: text;
+    /*背景裁剪为文本形式*/
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    position: fixed;
+    padding:380px 0 30px 0;
+    left: -6em;
+    top: 4em;
+    border: 4px;
+    border-bottom-style: dotted;
+    border-bottom-color: #23aaff;
+    margin-left: -360px;
+    padding-left: 600px;
+    overflow:hidden;
+}
+.summary{
+    top: 80px;
+    position:relative;
+    width: 55%;
+    padding: 10px;
+    left: 20%;
+    text-indent: 2em;
+}
+.preamble{
+    top: 80px;
+    position:relative;
+    width: 55%;
+    padding: 10px;
+    left: 20%;
+    text-indent: 2em;
+}
+#zen-supporting{
+    top:80px;
+    position:relative;
+    width: 55%;
+    padding: 10px;
+    left: 20%;
+    text-indent: 2em;
+}
+aside{
+    top: 150px;
+    margin: 25px;
+    line-height: 30px;
+    color: #1E90FF;
+    width: 20%;
+    word-spacing: 5px;
+    /*position: relative;*/
+    position: fixed;
+    left: 49%;
+    padding: 120px 0 0 40px;
+    border: 4px;
+    border-left-style: dotted;
+    border-left-color: #80c0f8;
+    margin-bottom: -3000px;
+    padding-bottom: 3000px;
+    padding-top: -3000px;
+    margin-top: -150px;
+    overflow: hidden;
+
+}
+/*取消无序列表li的样式*/
+ul li{
+    list-style: none;
+}
+h3.select,h3.archives,h3.resources{
+    text-align:left;
+    padding: 20px;
+}
+/*设置footer的背景*/
+footer {
+    /*clear: both;*/
+    /*padding: 5px;*/
+    color: #fff;
+    background: rgba(0,0,0,0.4);
+    text-align: center;
+}
+a{
+    color: 	#1E90FF;
+}
+footer a {
+    display: inline-block;
+    overflow: hidden;
+    width: 100px;
+    height: 40px;
+    padding: 40px 0 0 0;
+    position: relative;
+    color: indianred;
+}
+
+
+a:hover, a:focus {
+    color: red;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgba(255, 255, 255, 0.2);
+}
