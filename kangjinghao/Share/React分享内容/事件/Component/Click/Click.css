@@ -1,0 +1,30 @@
+.Click{
+    width: 800px;
+    margin: 0 auto;
+}
+.move{
+    width: 100px;
+    height: 50px;
+    position: relative;
+    background: black;
+}
+@keyframes moving_l
+{
+    from {left: 0;}
+    to {left: 700px;}
+}
+.moving_l{
+    animation: moving_l 1s;
+    left: 700px;
+}
+@keyframes moving_r
+{
+    from {left: 700px;}
+    to {left: 0;}
+}
+.moving_r{
+    animation: moving_r 1s;
+}
+.Click span{
+    font-size: 30px;
+}

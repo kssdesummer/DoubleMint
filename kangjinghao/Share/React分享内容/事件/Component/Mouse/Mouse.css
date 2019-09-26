@@ -1,0 +1,11 @@
+.Mouse{
+    width: 800px;
+    margin: 0 auto;
+}
+.Mouse h1{
+    font-size: 60px;
+}
+.Mouse div:last-child{
+    background: red;
+    height: 100px;
+}

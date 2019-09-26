@@ -1,0 +1,25 @@
+*{
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+.l{
+    float: left;
+}
+.r{
+    float: right;
+}
+button{
+    border: none;
+}
+input{
+    outline: none;
+}
