@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title>函数测试</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            //输出为undefined
+        // var a=1000;
+        // function A(){
+        //     console.log(a);
+        //     var a=2000;
+        // }
+        // A();
+
+        // var b=100;
+        // function test(){
+        //    var  b=0;
+        //     return b;
+        // }
+        // test();
+        // console.log(b);//返回为100
+
+ //交换数值
+            // function swap(a,b){
+            //     var c=a;
+            //             a=b;
+            //             b=c;
+            //     console.log(a,b);
+
+            // }
+            // function main(){
+            //     var a,b;
+            //     a=1;
+            //     b=3;
+            //     swap(a,b);
+            // }
+            // main();
+//定时器
+// setInterval(function(){
+//     document.write("1232");
+//     document.write("<br>");
+// },100)
+
+
+// function filter(con){
+//     for(var i=1; i<100;i++){
+//         if(con(i)){
+//             console.log(i);
+//         }
+//     }
+// }
+// function two(i){
+//     if(i%2==0){
+//         return true;
+//     }else{
+//         return false;
+//     }
+// }
+// filter(two);
+
+
+//立即调用函数
+//    ( function (name){
+//         console.log("立即调用函数" + name);
+//     })(132);
+
+//匿名函数
+// var a=function (){
+//     return 1;
+// }
+// a();
+// var b=a();
+// console.log(b);
+
+//闭包函数
+
+// var x=1;
+// function test(){
+//     var x=100;
+//     function he(){
+//         console.log(x);
+//     }
+//     return he;
+// }
+// var aa=test();
+// console.log(aa);
+// aa();
+
+
+
+//递归函数
+// function sum(n){
+//     if(n==1){
+//         return n;
+//     }
+//     var res=n+sum(n-1);
+//     return res;
+// }
+// var x=sum(3);
+// console.log(x);
+
+
+
+// function min(n){
+//     var res=n+min(n-1);
+//     return res;
+// }
+// var a=min(0);
+// console.log(a);
+
+// function test(n){
+//     document.write(n+'  ');
+//     if(n>0){
+//         test(n-1);
+//     }else{
+//         document.write("<------------->");
+//     }
+//     document.write(n+ " ");
+// }
+// test(10);
+
+        </script>
+    </body>
+</html>
