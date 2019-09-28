@@ -1,0 +1,77 @@
+
+.swiper-container {
+    width: 1152px;
+    margin-right: 30px;
+}
+.swiper-slide {
+    float: left;
+    position: relative;
+    width: 216px;
+    height: 248px !important;
+    margin-right: 18px;
+    box-sizing: border-box;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px 0 rgba(7, 17, 27, 0.05);
+    border-radius: 12px;
+    transition: all .3s;
+}
+
+.lecturer-uimg {
+    position: absolute;
+    top: -16.6px;
+    left: 50%;
+    margin-left: -48px;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+}
+.lecturer-name {
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 92px;
+    padding: 0 36px;
+    white-space: nowrap;
+    color: #07111b;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: -o-ellipsis-lastline;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+
+.lecturer-title {
+    position: relative;
+    display: block;
+    font-size: 12px;
+    margin-bottom: 12px;
+    color: #4D555D;
+    height: 24px;
+    line-height: 24px;
+}
+
+.lecturer-p {
+    position: relative;
+    top: 0;
+    display: block;
+    font-size: 12px;
+    line-height: 24px;
+    color: #4D555D;
+    height: 72px;
+    padding: 0 36px;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: -o-ellipsis-lastline;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-align: justify;
+    word-break: break-all;
+    font-weight: 400;
+}
+
