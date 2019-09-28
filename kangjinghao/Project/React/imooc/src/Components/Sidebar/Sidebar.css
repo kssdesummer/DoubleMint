@@ -1,0 +1,100 @@
+.elevator{
+    position: fixed;
+    padding: 0 16px;
+    top: 55%;
+    margin-top: -140px;
+    right: 0;
+    z-index: 899;
+    background-color: #fff;
+    box-shadow: 0px 4px 12px 0px rgba(7, 17, 27, 0.1);
+}
+.elevator a{
+    display: block;
+    width: 26px;
+    padding: 16px 0;
+    font-size: 22px;
+    line-height: 20px;
+    color: #b5b9bc;
+    box-sizing: border-box;
+    text-align: center;
+    border-bottom: 1px solid #edf1f2;
+}
+.elevator a.gototop{
+    /*display: none;*/
+}
+.elevator a i{
+    font-size: 24px;
+    color: #D9DDE1;
+}
+.elevator a span{
+    display: none;
+    font-size: 12px;
+    color: #07111b;
+    line-height: 14px;
+}
+/*返回顶部*/
+.icon-feedback:before {
+    content:"\e906"
+}
+.elevator .invite i{
+    display: inline-block;
+    width: 18px;
+    height: 20px;
+    background: url(../../Img/redPacket.png) no-repeat;
+    background-size: 100% 100%;
+    background-position: top center;
+    margin: 2px 0;
+}
+.elevator .icon-ques:before {
+    content:"\e615"
+}
+.elevator .icon-appdownload:before{
+    content: '\e93a';
+}
+.elevator .icon-wxgzh:before {
+    content:"\e919"
+}
+.elevator .icon-up2:before {
+    content:"\e90c"
+}
+.elevator a:hover span{
+    display: block;
+}
+.elevator a:hover i{
+    display: none;
+}
+.elevator .app .download-box{
+    position: absolute;
+    width: 172px;
+    height: 212px;
+    bottom: -2px;
+    right: 56px;
+    transform: scale(0.01);
+    transition: opacity 0.25s, transform .3s;
+    opacity: 0;
+    transform-origin: 100% 95%;
+    background: url("../../Img/elevator.png") no-repeat 0 -220px;
+}
+.elevator a:hover .download-box{
+    opacity: 1;
+    transform: scale(1.01);
+}
+.elevator .wechat .wechat-box{
+    position: absolute;
+    width: 172px;
+    height: 212px;
+    bottom: -4px;
+    right: 56px;
+    transform: scale(0.01);
+    transition: opacity 0.25s, transform .3s;
+    opacity: 0;
+    transform-origin: 100% 95%;
+    background: url("../../Img/elevator.png") no-repeat 0 0;
+}
+.elevator a:hover .wechat-box{
+    opacity: 1;
+    transform: scale(1.01);
+}
+img{
+    cursor:pointer;
+}

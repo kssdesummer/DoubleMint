@@ -1,0 +1,8 @@
+.hide{
+    animation:fade 0.1s;
+    opacity: 0;
+}
+
+@keyFrames fade{
+    from {opacity:1;}to{opacity:0;}
+}

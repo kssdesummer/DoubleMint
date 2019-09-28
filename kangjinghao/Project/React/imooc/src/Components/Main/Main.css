@@ -1,0 +1,1255 @@
+.box-1{
+    padding-top:32px;
+    margin: 0 auto;
+    min-height: calc(100% - 140px);
+}
+
+body .bk{
+    height: 180px;
+    opacity: 0.3;
+    filter:blur(100px);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-size: cover;
+    transition: all .3s;
+    background-image: url("../../Img/slide_1.jpg");
+    z-index: 800;
+}
+.g-banner {
+    background-color: #93999f;
+    box-shadow: 0 12px 24px 0 rgba(7, 17, 27, 0.2);
+    position: relative;
+    height: 444px;
+    overflow: hidden;
+    width: 1152px;
+    margin: auto;
+    border-radius: 8px;
+    z-index: 800;
+}
+.banner-box{
+    padding-top: 32px;
+}
+
+.menuContent {
+    position: relative;
+    float: left;
+    width: 216px;
+    height: 444px;
+    z-index: 2;
+    padding-top: 12px;
+    box-sizing: border-box;
+    background: #2b333b;
+    border-bottom-left-radius: 4px;
+    font-weight: 400;
+}
+
+.menuContent .item {
+    height: 60px;
+    line-height: 60px;
+    font-size: 12px;
+    cursor: pointer;
+    padding-left: 12px;
+    position: relative;
+}
+.menuContent .item > a {
+    display: block;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 0 16px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    height: 60px;
+    transition: all .1s;
+}
+.menuContent .item .group {
+    font-size: 14px;
+}
+.menuContent .item i {
+    position: absolute;
+    right: 8px;
+    top: 21px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+}
+[class^="imv2-"], [class*=" imv2-"] {
+    font-family: 'imv2' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    letter-spacing: 0;
+    -webkit-font-feature-settings: "liga";
+    -moz-font-feature-settings: "liga=1";
+    -moz-font-feature-settings: "liga";
+    -ms-font-feature-settings: "liga" 1;
+    font-feature-settings: "liga";
+    -webkit-font-variant-ligatures: discretionary-ligatures;
+    font-variant-ligatures: discretionary-ligatures;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.imv2-arrow1-r:before{
+    content: "\e5cb"
+}
+.imv2-dot_samll{
+    color: black;
+}
+.imv2-dot_samll:hover{
+    color: red;
+}
+
+.menuHidden {
+    background: #fff;
+    position: absolute;
+    left: 216px;
+    top: 0;
+    width: 768px;
+    height: 444px;
+    z-index: 581;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.menuHidden .innerBox {
+    background-color: #fff;
+    padding: 12px 48px 32px;
+    position: relative;
+    min-height: 238px;
+}
+
+.menuHidden .subinnerBox {
+    overflow: hidden;
+    box-sizing: border-box;
+    height: auto;
+}
+
+.menuHidden .title_part {
+    position: relative;
+    height: 1px;
+    margin: 35px 0 23px 0;
+    background-color: rgba(77, 85, 93, 0.08);
+}
+.menuHidden .hidden_part span {
+    position: absolute;
+    top: -12px;
+    left: 0;
+    padding-right: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #F20D0D;
+    line-height: 24px;
+    background-color: #fff;
+}
+.hidden_part_box{
+    font-size: 0;
+}
+.menuHidden .hidden_part_box a {
+    margin-bottom: 16px;
+    font-size: 14px;
+    color: #4D555D;
+    line-height: 22px;
+    margin-right: 24px;
+    display: inline-block;
+}
+.menuHidden .hidden_part_box a:hover {
+    color: red;
+}
+
+.hiddenDown{
+    position: absolute;
+    bottom: 0;
+    background: #F8FAFC;
+    padding: 36px 0 0px 48px;
+}
+.hiddenDown a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.hiddenDown .adsense-box {
+    width: 312px;
+    height: 64px;
+    background-color: #ccc;
+    border-radius: 4px;
+    margin-right: 48px;
+}
+
+.hiddenDown .hiddenDown_part {
+    width: 312px;
+    height: 60px;
+    margin-right: 48px;
+    margin-bottom: 36px;
+}
+
+.hiddenDown .hiddenDown_part img {
+    width: 64px;
+    height: 42px;
+    border-radius: 4px;
+    background-color: #ccc;
+}
+
+.hiddenDown .hiddenDown_part .course-card {
+    margin-left: 16px;
+}
+
+.hiddenDown .hiddenDown_part .course-card-name {
+    width: 232px;
+    font-size: 12px;
+    color: #07111B;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.hiddenDown .hiddenDown_part .course-card-info,.hiddenDown .hiddenDown_part .course-card-price {
+    font-size: 12px;
+    color: #4D555D;
+    line-height: 20px;
+}
+
+.hiddenDown .hiddenDown_part .course-card-info span {
+    margin-right: 12px;
+}
+
+.hiddenDown .hiddenDown_part .course-card-price.sales {
+    color: #f01414;
+}
+
+.hiddenDown .hiddenDown_part .course-card-price.studentsales .sales-tip {
+    padding: 0;
+    border: 0;
+}
+
+.course-card-container .cost-price {
+    margin-left: 5px;
+    color: #4D555D;
+    text-decoration: line-through;
+}
+
+.course-card-container .sales-tip1 {
+    color: #fff !important;
+    background: #FF6D00 !important;
+}
+.imv2-dot_samll:before{
+    content:"\e94c"
+}
+.icon-set_sns:before {
+    content:"\e95a"
+}
+
+/*顶部轮播图*/
+.g-banner .g-banner-content {
+    position: relative;
+    float: left;
+    width: 936px;
+}
+.g-banner .carousel-item img {
+    width: 100%;
+    height: 100%;
+}
+.carousel-control-prev,.carousel-control-next{
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    width: 36px;
+    height: 60px;
+    overflow: hidden;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    line-height: 60px;
+    text-shadow: 0 2px 4px rgba(7, 17, 27, 0.6);
+}
+.carousel-indicators{
+    margin-left: 80%;
+    margin-right: 0;
+}
+.carousel-indicators li{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    margin-left: 8px;
+    background: rgba(7, 17, 27, 1);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    transition: transform .2s;
+    cursor: pointer;
+}
+/*轮播图下面的小圆点*/
+.carousel-indicators .active{
+    background: #FFFFFF;
+    opacity:1;
+}
+/*轮播图渐入*/
+.carousel-inner .carousel-item{ transition:.2s;opacity:0.7; -webkit-transition-property:opacity;-moz-transition-property:opacity ; -ms-transition-property:opacity;-o-transition-property:opacity;transition-property:opacity ;}
+.carousel-inner .active{
+    opacity: 1;}
+/*.carousel-inner .active.left,.carousel-inner .active.right{left: 0;opacity: 1;}*/
+/*.carousel-control-prev, .carousel-control-next {opacity: 1;}*/
+/*轮播图下边*/
+.path-banner {
+    position: relative;
+    height: 128px;
+    padding: 0 18px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px 0px rgba(7, 17, 27, 0.1);
+    background-color: #fff;
+    text-align: center;
+}
+.path-banner .i-web{
+    background-position: center 0;
+}
+.path-banner .i-java{
+    background-position: center -36px;
+}
+.path-banner .i-python{
+    background-position: center -72px;
+}
+.path-banner .i-android{
+    background-position: center -108px;
+}
+.path-banner .i-php{
+    background-position: center -144px;
+}
+.path-banner i{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background: url(../../Img/path-2019-2.png) no-repeat;
+    background-size: 100%;
+    margin-top: 22px;
+}
+.path-banner > a {
+    float: left;
+    font-size: 0;
+    display: block;
+    width: 20%;
+    height: 128px;
+    overflow: hidden;
+    transition: all .3s;
+}
+.path-banner .title {
+    font-size: 14px;
+    color: #07111B;
+    letter-spacing: 1px;
+    margin-top: 4px;
+}
+.path-banner .desc {
+    font-size: 12px;
+    color: #93999F;
+    line-height: 16px;
+    margin-top: 2px;
+    font-weight: 400;
+}
+.path-banner::before {
+    content: " ";
+    background: url(../../Img/new-path.png) no-repeat;
+    width: 68px;
+    height: 68px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+/*实战推荐*/
+.bgfff{
+    min-height: calc(100% - 140px);
+    box-shadow: 0 2px 8px 0 rgba(7, 17, 27, 0.06);
+    background-size:cover ;
+    background-color: #fff;
+    position: relative;
+    z-index: 500;
+}
+.bgfff .card-body{
+    background-color: #fff !important;
+}
+.bg000{
+    min-height: calc(100% - 140px);
+    box-shadow: 0 2px 4px 0 rgba(7, 17, 27, 0.08);
+    background-size:cover ;
+    background-color: #F8FAFC;
+    position: relative;
+    z-index: 10;
+}
+.bg000 .card-body{
+    background-color: #F8FAFC !important;
+}
+.container-types {
+    width: 1152px;
+    margin: 0 auto;
+    position: relative;
+    padding: 36px 0 48px;
+}
+.container-types .types-title {
+    position: relative;
+    font-size: 14px;
+    color: #93999F;
+    letter-spacing: 0.6px;
+    line-height: 36px;
+    text-align: center;
+}
+.container-types .types-title span {
+    font-size: 20px;
+    font-weight: 600;
+    color: #4D555D;
+    margin: 0 3px;
+}
+.container-types .types-title .title-icon {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 56px;
+    height: 36px;
+    background: url(../../Img/icon.png) no-repeat;
+    background-size: 100%;
+}
+.container-types .types-title .tit-icon-l {
+    margin-right: 24px;
+}
+.container-types .types-title .tit-icon-r {
+    margin-left: 24px;
+}
+.container-fluid{
+    padding: 0 6px;
+}
+/*标题图标*/
+.container-types .types-title span.icon-shizhan-l {
+    background-position: center 0;
+}
+.container-types .types-title span.icon-shizhan-r {
+    background-position: center -36px;
+}
+.container-types .types-title span.icon-haoke-l {
+    background-position: center -72px;
+}
+.container-types .types-title span.icon-haoke-r {
+    background-position: center -108px;
+}
+.container-types .types-title span.icon-rumen-l {
+    background-position: center -144px;
+}
+.container-types .types-title span.icon-rumen-r {
+    background-position: center -180px;
+}
+.container-types .types-title span.icon-jineng-l {
+    background-position: center -216px;
+}
+.container-types .types-title span.icon-jineng-r {
+    background-position: center -252px;
+}
+.container-types .types-title span.icon-jishu-l {
+    background-position: center -288px;
+}
+.container-types .types-title span.icon-jishu-r {
+    background-position: center -324px;
+}
+.container-types .types-content {
+    margin-top: 24px;
+}
+.container-types .types-content .card-img-top{
+    border-radius: 8px;
+}
+.container-types .types-content .card{
+    border-style: none;
+}
+.container-types .types-content .col-md{
+    padding: 0 9px 12px;
+    width: 20%;
+    height: 252px;
+}
+.container-types .types-content .col-md.two-box{
+    width: 50%;
+}
+.types-content .card-content h3{
+    font-size: 16px;
+    color: #07111B;
+    line-height: 24px;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    transition: all .3s;
+    font-weight: bold;
+    height: 46px;
+}
+.types-content .course-card-bottom .card-info{
+    font-size: 12px;
+    color: #93999F;
+    line-height: 24px;
+    margin-top: 8px;
+    font-weight: 400;
+}
+.course-card-bottom .card-info span{
+    margin-right: 12px;
+    display: inline-block;
+}
+.imv2-set-sns:before{
+    content:"\e904"
+}
+.icon-star2:before {
+    content:"\e900"
+}
+.course-card-price{
+    font-size: 12px;
+    color: #4D555D;
+    font-weight: bold;
+}
+.course-card-price .cost-price{
+    margin-left: 5px;
+    color: #4D555D;
+    text-decoration: line-through;
+}
+.course-card-price .sales-tip{
+    box-sizing: border-box;
+    background: rgba(242, 13, 13, 0.6);
+    border-radius: 4px;
+    color: #fff;
+    padding: 0 4px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+.course-star-box{
+    margin: 0 !important;
+}
+.course-star-box .on{
+    color: #ff9900;
+}
+.card-body{
+    margin:0px;
+    padding: 7px;
+}
+/*图片上的小标签*/
+.card .s-logo{
+    position: absolute;
+    border: 2px solid #FFFFFF;
+    border-radius: 12px;
+    top: 8px;
+    left: -8px;
+    z-index: 4;
+    font-size: 12px;
+    color: #FFFFFF;
+    line-height: 20px;
+    padding: 0 8px
+}
+.card .new{
+    background-color: #FFAA00;
+    background-image: linear-gradient(90deg, #ffaa00 17%, #f76b1c 100%);;
+}
+.card .updata{
+    background-color: #9447EB;
+    background-image: linear-gradient(90deg, #bd89f8 6%, #9447eb 93%);
+}
+.card .course-card-lable span{
+    display: inline-block;
+    background: rgba(28, 31, 33, 0.6);
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin-bottom: 2px;
+    font-weight: 200;
+    margin-right: 4px;
+}
+.card .course-card-lable{
+    position: absolute;
+    top: 88px;
+    left: 8px;
+    font-size: 12px;
+    color: #FFFFFF;
+    line-height: 16px;
+}
+
+.card:hover h3{
+    cursor:pointer;
+    color:red;
+}
+
+.col-md.two-box{
+    height: 142px !important;
+}
+/*新手入门*/
+.card .course-up{
+    position: absolute;
+    top: 27px;
+    /*left: 40px;*/
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: #FFFFFF;
+    line-height: 16px;
+}
+.card .course-up h3{
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    line-height: 28px;
+    text-shadow: 0 2px 2px rgba(7, 17, 27, 0.4);
+}
+.card .course-up p{
+    font-size: 12px;
+    color: #FFFFFF;
+    line-height: 16px;
+    text-shadow: 0 2px 2px rgba(7, 17, 27, 0.4);
+    margin-top: 4px;
+}
+.card .course-down{
+    padding:18px;
+}
+
+/*手记猿问*/
+
+.container-types .types-title span.icon-shouji-l {
+    background-position: center -360px;
+}
+.container-types .types-title span.icon-shouji-r {
+    background-position: center -396px;
+}
+.bg000 .note{
+    display: flex;
+    justify-content: space-between;
+    flex-direction:row;
+    margin-top: 23px;
+}
+.bg000 .note .part{
+    width: 387px;
+
+}
+.bg000 .note .part1{
+    background-color: white;
+    border-style: none;
+    border-radius: 8px;
+    padding: 24px 32px 32px 32px;
+    margin: 0 18px 18px 0;
+}
+.note .part .part-up h4{
+    display: inline-block;
+    font-size: 12px;
+    color: #FFFFFF;
+    line-height: 24px;
+    background: rgba(0, 180, 60, 0.5);
+    border-radius: 12px;
+    padding: 0 12px;
+    margin-bottom: 8px;
+}
+.note .part1 .part-up .title{
+    height: 72px;
+}
+.note .part1 .part-up .title .w-title{
+    font-size: 16px;
+    color: rgba(0, 180, 60, 0.8);
+    line-height: 24px;
+    width: 224px;
+    transition: all .3s;
+}
+.note .part1 .part-up .title img{
+    width: 72px;
+    height: 72px;
+    border-radius: 8px;
+    background-color: #f3f5f7;
+}
+.note .part1 .content{
+    font-weight: 400;
+    font-size: 12px;
+    color: #4D555D;
+    line-height: 24px;
+    margin-top: 12px;
+}
+.note .part .title-line{
+    position: relative;
+    height: 1px;
+    margin: 35px 0 23px 0;
+    background-color: rgba(77, 85, 93, 0.08);
+}
+.note .bottom-info{
+    position: relative;
+    float: right;
+    font-size: 12px;
+    color: #93999F;
+    line-height: 24px;
+    margin-top: 12px;
+    font-weight: 400;
+}
+.note .bottom-info a{
+    color:rgba(0, 180, 60, 0.6);
+}
+.note .bottom-info a:hover{
+    cursor:pointer;
+    color: #00B43C;
+;
+}
+.note .bottom-info a i:before{
+    content: "\e625";
+    margin-left: 4px;
+}
+.note .part .title-line .title{
+    position: relative;
+    float: left;
+    margin-top: -8px;
+    font-size: 12px;
+    padding-right: 12px;
+    color: #93999F;
+    line-height: 16px;
+    background-color: white;
+}
+.note .part .part1 .part-down .title{
+    height: 72px;
+    margin-bottom: 16px;
+}
+.note .part .part1 .part-down .title .w-title{
+    font-size: 14px;
+    color: #4D555D;
+    line-height: 24px;
+    width: 224px;
+    transition: all .3s;
+}
+.note .part .part1 .part-down .title img{
+    width: 72px;
+    height: 72px;
+    border-radius: 8px;
+    background-color: #f3f5f7;
+}
+/*猿问左二*/
+.bg000 .note .part2{
+    background-color: white;
+    border-style: none;
+    border-radius: 8px;
+    padding: 24px 32px 32px 32px;
+    margin: 0 18px 18px 0;
+}
+.bg000 .note .part2 .header{
+    line-height: 16px;
+    margin-bottom: 8px;
+    display: inline-block;
+    font-size: 12px;
+    color: rgba(0, 140, 200, 0.6);
+}
+.icon-blog:before{
+    content: "\e921";
+}
+.bg000 .note .part2 i{
+    font-size: 16px;
+    margin-right: 4px;
+    vertical-align: text-bottom;
+}
+.note .part2 .part-up .title{
+    margin-top: 8px;
+    height: 48px;
+}
+.note .part2 .part-up .title .w-title{
+    font-size: 16px;
+    color: #000;
+    line-height: 24px;
+    width: 224px;
+    transition: all .3s;
+}
+.note .part2 .w-title:hover{
+    cursor:pointer;
+    color: #008CC8 !important;
+}
+.note .part2 .part-up .title img{
+    width: 72px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: #f3f5f7;
+}
+.note .part2 .content{
+    position: relative;
+    font-weight: 400;
+    font-size: 12px;
+    color: #4D555D;
+    line-height: 24px;
+    margin-top: 12px;
+}
+.note .part2 .part-down .footer{
+    font-size: 12px;
+    color: #93999F;
+    line-height: 24px;
+    margin-top: 12px;
+    font-weight: 400;
+}
+.note .part2 .part-down .footer span{
+    margin-right: 24px;
+}
+.note .part2 .part-down .footer a{
+    color: rgba(0, 140, 200, 0.6);
+    background-color: transparent;
+    float: right;
+}
+.icon-right:before{
+    content: "\e625";
+    margin-left: 4px;
+}
+.note .part2 .part-down .footer a:hover{
+    cursor:pointer;
+    color: #008CC8;
+}
+/*猿问左3*/
+.bg000 .note .part3{
+    background-color: white;
+    border-style: none;
+    border-radius: 8px;
+    padding: 24px 32px 32px 32px;
+    margin: 0 18px 18px 0;
+}
+.bg000 .note .part3 .header{
+    line-height: 16px;
+    margin-bottom: 8px;
+    display: inline-block;
+    font-size: 12px;
+    color:rgba(0, 180, 60, 0.6);
+}
+.note .part3 .title a{
+    font-size: 14px;
+}
+.note .part3 .header i{
+    font-size: 16px;
+    margin-right: 4px;
+    vertical-align: text-bottom;
+}
+.icon-yuanwen:before {
+    content: "\e922";
+}
+.note .part3 span{
+    font-size: 12px;
+    color: #07111B;
+    line-height: 24px;
+    display: inline-block;
+}
+.note .part3 .part-up .title{
+    height: 21px;
+}
+.note .part3 .content{
+    font-size: 12px;
+    color: #4D555D;
+    line-height: 24px;
+    text-align: justify;
+    word-break: break-all;
+    font-weight: 400;
+}
+.note .part3 .footer{
+    height: 24px;
+}
+.note .part3 .footer a{
+    color:rgba(0, 180, 60, 0.6);
+    font-size: 12px;
+    line-height: 24px;
+    margin-top: 12px;
+    font-weight: 400;
+    float: right;
+}
+.note .part3 .footer a:hover{
+    color: #00B43C;
+}
+.container-types .note .part .part1:hover {
+    cursor:pointer;
+    box-shadow: 0 8px 16px 0 rgba(7, 17, 27, 0.1);
+}
+.container-types .note .part .part2:hover {
+    cursor:pointer;
+    box-shadow: 0 8px 16px 0 rgba(7, 17, 27, 0.1);
+}
+.container-types .note .part .part3:hover {
+    cursor:pointer;
+    box-shadow: 0 8px 16px 0 rgba(7, 17, 27, 0.1);
+}
+
+/*精英讲师*/
+.elite-bg{
+    background-image: url("../../Img/bacakground.jpg");
+    background-size: cover;
+    height: 408px;
+}
+
+.container-types .types-title span.icon-mingshi-l {
+    background-position: center -432px;
+}
+.container-types .types-title span.icon-mingshi-r {
+    background-position: center -468px;
+}
+.elite-bg .container-types .types-title {
+    color: white!important;
+    left:31px;
+}
+.elite-bg .container-types .types-title span{
+    color: white!important;
+}
+.elite-bg .types-title a.lots{
+    position: relative;
+    transition: all .3s;
+    color: rgba(255, 255, 255, 0.6) !important;
+    height: 20px;
+    font-size: 12px;
+    line-height: 12px;
+    left:300px;
+}
+.elite-bg .types-title a.lots:hover{
+    color: white !important;
+}
+.imv2-arrow2_r:before {
+    content:"\e409"
+}
+/*底部轮播图*/
+.elite-bg .container-types .part1{
+    position: relative;
+    margin-top: 23px;
+    overflow: hidden;
+    height: 276px;
+    padding-top:20px !important ;
+    box-sizing: content-box;
+}
+.elite-bg .lunbo{
+    padding-top:0px !important ;
+    padding-bottom:0px !important ;
+}
+.elite-bg .container-types .part1 .pic0{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*轮播图滑动*/
+@keyframes pic1
+{
+    from {left: 0;}
+    to {left: 1152px;}
+}
+.elite-bg .container-types .part1 .pic1{
+    left: 1152px;
+    animation: pic1 1s;
+}
+@keyframes pic2
+{
+    from {left: -1152px;}
+    to {left: 0;}
+}
+.elite-bg .container-types .part1 .pic2{
+    animation: pic2 1s;
+}
+
+@keyframes pic3
+{
+    from {left: 0;}
+    to {left: -1152px;}
+}
+.elite-bg .container-types .part1 .pic3{
+    left: -1152px;
+    animation: pic3 1s;
+}
+@keyframes pic4
+{
+    from {left: 1152px;}
+    to {left: 0;}
+}
+.elite-bg .container-types .part1 .pic4{
+    animation: pic4 1s;
+}
+
+.elite-bg .container-types .part1 .pic{
+    position: relative;
+    border-style: none;
+    border-radius: 8px;
+    padding: 24px 32px 32px 32px;
+    margin: 0 18px 18px 0;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px 0 rgba(7, 17, 27, 0.05);
+    transition: all .3s;
+    width: 216px;
+    height: 248px;
+}
+.elite-bg .container-types .part1 .pic img {
+    position: absolute;
+    top: -18px;
+    margin-left: 28px;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+}
+.elite-bg .container-types .part1 .pic .name{
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 66px;
+    white-space: nowrap;
+    color: #07111b;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    word-wrap: break-word;
+    text-align: center;
+    -webkit-box-orient: vertical;
+}
+.elite-bg .container-types .part1 .pic .job {
+    text-align: center;
+    display: block;
+    font-size: 12px;
+    margin-bottom: 12px;
+    color: #4D555D;
+    height: 24px;
+    line-height: 24px;
+}
+.elite-bg .container-types .part1 .pic .desc{
+    position: absolute;
+    top: 152px;
+    display: block;
+    font-size: 12px;
+    line-height: 24px;
+    color: #4D555D;
+    height: 72px;
+    width: 144px;
+    padding: 0;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    text-align: justify;
+    word-break: break-all;
+    font-weight: 400;
+}
+.elite-bg .btn .left-btn{
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    top: 120px;
+    left: -24px;
+    z-index: 100;
+    box-sizing: border-box;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 32px;
+    color: #9199A1;
+    line-height: 32px;
+}
+.icon-left2:before{
+    content: '\e924';
+}
+.elite-bg .btn .right-btn{
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    top: 120px;
+    right: -24px;
+    z-index: 100;
+    box-sizing: border-box;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 32px;
+    color: #9199A1;
+    line-height: 32px;
+}
+.icon-left2:before{
+    content: '\e924';
+}
+.icon-right2:before{
+    content: '\e925';
+}
+.elite-bg .btn .first-btn,.elite-bg .btn .last-btn{
+    position: relative;
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 100%;
+    margin: 0 5px;
+    left: 540px;
+    top: -24px;
+}
+.elite-bg .btn .first-btn{
+    background: #fff;
+    opacity: 1;
+}
+.elite-bg .btn .last-btn{
+    background: #000;
+    opacity: .2;
+}
+
+.elite-bg .btn .left-btn:hover,.elite-bg .btn .right-btn:hover{
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgba(28, 31, 33, 0.1);
+}
+
+/*悬停效果*/
+.elite-bg .pic0 .pic:hover img{
+    cursor:pointer;
+    width: 63px;
+    height: 60px;
+    margin-left: 46px;
+    transition: all .3s;
+}
+.elite-bg .pic0 .pic:hover{
+    cursor:pointer;
+    background-color: white;
+}
+.elite-bg .pic0 .pic:hover .name,.elite-bg .pic0 .pic:hover .job{
+    cursor:pointer;
+    display: none;
+}
+.elite-bg .pic0 .pic:hover .desc{
+    cursor:pointer;
+    top:56px;
+    height:168px;
+    transition: all.3s;
+}
+/*全明星-三个大神*/
+.container-types .types-title span.icon-mingxing-l {
+    background-position: center -504px;
+}
+.container-types .types-title span.icon-mingxing-r {
+    background-position: center -540px;
+}
+.star{
+    position: relative;
+    height: auto;
+}
+.star .part1{
+    position: relative;
+    height: 99px;
+    margin: 38px 300px 48px;
+    text-align: center;
+}
+.star .part1 .person{
+    width: 136px;
+    height: 98px;
+    text-align: center;
+    float: left;
+}
+.star .part1 .person img{
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+}
+.star .part1 .person span{
+    position: absolute;
+    width: 26px;
+    height: 18px;
+    background: url(../../Img/champion.png) no-repeat;
+    background-size: 100%;
+}
+.star .part1 .person span.purple{
+    top: -16px;
+    left: 55px;
+    background-position: center 0;
+}
+.star .part1 .person span.green{
+    top: -16px;
+    left: 190px;
+    background-position: center -18px;
+}
+.star .part1 .person span.blue{
+    top: -16px;
+    left: 327px;
+    background-position: center -38px;
+}
+.star .part1 .person span.yellow{
+    top: -16px;
+    left: 464px;
+    background-position: center -56px;
+}
+.star .part1 .person .name{
+    font-size: 14px;
+    height: 18px;
+    overflow: hidden;
+}
+.star .part1 .person .desc{
+    font-size: 12px;
+    color: #93999F;
+}
+/*全明星-其他大神*/
+.star .part2{
+    width: 888px;
+    height: 152px;
+    margin: 0 132px;
+}
+.star .part2 .student img{
+    height: 48px;
+    width: 48px;
+    border-radius: 48px;
+    box-sizing: border-box;
+    padding: 2px;
+    background-color: #f3f5f7;
+    border: 2px solid #fff;
+}
+
+.star .part2 .student{
+    position: relative;
+    float: left;
+    border-radius: 48px;
+    font-size: 0;
+    margin-right: 28px;
+    margin-bottom: 24px;
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    transition: all .3s;
+}
+.star .part2 .student .hidden{
+    /*display: none;*/
+    position: absolute;
+    border-radius: 8px;
+    color: #FFFFFF;
+    top: -110px;
+    left: -83px;
+    width: 202px;
+    height: 90px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.star .part2 .student .hidden p{
+    font-size: 14px;
+    line-height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.star .part2 .student.rr{
+    margin-right: 0;
+}
+.star .part2 .student.ll{
+    margin-left: 40px;
+}
+.star .part2 .student .hidden span{
+    position: absolute;
+    bottom: -9px;
+    font-size: 40px;
+    left: 93px;
+    line-height: 20px;
+}
+/*全明星隐藏部分颜色*/
+/*紫色*/
+.star .part2 .student.purple .hidden{
+    background: #653ddd;
+}
+.star .part2 .student.purple .hidden span{
+    color: #653ddd;
+}
+.star .part2 .student.purple img:hover{
+    cursor:pointer;
+    border: 2px solid #653ddd;
+}
+/*蓝色*/
+.star .part2 .student.blue .hidden{
+    background: #008cc8;
+}
+.star .part2 .student.blue .hidden span{
+    color: #008cc8;
+}
+.star .part2 .student.blue img:hover{
+    cursor:pointer;
+    border: 2px solid #008cc8;
+}
+/*绿色*/
+.star .part2 .student.green .hidden{
+    background: #00b46d;
+}
+.star .part2 .student.green .hidden span{
+    color: #00b46d;
+}
+.star .part2 .student.green img:hover{
+    cursor:pointer;
+    border: 2px solid #00b46d;
+}

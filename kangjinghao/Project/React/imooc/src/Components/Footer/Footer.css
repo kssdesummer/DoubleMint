@@ -1,0 +1,125 @@
+.foot{
+    padding: 36px 0;
+    height: auto;
+    box-shadow: 0 2px 8px 0 rgba(7, 17, 27, 0.06);
+    background-size:cover ;
+    background-color: #F8FAFC;
+}
+.foot a{
+    display: inline-block;
+    font-size: 14px;
+    color: #4D555D;
+    line-height: 28px;
+    margin: 0;
+    margin-right: 36px;
+}
+.foot .containe{
+    width: 1152px;
+    margin: 0 auto;
+    position: relative;
+}
+.foot .footer-link{
+    text-align: left;
+    border: none;
+    padding: 0;
+}
+.foot .f-link a{
+    margin: 0 13.1px 0 10px;
+    color: #99a1a6;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 28px;
+}
+.foot .f-remark{
+    font-size: 12px;
+    padding: 0;
+    padding-left: 10px;
+    text-align: left;
+    margin-top: 8px;
+    color: #93999F;
+    line-height: 25px;
+}
+.f-remark img{
+    width: 18px;
+    height: 18px;
+    display: inline !important;
+    margin: 0 !important;
+    vertical-align: unset!important;
+    top:10px;
+}
+p {
+    word-break: break-all;
+}
+.foot .f-contact{
+    position: absolute;
+    width: auto;
+    right: 0;
+    bottom: 0;
+    height: 60px;
+}
+.foot .f-contact .qq-wechat{
+    padding: 0;
+    text-align: center;
+    width: auto;
+    height: 60px;
+}
+.foot .f-contact .qq-wechat .wechat{
+    padding-left: 14px;
+}
+.foot .f-contact .qq-wechat .qq{
+    margin-right: 20px;
+}
+.foot .f-contact .qq-wechat .qq a{
+    display: inline-block;
+    width: 32px;
+    height:32px;
+    background: url(../../Img/idx-btm.png) no-repeat 0 0;
+    position: absolute;
+    background-position: -52px -221px;
+    line-height: 28px;
+    left: 2px;
+    margin: 0 9px;
+}
+.foot .f-contact .qq-wechat .qq a:hover{
+    background-position: -52px -262px;
+}
+.foot .f-contact .qq-wechat .wechat a:hover{
+    background-position: 0 -262px;
+}
+.foot .f-contact .qq-wechat .qq i{
+    z-index: 999;
+    position: absolute;
+    display: none;
+    width: 158px;
+    height: 201px;
+    top: -216px;
+    left: -55px;
+    bottom: 40px;
+    background: url(../../Img/gongzong.png) no-repeat 0 0;
+    box-shadow: 1px 5px 8px 0 rgba(7, 17, 27, 0.2);
+}
+.foot .f-contact .qq-wechat .qq:hover i{
+    cursor:pointer;
+    display: block;
+}
+.foot .f-contact .qq-wechat .wechat a{
+    display: inline-block;
+    width: 32px;
+    height:32px;
+    background: url(../../Img/idx-btm.png) no-repeat 0 0;
+    position: absolute;
+    background-position: 0 -221px;
+    line-height: 28px;
+    right: -27px;
+}
+.foot .f-contact .qq-wechat div{
+    width: 60px;
+    height: 60px;
+}
+.foot .f-contact .qq-wechat p{
+    font-size: 12px;
+    color: #4D555D;
+    line-height: 24px;
+    margin-top: 36px;
+    margin-left: -4px;
+}

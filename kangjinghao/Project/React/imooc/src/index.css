@@ -1,0 +1,79 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+  cursor:pointer;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: 400;
+  margin: 0;
+  padding:0;
+}
+/*设置自定义字体*/
+@font-face {
+  font-family: 'moco';
+  src: url('https://www.imooc.com/static/moco/v1.0/dist/fonts/moco.eot?d846nx');
+  src: url('https://www.imooc.com/static/moco/v1.0/dist/fonts/moco.eot?d846nx#iefix') format('embedded-opentype'), url('https://www.imooc.com/static/moco/v1.0/dist/fonts/moco.ttf?d846nx') format('truetype'), url('https://www.imooc.com/static/moco/v1.0/dist/fonts/moco.woff?d86nx') format('woff'), url('https://www.imooc.com/static/moco/v1.0/dist/fonts/moco.svg?d846nx') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family:'imv2';
+  src:url('https://www.imooc.com/static/moco/v1.0/dist/imv2fonts/imv2.eot?20190815');
+  src:url('https://www.imooc.com/static/moco/v1.0/dist/imv2fonts/imv2.eot?20190815#iefix') format('embedded-opentype'), url('https://www.imooc.com/static/moco/v1.0/dist/imv2fonts/imv2.ttf?20190815') format('truetype'), url('https://www.imooc.com/static/moco/v1.0/dist/imv2fonts/imv2.woff?20190815') format('woff'), url('https://www.imooc.com/static/moco/v1.0/dist/imv2fonts/imv2.svg?20190815#imv2') format('svg');
+  font-weight:normal;
+  font-style:normal
+}
+
+html,body {
+  font: 16px/1.5 "PingFang SC", "微软雅黑", "Microsoft YaHei", Helvetica, "Helvetica Neue", Tahoma, Arial, sans-serif;
+  color: #1c1f21;
+  /*height: 100%;*/
+  /*width: 100%;*/
+  /*min-width: 1344px;*/
+}
+body {
+  font: 16px/1.5 "PingFang SC", "微软雅黑", "Microsoft YaHei", Helvetica, "Helvetica Neue", Tahoma, Arial, sans-serif;
+  /*min-width: 1344px;*/
+  background-color: #fff;
+  overflow-y: scroll;
+  padding-top: 0;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+}
+/*链接样式*/
+
+div{
+  display: block;
+  background-size: cover;
+}
+
+ul,ol{
+  list-style: none;
+}
+
+.l{
+  float: left;
+}
+.r{
+  float: right;
+}
+
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'imv2' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
