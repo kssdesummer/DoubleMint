@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="demo.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+
+    <!-- Demo styles -->
+
+</head>
+
+<body>
+    <!-- Swiper -->
+    <div class="elite-bg">
+        <div class="container-types container-teacher-types clearfix">
+            <h3 class="types-title">
+                <span class="tit-icon icon-teacher-l tit-icon-l"></span>
+                <em>慕</em>／
+                <em>课</em>／
+                <em>精</em>／
+                <em>英</em>／
+                <em>名</em>／
+                <em>师</em>
+                <span class="tit-icon icon-teacher-r tit-icon-r"></span>
+                <a href="#" class="types-title-more">
+                    <span>查看更多</span>
+                    <i class="imv2-arrow2_r"></i>
+                </a>
+            </h3>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <a href="#" class="swiper-slide">
+                        <img class="lecturer-uimg" src="img/xlb/qy.jpg" title="7七月">
+                        <span class="lecturer-name">7七月</span>
+                        <span class="lecturer-title">全栈工程师</span>
+                        <span class="lecturer-p"
+                            title="十年研发及团队管理经验，对程序员面临的各种问题深有体会；精通Python、Java、Node.js、JavaScript等语言，对Web的基础研发、高并发处理与分布式有非常深入的理解。课程讲解深入浅出，极为擅长培养学生的编程思维。">十年研发及团队管理经验，对程序员面临的各种问题深有体会；精通Python、Java、Node.js、JavaScript等语言，对Web的基础研发、高并发处理与分布式有非常深入的理解。课程讲解深入浅出，极为擅长培养学生的编程思维。</span>
+                    </a>
+                    <a href="#" class="swiper-slide"><img class="lecturer-uimg" src="img/xlb/lsx.jpg" title="廖师兄"><span
+                            class="lecturer-name">廖师兄</span><span class="lecturer-title">JAVA开发工程师</span><span
+                            class="lecturer-p" title="载着干货的老司机。微服务，分布式架构方面经验丰富。">载着干货的老司机。微服务，分布式架构方面经验丰富。</span></a>
+                    <a href="#" class="swiper-slide"><img class="lecturer-uimg" src="img/xlb/lyb.jpg"
+                            title="liuyubobobo"><span class="lecturer-name">liuyubobobo</span><span
+                            class="lecturer-title">全栈工程师</span><span class="lecturer-p"
+                            title="创业者，全栈工程师，持续学习者。对技术开发，产品设计、前后端，ios，html5，智能算法等领域均有接触；拥有多款独立App作品；对一切可编程的东西有浓厚兴趣，对游戏编程格外感兴趣。相信编程改变一切。">创业者，全栈工程师，持续学习者。对技术开发，产品设计、前后端，ios，html5，智能算法等领域均有接触；拥有多款独立App作品；对一切可编程的东西有浓厚兴趣，对游戏编程格外感兴趣。相信编程改变一切。</span></a>
+                    <a href="#" class="swiper-slide"><img class="lecturer-uimg" src="img/xlb/gfh.jpg"
+                            title="慕课官方号"><span class="lecturer-name">慕课官方号</span><span
+                            class="lecturer-title">页面重构设计</span><span class="lecturer-p"
+                            title="慕课，Massive（大规模）Open（开放）Online（在线）Course（课程）。专注做好IT技能教育的MOOC，符合互联网发展潮流接地气儿的MOOC。我们有更多免费资源，我们只教有用的，我们专心做教育。">慕课，Massive（大规模）Open（开放）Online（在线）Course（课程）。专注做好IT技能教育的MOOC，符合互联网发展潮流接地气儿的MOOC。我们有更多免费资源，我们只教有用的，我们专心做教育。</span></a>
+                    <a href="#" class="swiper-slide"><img class="lecturer-uimg" src="img/xlb/oea.jpg"
+                            title="Oeasy"><span class="lecturer-name">Oeasy</span><span
+                            class="lecturer-title">页面重构设计</span><span class="lecturer-p"
+                            title="他，授课风趣幽默，激情四射，自称屌丝青年，中国传媒大学计算机教师；他，专注于网页制作、平面设计、多媒体等多个领域的软件以及应用的挖掘与创新，热爱分享，是新鲜热门软件和应用的导航标，他就是众粉丝心中的“Oeasy老湿”">他，授课风趣幽默，激情四射，自称屌丝青年，中国传媒大学计算机教师；他，专注于网页制作、平面设计、多媒体等多个领域的软件以及应用的挖掘与创新，热爱分享，是新鲜热门软件和应用的导航标，他就是众粉丝心中的“Oeasy老湿”</span></a>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <div class="btn">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                </div>
+                <!-- Add Arrows -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 5,
+            spaceBetween: 20,
+            slidesPerGroup: 5,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+
+</html>
