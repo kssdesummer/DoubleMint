@@ -105,7 +105,35 @@ button_right.onclick=function(){
     button_left.style.color='#82819f';
     button_right.style.color='#fff';
 }
+//解决人才供需矛盾的破冰者
+var right_onclick=document.getElementById("right_onclick");
+var gright_onclick=document.getElementById("gright_onclick");
+var ice_rdisplay1=document.getElementById("ice_rdisplay1");
+var ice_rdisplay2=document.getElementById("ice_rdisplay2");
+right_onclick.onclick=function(){
+    ice_rdisplay2.style.display='none';
+    ice_rdisplay1.style.display='block';
+    document.getElementById('img1').src="./images/white_row.png";
+    document.getElementById('img2').src="./images/black_row.png";
+    document.getElementById('dialog_right').style.backgroundColor='#071d50';
+    document.getElementById('dialog_gright').style.backgroundColor='#e6e6e6';
+    document.getElementById('p20').style.color='#111450';
+    document.getElementById('p21').style.color='#111450';
+    document.getElementById('p10').style.color='#fff';
+    document.getElementById('p11').style.color='#fff';
+}
+gright_onclick.onclick=function(){
+    ice_rdisplay1.style.display='none';
+    ice_rdisplay2.style.display='block';
+    document.getElementById('img2').src="./images/white_row.png";
+    document.getElementById('img1').src="./images/black_row.png";
+    document.getElementById('dialog_right').style.backgroundColor='#e6e6e6';
+    document.getElementById('dialog_gright').style.backgroundColor='#071d50';
+    document.getElementById('p10').style.color='#111450';
+    document.getElementById('p11').style.color='#111450';
+    document.getElementById('p20').style.color='#fff';
+    document.getElementById('p21').style.color='#fff';
 
-
+}
 
 }
