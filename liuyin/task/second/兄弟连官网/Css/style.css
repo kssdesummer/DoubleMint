@@ -4,7 +4,6 @@
 }
 body{
     width: 1400px;
-    height: 300px;
     text-align: center;
     margin:0 auto;
 }
@@ -56,6 +55,9 @@ ul{
     color:#00c0a9;
 }
 
+/* .main{
+    position: relative;
+} */
 
 /* 轮播 */
 #banner{
@@ -490,10 +492,8 @@ ul{
     margin-top: 42px;
 }
 .it_ice{    
-    position: relative;
     background-color: white;
     width: 1400px;
-    z-index: -2;
 }
 .ice_body{
     background:url("../images/ice_body.png");
@@ -533,9 +533,9 @@ ul{
     box-shadow: 0 0 38px rgba(0,0,0,0.12);
 }
 .ice_left{
+    float: left;
     width:408px;
     height: 340px;
-    float: left;
     background-color: #fff;
 }
 .ice_ltop{
@@ -581,19 +581,18 @@ ul{
     height: 34px;
     margin-top: 50px;
 }
-.dialog_right{
-    float: right;
-    overflow: hidden;
+#dialog_right{
+    margin-left: 38px;
     width: 191px;
     height: 84px;
-    border-radius: 39px 39px 39px 0;
-    background-image: linear-gradient(137deg, #130d4c 0%, #0d1b54 100%);
+    overflow: hidden;
+    border-radius: 39px 39px 39px 0px;
+    background:#071d50;
 }
 .dialog_right div:first-child{
     width: 125px;
     margin: 0 auto;
     margin-top: 20px;
-
 }
 .dialog_right p{
     margin: 0 atuo;
@@ -602,13 +601,15 @@ ul{
     color: #ffffff;
     font-family: "Source Han Sans CN";
 }
+#right_onclick{
+    cursor: pointer;
+}
 
 .dialog_gray{
-    float: right;
     width: 229px;
     height: 84px;
     margin-top: 26px;
-    margin-right: 24px;
+    margin-left: 155px;
 }
 .dialog_gleft{
     float: right;
@@ -622,10 +623,9 @@ ul{
     margin-top: 50px;
 }
 .dialog_gright{
-    float: left;
-    overflow: hidden;
     width: 191px;
     height: 84px;
+    overflow: hidden;
     border-radius: 39px 39px 0px 39px;
     background-color: #e6e6e6;
 }
@@ -643,13 +643,19 @@ ul{
     text-align: left;
     font-family: "Source Han Sans CN";
 }
+#gright_onclick{
+    cursor: pointer;
+}
 
 .ice_right{
     float: right;
+    left: 408px;
     width: 470px;
     height: 340px;
     background-color: #081c50;
-    overflow: hidden;
+}
+.ice_rdisplay2{
+    display: none;
 }
 .ice_rtop p{
     width: 384px;
@@ -660,10 +666,11 @@ ul{
     color: #7d7d7d;
     font-family: "Source Han Sans CN";
     font-weight: 500;
-    margin-top: 31px;
+    padding-top: 31px;
 }
 .ice_rtop ul li{
     width: 384px;
+    font-size: 12px;
     list-style: disc;
     color: #fff;
     font-family: "Source Han Sans CN";
@@ -697,11 +704,60 @@ ul{
     font-family: "Source Han Sans CN";
     font-weight: 500;
 }
-.it_serve{
-    position: relative;
-    top: -372px;
-    width: 1400px;
+.ice_rtop1 p{
+    width: 384px;
+    text-align: left;
+    margin-left: 36px;
+    font-size: 15px;
+    line-height: 20px;
+    color: #7d7d7d;
+    font-family: "Source Han Sans CN";
+    font-weight: 500;
+    margin-top: 5px;
 }
+.ice_rtop1 > ul li{
+    width: 416px;
+    list-style: disc;
+    color: #fff;
+    font-family: "Source Han Sans CN";
+    text-align: left;
+    margin-left: 36px;
+    margin-top: 6px;
+}
+.ice_rbottom2{
+    width: 234px;
+    height:26px;
+    line-height: 26px;
+    font-size: 12px;
+    color: #ffffff;
+    font-family: "Source Han Sans CN";
+    font-weight: 500;
+    border-radius: 12px;
+    margin-left: 53px;
+    margin-top: 4px;
+    background-color: #13d2cc;
+}
+.ice_rbottom12{
+    width: 232px;
+    height:24px;
+    border-radius: 12px;
+    margin-left: 53px;
+    margin-top: 8px;
+    border: 1px solid #00ffff; 
+    font-size: 12px;
+    line-height: 24px;
+    color: #13d2cc;
+    font-family: "Source Han Sans CN";
+    font-weight: 500;
+}
+
+/* 全方位服务你的学习 */
+.it_serve{
+    margin-top: -372px;
+    width: 1400px;
+    overflow: hidden;
+}
+
 .serve_top{
     width: 465px;
     background-image: url("../images/work/ice_top.png");
@@ -722,12 +778,11 @@ ul{
 .serve_lbody{
     float: left;
     width: 392px;
-    border-radius: 10px;
+    border-radius: 7px;
     background-color: #ffffff;
     margin-left: 263px;
     margin-top: 31px;
     overflow: hidden;
-    /* border: 1px solid red; */
 }
 .serve_lbody > p{
     font-size: 15px;
@@ -742,11 +797,15 @@ ul{
     text-align: left;   
     margin-bottom: 7px;
 }
+.serve_lbody div p:last-child{
+    font-size: 12px;
+    color:#333 ;
+}
 .top_art{
     margin-top: 15px;
 }
 .serve_lbody  div > p{
-    font-size: 12px;
+    font-size: 14px;
     color: #000000;
     font-family: "Source Han Sans CN";
     font-weight: 500;
@@ -754,6 +813,9 @@ ul{
 }
 .lbody_gray{
     background:#f8f8f8;
+}
+.lbody_end p:last-child{
+margin-bottom: 39px;
 }
 .serve_vs{
     position: relative;
@@ -767,9 +829,277 @@ ul{
 }
 .serve_rbody{
     width: 395px;
-    height: 1128px;
     float: right; 
-    background-color: #006bd7;
     margin-top: -49px; 
     margin-right: 261px; 
+    overflow: hidden;
+    border-radius: 0 0 7px 7px;
+}
+.rbody_top{
+    width: 100%;
+    height: 64px;
+    font-size: 15px;
+    background-color: #0c64bd;
+    line-height: 64px;
+    color: #ffffff;
+    font-family: "Source Han Sans CN";
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+}
+.rbody_topy{
+    width: 100%;
+    height: 30px;
+    margin-top: -15px;
+    background: #013db2;
+    position: relative;
+    z-index: 0;
+}
+.rbody_topy > div{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #0c64bd;
+    margin: 0 auto;
+
+}
+.rbody_topy >div img{
+    width:13 px;
+    height: 8px;
+    margin-top: 15px;
+}
+.rbody_footer{
+    width: 100%;
+    background-color: #013db2;
+    overflow: hidden;
+}
+.rbody_footer div{
+    width: 339px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.rbody_footer div:last-child{
+    margin-bottom: 21px;
+}
+.rbody_footer p:first-child{
+    margin-top: 17px;
+    text-align: left;
+    margin-bottom: 3px;
+}
+.rbody_footer span{
+    padding: 0px 6px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    color: #fff;
+    background-color: #0e0846;
+    font-size: 14px;
+    font-family: "Source Han Sans CN";
+    font-weight: 500;
+}
+.rbody_footer div p:last-child{
+    text-align: left;
+    font-size: 12px;
+    color:#ccc;
+    font-family: "Source Han Sans CN";
+    font-weight: 500;
+}
+.serve_footer{
+    margin-top: 209px;  
+    width: 100%;
+}
+.top_f{
+    width: 100%;
+    height: 734px;
+    background-color: #0a0e44;
+    position: relative;
+    z-index: -1;
+}
+.top_dot{
+    background: url("../images/dot.png");
+    background-repeat: no-repeat;
+    background-size: 155px 101px;
+    width:155px;
+    height: 101px;
+    margin-top: -101px;
+    margin-left: 1035px;
+}
+
+.top_w{
+    width: 100%;
+    height: 50px;
+    background: #fff;
+}
+.serve_banner{
+    position: relative;
+    margin-top: 39px;
+    width: 100%;
+    height: 54px;
+}
+.serve_banner nav{
+    display: inline-block;
+    width:180px;
+    height: 54px;
+    line-height: 54px;
+    background: url("../images/enroll.png");
+    background-size:180px 54px; 
+    font-size: 16px;
+    color: #ffffff;
+    font-family: "Source Han Sans CN";
+    cursor: pointer;
+
+}
+.serve_banner nav:last-child{
+    margin-left: 39px;
+}
+/* 具备交付能力的程序员 */
+.pay{
+    width: 100%;  
+    border: 1px solid red;
+    margin-top: 18px;
+    height: 800px;
+}
+.pay1{
+    background-image: url("../images/ability/bg1.png");
+    background-size: 1400px 602px;
+    height: 602px;
+    width: 1400px;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+.pay2{
+    background-image: url("../images/ability/bg.png");
+    background-size: 1400px 580px;
+    margin-top: -602px;
+    height: 580px;
+    width: 1400px;
+    position: relative;
+    z-index: 1;
+}
+.pay3{
+    background-image: url("../images/ability/bg2.png");
+    background-size: 1400px 619px;
+    height: 619px;
+    margin-top: -480px;
+}
+.pay_top{
+    width: 465px;
+    height: 39px;
+    margin: 0 auto;
+    background-image: url("../images/work/ice_top.png");
+    background-size: 465px 39px;
+    margin-top:50px;
+}
+.pay_top > p{
+    width: 348px;
+    height: 95px;
+    font-size: 28px;
+    color: #0e0846;
+    font-family: "Source Han Sans CN";
+    font-weight: bold;  
+    margin: 0 auto;
+}
+.pay_row{
+    width: 427px;
+    height: 90px;
+    background: url("../images/ability/row.png");
+    background-size: 427px 90px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    margin-top: 40px;   
+}
+
+.top_one{
+    width: 200px;
+    float: left;
+    margin-right: 21px;
+    margin-left: 145px;
+    margin-top: 40px;
+}
+.top_two{
+    width: 200px;
+    float: left;
+    margin-right: 21px;
+    margin-top: 24px;
+}
+.top_three{
+    width: 200px;
+    float: left;
+    margin-right: 21px;
+}
+.top_four{
+    width: 200px;
+    float: left;
+    margin-right: 21px;
+}
+.top_five{
+    width: 200px;
+    float: left;
+    margin-right: 21px;
+}
+.top_onetop{
+    width: 113px;
+    height: 113px;
+    border-radius: 50%;
+    border: 1px solid #00d2cc;
+    margin-left: 43px;
+}
+.top_onetop img{
+    width: 79px;
+    height: 53px;
+    margin: 50% auto;
+    margin-top: 26px;
+}
+.top_one .top_oneshadow{
+    width: 100px;
+    height:1px;
+    background-color:#f0f8fc; 
+    border-radius: 50%;
+    box-shadow: #a8d8e0 6px 8px 9px 3px;
+    margin: 0 auto;
+}
+.top_onetitle p{
+    width:200px;
+    font-size: 15px;
+    line-height: 30px;
+    color: #0e0846;
+    font-family: "Source Han Sans CN";
+    font-weight: 500;
+    text-align: center;
+}
+.top_onetxt{
+    width: 200px;
+    height: 180px;
+    box-shadow: 0px 3px 10px rgba(22,136,201,0.1);
+    background-color: #ffffff;
+}
+.top_onetxt div{
+    width: 158px;
+    margin: 0 auto;
+}
+.top_onetxt div p:first-child{
+    font-size: 14px;
+    line-height: 21px;
+    color: #0e0846;
+    font-family: "Source Han Sans CN";
+    font-weight: bold;
+    text-align: left;   
+    margin-top: 8px;
+}
+.top_onetxt div p:last-child{
+    font-size: 12px;
+    color: #0e0846;
+    font-family: "Source Han Sans CN";
+    text-align: left;   
+}
+
+
+
+
+
+.language{
+    width: 1400px;
+    height: 400px;
+    background-color: red;
+    margin-top: -69;
 }
