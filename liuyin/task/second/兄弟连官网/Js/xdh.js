@@ -133,7 +133,151 @@ gright_onclick.onclick=function(){
     document.getElementById('p11').style.color='#111450';
     document.getElementById('p20').style.color='#fff';
     document.getElementById('p21').style.color='#fff';
-
 }
-
+// 培养具备真实交付能力的程序员
+var top_onetop1=document.getElementById("top_onetop1");
+var top_onetop2=document.getElementById("top_onetop2");
+var top_onetop3=document.getElementById("top_onetop3");
+var top_onetop4=document.getElementById("top_onetop4");
+var top_onetop5=document.getElementById("top_onetop5");
+var top_onetitle1=document.getElementById("top_onetitle1");
+var top_onetitle2=document.getElementById("top_onetitle2");
+var top_onetitle3=document.getElementById("top_onetitle3");
+var top_onetitle4=document.getElementById("top_onetitle4");
+var top_onetitle5=document.getElementById("top_onetitle5");
+var top_onetxt1=document.getElementById('top_onetxt1');
+var top_onetxt2=document.getElementById('top_onetxt2');
+var top_onetxt3=document.getElementById('top_onetxt3');
+var top_onetxt4=document.getElementById('top_onetxt4');
+var top_onetxt5=document.getElementById('top_onetxt5');
+top_onetop1.onclick=function(){
+    top_onetop1.className='top_onetopn';
+    top_onetop2.className='top_onetop';
+    top_onetop3.className='top_onetop';
+    top_onetop4.className='top_onetop';
+    top_onetop5.className='top_onetop';
+    top_onetitle1.className='top_onetitlen';
+    top_onetitle2.className='top_onetitle';
+    top_onetitle3.className='top_onetitle';
+    top_onetitle4.className='top_onetitle';
+    top_onetitle5.className='top_onetitle';
+    top_onetxt1.className='top_onetxtn';
+    top_onetxt2.className='top_onetxt';
+    top_onetxt3.className='top_onetxt';
+    top_onetxt4.className='top_onetxt';
+    top_onetxt5.className='top_onetxt';
+}
+top_onetop2.onclick=function(){
+    top_onetop1.className='top_onetop';
+    top_onetop2.className='top_onetopn';
+    top_onetop3.className='top_onetop';
+    top_onetop4.className='top_onetop';
+    top_onetop5.className='top_onetop';
+    top_onetitle1.className='top_onetitle';
+    top_onetitle2.className='top_onetitlen';
+    top_onetitle3.className='top_onetitle';
+    top_onetitle4.className='top_onetitle';
+    top_onetitle5.className='top_onetitle';
+    top_onetxt1.className='top_onetxt';
+    top_onetxt2.className='top_onetxtn';
+    top_onetxt3.className='top_onetxt';
+    top_onetxt4.className='top_onetxt';
+    top_onetxt5.className='top_onetxt';
+}
+top_onetop3.onclick=function(){
+    top_onetop1.className='top_onetop';
+    top_onetop2.className='top_onetop';
+    top_onetop3.className='top_onetopn';
+    top_onetop4.className='top_onetop';
+    top_onetop5.className='top_onetop';
+    top_onetitle1.className='top_onetitle';
+    top_onetitle2.className='top_onetitle';
+    top_onetitle3.className='top_onetitlen';
+    top_onetitle4.className='top_onetitle';
+    top_onetitle5.className='top_onetitle';
+    top_onetxt1.className='top_onetxt';
+    top_onetxt2.className='top_onetxt';
+    top_onetxt3.className='top_onetxtn';
+    top_onetxt4.className='top_onetxt';
+    top_onetxt5.className='top_onetxt';
+}
+top_onetop4.onclick=function(){
+    top_onetop1.className='top_onetop';
+    top_onetop2.className='top_onetop';
+    top_onetop3.className='top_onetop';
+    top_onetop4.className='top_onetopn';
+    top_onetop5.className='top_onetop';
+    top_onetitle1.className='top_onetitle';
+    top_onetitle2.className='top_onetitle';
+    top_onetitle3.className='top_onetitle';
+    top_onetitle4.className='top_onetitlen';
+    top_onetitle5.className='top_onetitle';
+    top_onetxt1.className='top_onetxt';
+    top_onetxt2.className='top_onetxt';
+    top_onetxt3.className='top_onetxt';
+    top_onetxt4.className='top_onetxtn';
+    top_onetxt5.className='top_onetxt';
+}
+top_onetop5.onclick=function(){
+    top_onetop1.className='top_onetop';
+    top_onetop2.className='top_onetop';
+    top_onetop3.className='top_onetop';
+    top_onetop4.className='top_onetop';
+    top_onetop5.className='top_onetopn';
+    top_onetitle1.className='top_onetitle';
+    top_onetitle2.className='top_onetitle';
+    top_onetitle3.className='top_onetitle';
+    top_onetitle4.className='top_onetitle';
+    top_onetitle5.className='top_onetitlen';
+    top_onetxt1.className='top_onetxt';
+    top_onetxt2.className='top_onetxt';
+    top_onetxt3.className='top_onetxt';
+    top_onetxt4.className='top_onetxt';
+    top_onetxt5.className='top_onetxtn';
+}
+//你应该知道的事情
+var kleft_one=document.getElementById('kleft_one');
+var kleft_two=document.getElementById('kleft_two');
+var kleft_three=document.getElementById('kleft_three');
+var kleft_four=document.getElementById('kleft_four');
+kleft_one.onclick=function(){
+    kleft_one.className='kleft_one';
+    kleft_two.className='kleft_two';
+    kleft_three.className='kleft_two';
+    kleft_four.className='kleft_two';
+    document.getElementById('kright_one').style.display='block';
+    document.getElementById('kright_two').style.display='none';
+    document.getElementById('kright_three').style.display='none';
+    document.getElementById('kright_four').style.display='none';
+}
+kleft_two.onclick=function(){
+    kleft_one.className='kleft_two';
+    kleft_two.className='kleft_one';
+    kleft_three.className='kleft_two';
+    kleft_four.className='kleft_two';
+    document.getElementById('kright_one').style.display='none';
+    document.getElementById('kright_two').style.display='block';
+    document.getElementById('kright_three').style.display='none';
+    document.getElementById('kright_four').style.display='none';
+}
+kleft_three.onclick=function(){
+    kleft_one.className='kleft_two';
+    kleft_two.className='kleft_two';
+    kleft_three.className='kleft_one';
+    kleft_four.className='kleft_two';
+    document.getElementById('kright_one').style.display='none';
+    document.getElementById('kright_two').style.display='none';
+    document.getElementById('kright_three').style.display='block';
+    document.getElementById('kright_four').style.display='none';
+}
+kleft_four.onclick=function(){
+    kleft_one.className='kleft_two';
+    kleft_two.className='kleft_two';
+    kleft_three.className='kleft_two';
+    kleft_four.className='kleft_one';
+    document.getElementById('kright_one').style.display='none';
+    document.getElementById('kright_two').style.display='none';
+    document.getElementById('kright_three').style.display='none';
+    document.getElementById('kright_four').style.display='block';
+}
 }
