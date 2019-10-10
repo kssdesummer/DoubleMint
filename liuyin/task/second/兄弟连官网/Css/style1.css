@@ -951,27 +951,19 @@ margin-bottom: 39px;
 .serve_banner nav:last-child{
     margin-left: 39px;
 }
-
 /* 具备交付能力的程序员 */
 .pay{
     width: 100%;  
-    /* border: 1px solid red; */
+    border: 1px solid red;
     margin-top: 18px;
     height: 800px;
-}
-.paybody{
-    width: 1400px;
-    height: 602px;
-    /* overflow: hidden; */
-    position: relative;
-    z-index: 4;
-    float: left;
 }
 .pay1{
     background-image: url("../images/ability/bg1.png");
     background-size: 1400px 602px;
     height: 602px;
     width: 1400px;
+    overflow: hidden;
     position: relative;
     z-index: 2;
 }
@@ -988,9 +980,7 @@ margin-bottom: 39px;
     background-image: url("../images/ability/bg2.png");
     background-size: 1400px 619px;
     height: 619px;
-    margin-top: -378px;
-    position: relative;
-    z-index: 3;
+    margin-top: -480px;
 }
 .pay_top{
     width: 465px;
@@ -1018,50 +1008,15 @@ margin-bottom: 39px;
     margin: 0 auto;
     margin-top: 40px;   
 }
+
 .top_one{
     width: 200px;
-    float: left;
-    margin-right: 21px;
-    margin-left: 145px;
-    margin-top: 48px;
-}
-.top_two{
-    width: 200px;
-    float: left;
-    margin-right: 21px;
-    margin-top: 24px;
-}
-.top_three{
-    width: 200px;
-    float: left;
-    margin-right: 21px;
-}
-.top_four{
-    width: 200px;
-    float: left;
-    margin-right: 21px;
-    margin-top: -48px;
-}
-.top_five{
-    width: 200px;
-    float: left;
-    margin-right: 21px;
-    margin-top: -72px;
 }
 .top_onetop{
     width: 113px;
     height: 113px;
     border-radius: 50%;
     border: 1px solid #00d2cc;
-    margin-left: 43px;
-    cursor: pointer;
-}
-.top_onetopn{
-    width: 113px;
-    height: 113px;
-    border-radius: 50%;
-    margin-left: 43px;
-    cursor: pointer;
 }
 .top_onetop img{
     width: 79px;
@@ -1069,7 +1024,7 @@ margin-bottom: 39px;
     margin: 50% auto;
     margin-top: 26px;
 }
- .top_oneshadow{
+.top_one .top_oneshadow{
     width: 100px;
     height:1px;
     background-color:#f0f8fc; 
@@ -1077,11 +1032,11 @@ margin-bottom: 39px;
     box-shadow: #a8d8e0 6px 8px 9px 3px;
     margin: 0 auto;
 }
-.top_onetitle p:first-child{
-    margin-top: 15px;
+.top_onetitle{
+    margin:0 auto;
 }
 .top_onetitle p{
-    width:200px;
+    width: 113px;
     font-size: 15px;
     line-height: 30px;
     color: #0e0846;
@@ -1089,50 +1044,17 @@ margin-bottom: 39px;
     font-weight: 500;
     text-align: center;
 }
-
-.top_onetitlen p:first-child{
-    margin-top: 15px;
-}
-.top_onetitlen p{
-    width:200px;
-    font-size: 15px;
-    line-height: 30px;
-    color: #00d2cc;
-    font-family: "Source Han Sans CN";
-    font-weight: 500;
-    text-align: center;
-}
-
 .top_onetxt{
     width: 200px;
     height: 180px;
     box-shadow: 0px 3px 10px rgba(22,136,201,0.1);
     background-color: #ffffff;
 }
-.top_onetxtn{
-    width: 200px;
-    height: 227px;
-    box-shadow: 0px 3px 10px rgba(22,136,201,0.1);
-    background-color: #f5feff;
-}
 .top_onetxt div{
     width: 158px;
     margin: 0 auto;
 }
-.top_onetxtn div{
-    width: 158px;
-    margin: 0 auto;
-}
 .top_onetxt div p:first-child{
-    font-size: 14px;
-    line-height: 21px;
-    color: #0e0846;
-    font-family: "Source Han Sans CN";
-    font-weight: bold;
-    text-align: left;   
-    margin-top: 8px;
-}
-.top_onetxtn div p:first-child{
     font-size: 14px;
     line-height: 21px;
     color: #0e0846;
@@ -1147,280 +1069,14 @@ margin-bottom: 39px;
     font-family: "Source Han Sans CN";
     text-align: left;   
 }
-.top_onetxtn div p:last-child{
-    font-size: 12px;
-    color: #0e0846;
-    font-family: "Source Han Sans CN";
-    text-align: left;   
-}
-.pay_footer{
-    position: relative;
-    top: -168px; 
-    z-index: 4;
-}
-/* 六大语言学科融会贯通 */
+
+
+
+
+
 .language{
     width: 1400px;
-    height: 852px;
-    background-color: #090d43;
-    margin-top: -45px;
-    position: relative;
-    overflow: hidden;
-}
-.lan_top{
-    width: 544px;
-    height: 42px;
-    margin: 0 auto;
-    background-image: url("../images/language/bg2.png");
-    background-size: 544px 42px;
-    margin-top:102px;
-}
-.lan_top > p{
-    width: 428px;
-    font-size: 28px;
-    color: #00fffa;
-    font-family: "Source Han Sans CN";
-    font-weight: bold;
-    margin: 0 auto;
-}
-.lan_six{
-    width: 816px;
-    margin: 0 auto;
-    margin-top: 56px;
-    overflow: hidden;
-}
-.lan_six > div{
-    width: 272px;
-    height: 197px;
-    color: #fff;
-    float: left;
-    cursor: pointer;
-}
-.lan_six div:hover{
-    background-color: #191259;
-}
-.lan_six >  div img{
-    width: 123px;
-    height:155px;
-    margin: 22px auto;
-    cursor: pointer;
-}
-.lan_footer{
-    margin-top: 16px;
-}
-/* 你应该知道的事 */
-.know{
-    width: 1400px;
-    background:#090d43;
-    margin-top: -217px;
-    position: relative;
-    z-index: 0;
-}
-.know_top{
-    width: 361px;
-    height: 42px;
-    margin: 0 auto;
-    background-image: url("../images/coop/bg.png");
-    background-size: 361px 42px;
-    margin-top:102px;
-    font-size: 28px;
-    color: #00fffa;
-    font-family: "Source Han Sans CN";
-    font-weight: bold;
-} 
- .know_top p{
-    width:224px;
-    font-size: 28px;
-    color: #00fffa;
-    font-family: "Source Han Sans CN";
-    font-weight: bold;
-    margin: 0 auto;
-}
-.know_body{
-    width: 877px;
-    overflow: hidden;
-    margin:0 auto;
-    margin-top: 36px;
-}
-.know_left{
-    width: 315px;
-    height: 285px;
-    float: left;
-    margin-top: 6px;
-}
-
-.kleft_one{
-    margin-bottom: 28px;
-    width: 314px;
-    height: 48px;
-    overflow: hidden;
-    line-height: 48px;
-    border-radius: 7px;
-    background-color: #13d2cc;  
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    cursor: pointer;
-    position: relative;
-}
-.kleft_one > p{
-    height: 48px;
-    line-height: 48px;
-    font-size: 14px;
-    color: #fefeff;
-    font-family: "Source Han Sans CN";
-    font-weight: 500;
-}
-.kleft_one > div{
-    width: 27px;
-    height: 27px;
-    line-height: 27px;
-    border-radius: 50%;
-    background-color: #ffffff;
-    font-size: 17px;
-    color: #13d2cc;
-    font-family: "Source Han Sans CN";
-    font-weight: 500;
-    margin-top: 11px;
-    margin-left: 54px;
-    margin-right: 14px;
-}
-.kleft_one > img{
-    width: 32px;
-    height: 7px;
-    position: absolute;
-    top: 34px;
-    right: 10px;
-}
-.kleft_two{
-    width: 277px;
-    height: 46px;
-    line-height:46px;
-    border-radius: 7px;
-    border: 1px solid #13d2cc;
-    margin-bottom: 28px;
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    cursor: pointer;
-}
-.kleft_two > p{
-    height: 48px;
-    line-height: 48px;
-    font-size: 14px;
-    color: #13d2cc;
-    font-family: "Source Han Sans CN";
-    font-weight: 500;
-}
-.kleft_two > div{
-    width: 27px;
-    height: 27px;
-    line-height: 27px;
-    border-radius: 17px;
-    background-color: #13d2cc;
-    font-size: 17px;
-    color: #0e0846;
-    font-family: "Source Han Sans CN";
-    font-weight: 500;
-    margin-top: 11px;
-    margin-left: 39px;
-    margin-right: 14px;
-}
-.kleft_two img{
-    display: none;
-}
-.know_right{
-    width: 534px;
-    height: 285px;
-    float:right;
-    border-radius: 7px;
-    background-color: #191259;
-    border: 1px solid rgba(19,210,204,0.4);
-}
-#kright_one{
-    text-align: left;
-    width: 476px;
-    height: 125px;
-    margin: 0 auto;
-    margin-top: 39px;
-}
-.kright_ul{
-    list-style:disc;
-    font-size: 12px;
-    line-height: 26px;
-    color: #ffffff;
-    font-family: "Source Han Sans CN";
-}
-.kright_ul  li{
-    margin-bottom: 10px;
-}
-#kright_two{
-    text-align: left;
-    width: 476px;
-    height: 125px;
-    margin: 0 auto;
-    margin-top: 39px;
-    display: none;
-}
-#kright_three{
-    text-align: left;
-    width: 476px;
-    height: 125px;
-    margin: 0 auto;
-    margin-top: 39px;
-    display: none;
-}
-#kright_four{
-    text-align: left;
-    width: 476px;
-    height: 125px;
-    margin: 0 auto;
-    margin-top: 18px;
-    display: none;
-}
-.know_footer{
-    overflow: hidden;
-    margin-top: 22px;
-}
-.know_space{
-    width: 1400px;
-    height: 51px;
-    background:#090d43;
-}
-/* 合作企业 */
-.coop{
-    width: 1400px;
-    height: 448px;
-    background-image: url("../images/coop/bg1.png");
-    background-size: 1400px 448px;
-    background-repeat: no-repeat;
-    margin-top: -2px;
-}
-.coop_top{
-    width: 361px;
-    height: 42px;
-    margin: 0 auto;
-    background-image: url("../images/coop/bg.png");
-    background-size: 361px 42px;
-    font-size: 28px;
-    color: #00fffa;
-    font-family: "Source Han Sans CN";
-    font-weight: bold;
-} 
-.coop_top p{
-    width:252px;
-    font-size: 28px;
-    color: #00fffa;
-    font-family: "Source Han Sans CN";
-    font-weight: bold;
-    margin: 0 auto;
-}
-.cbody_main{
-width: 134px;
-height: 44px;
-}
-.cbody_1{
-    background: url("../images/coop/1.png");
-    background-size: 134px 44px;
-    background-repeat: no-repeat;
+    height: 400px;
+    background-color: red;
+    margin-top: -69;
 }
