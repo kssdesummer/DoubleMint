@@ -13,7 +13,6 @@ window.onload=function(){
     var cirN = 0;                         //当前显示图片的小圆点下标
     var now;
     var then = Date.now();
-
     //将第一个li克隆到末尾实现循环
     ul_img.appendChild(ul_img.children[0].cloneNode(true));
     //创建圆点
@@ -83,7 +82,31 @@ for(var i=0; i<len; i++){
         rollTo();
     }
 }
-//--------------------------------------------------
+// work
+var work_rec=document.getElementById('work_rec');
+var b=work_rec.childNodes;
+var more_1=document.getElementById('more_1');
+var more_2=document.getElementById('more_2');
+var more_3=document.getElementById('more_3');
+more_1.onclick=function(){setDisplay(more_1);}
+more_2.onclick=function(){setDisplay(more_2);}
+more_3.onclick=function(){setDisplay(more_3);}
+function setDisplay(a){
+    var parent=a.parentNode;
+    for(var i=0 ;i<b.length-1;i++){
+        var s=i%2;
+        if(parent==work_rec.children[i+1]){
+            work_rec.children[i].style.display='block';
+            work_rec.children[i+1].style.display='none';
+            i++;
+        }else if(s==0){
+            work_rec.children[i].style.display='none';
+        }else{
+            work_rec.children[i].style.display='block';
+        }
+    }
+}   
+
 // IT行业就业/ 职场痛点
 var button_left=document.getElementById("button_left");
 var button_right=document.getElementById("button_right");
@@ -152,20 +175,17 @@ var top_onetxt4=document.getElementById('top_onetxt4');
 var top_onetxt5=document.getElementById('top_onetxt5');
 top_onetop1.onclick=function(){
     top_onetop1.className='top_onetopn';
-    top_onetop2.className='top_onetop';
-    top_onetop3.className='top_onetop';
-    top_onetop4.className='top_onetop';
-    top_onetop5.className='top_onetop';
-    top_onetitle1.className='top_onetitlen';
-    top_onetitle2.className='top_onetitle';
-    top_onetitle3.className='top_onetitle';
-    top_onetitle4.className='top_onetitle';
-    top_onetitle5.className='top_onetitle';
-    top_onetxt1.className='top_onetxtn';
-    top_onetxt2.className='top_onetxt';
-    top_onetxt3.className='top_onetxt';
-    top_onetxt4.className='top_onetxt';
-    top_onetxt5.className='top_onetxt';
+}
+function setOnetop(this){
+    var parent=this.parentNode;
+    var node=document.getElementById("paybody");
+    var nodes=node.childNodes;
+    for(var i=2;i<nodes.length-1;i++){
+        if(parent==nodes[i]){
+            
+        }
+    }
+
 }
 top_onetop2.onclick=function(){
     top_onetop1.className='top_onetop';
