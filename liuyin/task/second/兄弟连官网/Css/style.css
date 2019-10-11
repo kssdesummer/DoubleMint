@@ -15,7 +15,8 @@ ul{
     header{
         background: #2b2b2b;
         width: 1400px;
-        height: 48px;
+        height: 44px;
+        overflow: hidden;
     }
     .nav{
         overflow: hidden;
@@ -23,33 +24,35 @@ ul{
 
 .nav_left{
     float: left;
-    margin-left: 99px;
-    width: 100px;
-    height: 48px;
-    line-height: 48px;
+    width: 70px;
+    height: 26px;
+    line-height: 26px;
+    margin: 50% auto;
+    margin-top:13px;
+    margin-left: 262px;
 }
 .nav_left img{
-    width: 100px;
+    width: 70px;
     height: 26px;
 }
 
 .nav_right{
     float: right;
-    width: 576px;
-    margin-right: 99px;
-    height: 48px;
+    width: 445px;
     text-align: center;
     line-height: 48px;
     overflow: hidden; 
+    margin-right: 263px;
 }
 .nav_right ul li{
     float: left;
 }
 .nav_right ul li a{
-    color:#fff; 
+    font-size: 12px;
+    color: #a1a1a1;
+    font-family: "Source Han Sans CN";
     text-decoration: none;
-    font:16px PingFangSC-Regular,sans-serif;
-    margin-left: 26px;
+    margin-left: 22px;
 }
 .nav_right ul li a:hover{
     color:#00c0a9;
@@ -117,269 +120,268 @@ ul{
 /* work */
 .work_point{
     width: 1400px;
-    height: 1006px;
+    height: 733px;
     background: url("../images/work/work_bg1.png");
-    background-size: 1400px 1006px;
+    background-size: 1400px 733px;
+    background-repeat: no-repeat;
     overflow: hidden;
     position: relative;
 }
 .work_top{
-    width:520px;
-    height: 54px;
+    width:379px;
+    height: 39px;
     color:#00fffa;
     font-family: "Source Han Sans CN";
-    font-size: 38px;
+    font-size: 28px;
     font-weight: bold;
     background: url("../images/work/work_bg3.png");
+    background-size: 379px 39px;
     background-repeat: no-repeat;
-    margin:70px auto;
+    margin:51px auto;
 }
 .work_button{
-    margin-top: 60px;
+    margin-top: 44px;
 }
 .button_left{
     display: inline-block;
-    width:260px;
-    line-height: 65px;
+    width:190px;
+    height:47px;
+    line-height: 47px;
     background: url("../images/work/button.png");
+    background-size: 190px 47px;
     color: white;
     cursor: pointer;
-    font-size: 28px;
+    font-size: 20px;
     color: #ffffff;
     font-family: "Source Han Sans CN";
 }
 .button_right{
     display: inline-block;
-    margin-left: 196px;
-    width:260px;
-    height: 65px;
-    line-height: 65px;
+    margin-left: 143px;
+    width:190px;
+    height:47px;
+    line-height: 47px;
     background: url("../images/work/button1.png");
-    font-size: 28px;
+    background-size: 190px 47px;
+    font-size: 20px;
     color: #82819f;
     font-family: "Source Han Sans CN";
     cursor: pointer;
 }
 .work_body1{
-    padding: 40px;
-    width: 1121px;
-    height: 501px;
-    border: 1px solid #205c83;
-    border-radius: 8px;
-    margin:50px auto;
+    padding: 29px;
+    width: 818px;
+    height: 384px;
+    border: 1px solid #5af9ff;
+    border-radius: 6px;
+    margin:36px auto;
     color: #ffffff;
+    background-color: #130854;
 }
 .top_1 p{
     float: left;
     display: block;
-    font-size: 18px;
+    font-size: 13px;
     color: #ffffff;
     font-family: "Source Han Sans CN";
 }
 .work_body1 article{
     float: left;
     text-align: left;
-    margin-top: 25px;
+    margin-top: 18px;
     display: block;
     color: white;
-    font-size: 15px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 17px;
     color: #ffffff;
     font-family: "Source Han Sans CN";
 }
 .work_rec{
-    display: inline-flex;
+    width: 843px;
+    overflow: hidden;
 }
-.rec_1{
-    border-bottom:5px solid #00fffa;
-}
-.rec_2 , .rec_3{
-    border-top: 6px solid #00fffa;
+.rec_10,.rec_20,.rec_30{
+    border-bottom:4px solid #00fffa;
 }
 .rec_1 , .rec_2 , .rec_3{
-    width: 347px;
-    height: 356px;
-    margin-top: 35px;
-    text-align: center;
-    background-color: #f3fdff;
+    border-top: 4px solid #00fffa;
 }
-.rec_1 p:first-child{
+.rec_1 , .rec_2 , .rec_3,.rec_10 ,.rec_20,.rec_30{
+    float: left;
+    margin-right: 28px;
+}
+.rec_10,.rec_20,.rec_30{
+    display: none;
+}
+
+.rec_1 , .rec_2 , .rec_3{
+    width: 253px;
+    height: 278px;  
+    margin-top: 25px;
+    text-align: center;
+    background-color: #fff;
+}
+.rec_10 ,.rec_20,.rec_30{
+    width: 253px;
+    height: 278px;  
+    margin-top: 25px;
+    text-align: center;
+    background-color: #f4fdff;
+}
+.rec_p11{
     width: 100%;
     text-align:center;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 17px;
     color: #070707;
     font-family: "Source Han Sans CN";
     font-weight: bold;
-    margin-top: 38px;
-    margin-bottom: 7px;
+    margin-top: 28px;
+    margin-bottom: 5px;
 }
-.rec_1 p span{
+.rec_p21 span{
     width: 100%;
     text-align: center;
     font-size: 12px;
-    line-height: 24px;
+    line-height: 17px;
     color: #070707;
     font-family: "Source Han Sans CN";
 }
-.rec_1 .div_item{
+.div_item{
     margin: 0 auto;
-    margin-top: 7px;
-    width: 56px;
-    height: 3px;
+    margin-top: 5px;
+    width: 41px;
+    height: 2px;
     background-color: #dbdbdb;
 }
-.rec_1 article{
-    margin-left: 28px;
-    margin-top: 27px;
-    width: 289px;
-    font-size: 14px;
-    line-height: 21px;
+.rec_a11{
+    margin-left: 20px;
+    margin-top: 19px;
+    width: 211px;
+    font-size: 12px;
+    line-height: 15px;
     color: #080808;
     font-family: "Source Han Sans CN";
     text-align: left;
 }
-
-.work_rec div:nth-child(2){
-    margin-left:40px;
-    margin-right: 40px;
-}
 .work2_point{
     position: absolute;
-    top: 486px;
+    top: 355px;
     z-index: -1;
     width: 1400px;
-    height: 1006px;
+    height: 734px;
     background: url("../images/work/work_bg2.png");
-    background-size: 1400px 1006px;
+    background-size: 1400px 734px;
 }
 .risk{
-    width: 115px;
-    height: 116px;
+    width: 84px;
+    height: 84px;
     text-align: center;
-    border: 15px solid #ccc;
+    border: 11px solid #ccc;
     border-radius: 50%;
     overflow: hidden;
     margin:0 auto;
-    margin-top: 35px;
-    cursor: pointer;
+    margin-top: 25px;
 }
 .risk:hover{
     border-color: #00fffa;  
 }
 .risk a img{
-    margin-top: 23px;
+    width: 54px;
+    height: 52px;
+    margin-top: 17px;
 }
-.rec_2 p:nth-child(2){
+.rec_p1{
     width: 100%;
     text-align:center;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 17px;
     color: #070707;
     font-family: "Source Han Sans CN";
     font-weight: bold;
-    margin-top: 39px;   
-    margin-bottom: 7px;
-
-
+    margin-top: 28px;   
+    margin-bottom: 5px;
 }
-.rec_2 p span{
-    margin-top: 27px;   
+.rec_p2  span{
+    margin-top: 20px;   
     width: 100%;
     text-align: center;
     font-weight: normal;
-    margin-top: 7px;   
+    margin-top: 5px;   
     font-size: 12px;
-    line-height: 24px;
+    line-height: 17px;
     color: #070707;
     font-family: "Source Han Sans CN";
 }
 .more{
-    width: 125px;
-    height: 30px;
-    border-radius: 6px;
+    width: 91px;
+    height: 22px;
+    border-radius: 4px;
     background-color: #13d2cc;
-    line-height: 30px;
-    font-size: 14px;
+    line-height: 22px;
+    font-size: 12px;
     color: #ffffff;
     font-family: "Source Han Sans CN";
     font-weight: 500;
     margin: 0 auto;
-    margin-top: 41px;
+    margin-top: 30px;
     cursor: pointer;
 }
-.rec_3 p:nth-child(2){
-    width: 100%;
-    text-align:center;
-    font-size: 20px;
-    line-height: 24px;
-    color: #070707;
-    font-family: "Source Han Sans CN";
-    font-weight: bold;
-    margin-top: 39px;   
-    margin-bottom: 7px;
-
-
-}
-.rec_3 p span{
-    margin-top: 27px;   
-    width: 100%;
-    text-align: center;
-    font-weight: normal;
-    margin-top: 7px;   
-    font-size: 12px;
-    line-height: 24px;
-    color: #070707;
-    font-family: "Source Han Sans CN";
-}
-
  .work_body2{
-    padding: 35px 40px;
-    width: 1121px;
-    height: 582px;
-    border: 1px solid #205c83;
-    border-radius: 8px;
-    margin:50px auto;
+    padding: 25px 29px;
+    width: 818px;
+    height: 425px;
+    background-color: #130854;
+    border: 1px solid #5af9ff;  
+    border-radius: 6px;
+    margin:36px auto;
     color: #ffffff;
     display: none;
 }
 .work_body2 article{
     float: left;
     text-align: left;
-    margin-top: 25px;
+    margin-top: 18px;
     display: block;
     color: white;
-    font-size: 15px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 17px;
     color: #ffffff;
     font-family: "Source Han Sans CN";
 }
-
+.work_rec1{
+    width: 843px;
+    display:inline-flex;
+}
+.work_rec1 div:nth-child(2){
+    margin-left:29px;
+    margin-right: 29px;
+}
 .rec_11{
-    width: 347px;
-    height: 372px;
-    margin-top: 61px;
+    width: 253px;
+    height: 271px;
+    margin-top: 44px;
     text-align: center;
     background-color: #013db2;
 }
 .rec_22{
-    width: 348px;
-    height: 446px;
-    margin-top: 21px;
+    width: 254px;
+    height: 345px;
+    margin-top: 15px;
     text-align: center;
     background-color: #008581;
 }
 .rec_33{
-    width: 347px;
-    height: 372px;
-    margin-top: 61px;
+    width: 253px;
+    height: 284px;
+    margin-top: 44px;
     text-align: center;
     background-color: #462eb2;
 }
 .rec_top11{
     position: relative;
-    width: 347px;
-    height: 127px;
+    width: 253px;
+    height: 93px;
     background-color: #006bd7;
     overflow: hidden;
 }
@@ -388,41 +390,41 @@ ul{
     right: 0px;
     width: 0;
     height: 0;
-    border-top: 55px solid #fff;
-    border-left: 57px solid transparent;
+    border-top: 40px solid #fff;
+    border-left: 41px solid transparent;
 }
 .rec_top11 p{
     margin: 0 auto;
-    margin-top: 38px;
-    width: 268px;
-    font-size: 20px;
+    margin-top: 27px;
+    width: 196px;
+    font-size: 14px;
     text-align: center;
-    line-height: 32px;
+    line-height: 23px;
     color: #ffffff;
     font-family: "Source Han Sans CN";
     font-weight: bold;
 }
 .rec_tri div {
-    font-size: 24px;
-    line-height: 21px;
+    font-size: 17px;
+    line-height: 15px;
     color: #10084b;
     font-family: "Source Han Sans CN";
     font-weight: 500;
     position: absolute;
-    top: -48px;
-    left: -19px;
+    top: -35px;
+    left: -13px;
 }
 .rec_bottom11{
-    width: 266px;
-    height: 254px;
+    width: 194px;
+    height: 185px;
     margin:0 auto;
-    margin-top: 42px;
+    margin-top: 30px;
 }
 .rec_bottom11 p{
-    width: 276px;
-    height: 322px;
-    font-size: 14px;
-    line-height: 28px;
+    width: 210px;
+    height: 235px;
+    font-size: 12px;
+    line-height: 20px;
     color: #ffffff;
     font-family: "Source Han Sans CN";
     text-align: left;
@@ -430,37 +432,37 @@ ul{
 
 .rec_top22{
     position: relative;
-    width: 348px;
-    height: 139px;
+    width: 254px;
+    height: 101px;
     background-color: #00d2cc;
     overflow: hidden;
 }
 .rec_top22 p{
     margin: 0 auto;
-    margin-top: 44px;
-    width: 168px;
-    font-size: 20px;
-    line-height: 32px;
+    margin-top: 32px;
+    width: 123px;
+    font-size: 14px;
+    line-height: 23px;
     color: #ffffff;
     font-family: "Source Han Sans CN";
     font-weight: bold;
     }
 .rec_tri div {
-    font-size: 24px;
-    line-height: 21px;
+    font-size: 17px;
+    line-height: 15px;
     color: #10084b;
     font-family: "Source Han Sans CN";
     font-weight: 500;
     position: absolute;
-    top: -48px;
-    left: -19px;
+    top: -35px;
+    left: -14px;
 }
 .rec_bottom22 p{
-    margin-top: 33px;
-    width: 285px;
-    height: 322px;
-    font-size: 14px;
-    line-height: 28px;
+    margin-top: 24px;
+    width: 208px;
+    height: 235px;
+    font-size: 12px;
+    line-height: 20px;
     color: #ffffff;
     font-family: "Source Han Sans CN";
     text-align: left;
@@ -468,29 +470,30 @@ ul{
 
 .rec_top33{
     position: relative;
-    width: 347px;
-    height: 127px;
+    width: 253px;
+    height: 93px;
     background-color: #7b45fa;
     overflow: hidden;
 }
 .rec_top33 p{
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 14px;
+    line-height: 20px;
     color: #ffffff;
     font-family: "Source Han Sans CN";
     font-weight: bold;
-    margin-top: 53px;
+    margin-top: 38px;
 }
 .rec_bottom33{
-    width: 285px;
-    height: 322px;
-    font-size: 14px;
-    line-height: 28px;
+    width: 208px;
+    height: 235px;
+    font-size: 12px;
+    line-height: 20px;
     color: #ffffff;
     font-family: "Source Han Sans CN";
     text-align: left;
-    margin-top: 42px;
+    margin-top: 31px;
 }
+/* 破冰者 */
 .it_ice{    
     background-color: white;
     width: 1400px;
@@ -683,13 +686,22 @@ ul{
     height:26px;
     line-height: 26px;
     font-size: 12px;
-    color: #ffffff;
     font-family: "Source Han Sans CN";
     font-weight: 500;
     border-radius: 12px;
     margin-left: 53px;
     margin-top: 46px;
+    border: 1px solid #00ffff; 
+    color: #13d2cc;
+    cursor: pointer;
+}
+.ice_rbottom:hover{
     background-color: #13d2cc;
+    color: #ffffff;
+}
+.ice_rbottom1:hover{
+    background-color: #13d2cc;
+    color: #ffffff;
 }
 .ice_rbottom1{
     width: 232px;
@@ -703,6 +715,7 @@ ul{
     color: #13d2cc;
     font-family: "Source Han Sans CN";
     font-weight: 500;
+    cursor: pointer;
 }
 .ice_rtop1 p{
     width: 384px;
@@ -729,13 +742,22 @@ ul{
     height:26px;
     line-height: 26px;
     font-size: 12px;
-    color: #ffffff;
+    color: #13d2cc;
     font-family: "Source Han Sans CN";
     font-weight: 500;
     border-radius: 12px;
     margin-left: 53px;
     margin-top: 4px;
+    border: 1px solid #00ffff; 
+    cursor: pointer;
+}
+.ice_rbottom2:hover{
     background-color: #13d2cc;
+    color: #ffffff;
+}
+.ice_rbottom12:hover{
+    background-color: #13d2cc;
+    color: #ffffff;
 }
 .ice_rbottom12{
     width: 232px;
@@ -749,6 +771,7 @@ ul{
     color: #13d2cc;
     font-family: "Source Han Sans CN";
     font-weight: 500;
+    cursor: pointer;
 }
 
 /* 全方位服务你的学习 */
@@ -1415,12 +1438,173 @@ margin-bottom: 39px;
     font-weight: bold;
     margin: 0 auto;
 }
+.coop_body{
+    width: 909px;
+    height: 192px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 69px;
+}
 .cbody_main{
 width: 134px;
 height: 44px;
+margin-left: 15px;
+margin-top: 15px;
 }
 .cbody_1{
     background: url("../images/coop/1.png");
     background-size: 134px 44px;
     background-repeat: no-repeat;
+    float: left;
+}
+.cbody_2{
+    background: url("../images/coop/2.png");
+    background-size: 134px 44px;
+    background-repeat: no-repeat;
+    float: left;
+}
+.cbody_3{
+    background: url("../images/coop/3.png");
+    background-size: 134px 44px;
+    background-repeat: no-repeat;
+    float: left;
+}
+.cbody_4{
+    background: url("../images/coop/4.png");
+    background-size: 134px 44px;
+    background-repeat: no-repeat;
+    float: left;
+}
+.cbody_5{
+    background: url("../images/coop/5.png");
+    background-size: 134px 44px;
+    background-repeat: no-repeat;
+    float: left;
+}
+.cbody_6{
+    background: url("../images/coop/6.png");
+    background-size: 134px 44px;
+    background-repeat: no-repeat;
+    float: left;
+}
+.coop_footer1{
+    font-size: 12px;
+    color: #cbcbcb;
+    font-family: "Source Han Sans CN";
+    margin-top: 52px;
+}
+.coop_footer2{
+    width: 1400px;
+    height:85px;
+    line-height: 85px;
+    background-image: url("../images/coop/bg2.png");
+    background-repeat: no-repeat;
+    background-size:1400px 85px;
+    margin-top:64px;
+}
+.coop_footer2 p{
+    font-size: 12px;
+    color: #00c1de;
+    font-family: "Source Han Sans CN";
+}
+/* 底部导航 */
+.footer1{
+    margin-top: 64px;
+    width: 1400px;
+    height: 220px;
+    background-color: #363d41;
+    overflow: hidden;
+}
+.footer2{
+width: 1400px;
+height: 28px;
+line-height: 28px;
+background-color: #282d30;
+font-size: 12px;
+color: #8b8b8b;
+font-family: "Source Han Sans CN";
+}
+.footer_logo{
+    float: left;
+    width: 129px;
+    height: 112px;
+    margin-top: 37px;
+    overflow: hidden;
+    margin-left: 282px;
+    margin-right: 25px;
+}
+.footer_logo p:first-child{
+    margin-top: 13px;
+}
+.footer_logo p:nth-child(2){
+    font-size: 14px;
+    color: #13d2cc;
+    font-family: "Source Han Sans CN";
+    text-align: center;
+    margin-top: 17px;
+}
+.footer_logo p:last-child{
+    font-size: 12px;
+    color: #8b8b8b;
+    font-family: "Source Han Sans CN";
+}
+.footer_logo img{
+    width: 129px;
+    height: 31px;
+}
+.footer_nav{
+    width: 1px;
+    height: 140px;
+    background-color: #525252;
+    float: left;
+    margin-top: 39px;
+}
+.footer_txt1{
+    float: left;
+    margin-left: 39px;
+    margin-top: 36px;
+    overflow: hidden;
+    text-align: left;
+}
+.footer_txt1 p:first-child{
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+    font-family: "Source Han Sans CN";
+    margin-bottom: 16px;
+    margin-top: 0px;
+}
+.footer_txt1 p{
+    font-size: 12px;
+    color: #8b8b8b;
+    font-family: "Source Han Sans CN";
+    margin-top: 8px;
+}
+.footer_nav2{
+    width: 1px;
+    height: 140px;
+    background-color: #525252;
+    float: left;
+    margin-top: 39px;
+    margin-left: 34px;
+    margin-right: 41px;
+}
+.footer_wb{
+    width: 96px;
+    height: 96px;
+    background-image: url("../images/footer/wb.png");
+    background-size: 96px 96px;
+    background-repeat: no-repeat;
+    float: left;
+    margin-top: 45px;
+}
+.footer_wx{
+    width: 96px;
+    height: 96px;
+    background-image: url("../images/footer/wx.png");
+    background-size: 96px 96px;
+    background-repeat: no-repeat;
+    float: left;
+    margin-top: 45px;
+    margin-left: 36px;
 }
