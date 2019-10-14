@@ -10,21 +10,23 @@
 <body>
     <header>
         <!-- 导航 -->
-        <dev class="nav">
-            <div class="nav_left">
-                <a href="#"><img src="./images/logo.png" alt="logo""></a>
-            </div>
-            <dev class="nav_right">
-                <ul>
-                    <li><a href="#">学科概述</a></li>
-                    <li><a href="#">职业前景</a></li>
-                    <li><a href="#">培养体系</a></li>
-                    <li><a href="#">项目采访</a></li>
-                    <li><a href="#">免费资源获取</a></li>
-                    <li><a href="#">在线咨询</a></li>
-                </ul>
+        <div class="navi">
+            <dev class="nav">
+                <div class="nav_left">
+                    <a href="javascript:void(0)"><img src="./images/logo.png" alt="logo""></a>
+                </div>
+                <dev class="nav_right">
+                    <ul>
+                        <li><a target="_blank" href="javascript:void(0);" onclick="ydtopenchat();return false;">学科概述</a></li>
+                        <li><a target="_blank" href="javascript:void(0);" onclick="ydtopenchat();return false;">职业前景</a></li>
+                        <li><a target="_blank" href="javascript:void(0);" onclick="ydtopenchat();return false;">培养体系</a></li>
+                        <li><a target="_blank"  href="javascript:void(0);" onclick="ydtopenchat();return false;">项目采访</a></li>
+                        <li><a target="_blank" href="javascript:void(0);" onclick="ydtopenchat();return false;">免费资源获取</a></li>
+                        <li><a target="_blank" href="javascript:void(0);" onclick="ydtopenchat();return false;">在线咨询</a></li>
+                    </ul>
+                </dev>
             </dev>
-        </dev>
+        </div>
     </header>
 
     <main class="main">
@@ -32,9 +34,9 @@
         <div  id="banner">
             <div id="banner_img">
                 <ul id="ul_img">
-                    <li><img src="./images/banner/1.png" alt=""></li>
-                    <li><img src="./images/banner/2.png" alt=""></li>
-                    <li><img src="./images/banner/3.png" alt=""></li>
+                    <li onclick="ydtopenchat();return false;"><img src="./images/banner/bg1.png" alt=""></li>
+                    <li onclick="ydtopenchat();return false;"><img src="./images/banner/bg2.png" alt=""></li>
+                    <li onclick="ydtopenchat();return false;"><img src="./images/banner/bg3.png" alt=""></li>
                 </ul>
             </div>
             <div id="div3">
@@ -61,35 +63,35 @@
                         <div class="div_item"></div>
                         <p class="rec_a11">在IT行业,招一个刚从众多培训机构刚出来的新人,纯招聘开销是xxx。另外不能做事的新人进入企业后需要培训3个月,一个月培训费用是多少,总培训费用共多少,额外加上新人的这段时间的工资照发费用大概多少,这都是最直接最明显的成本。还有的培养不出来还得放弃,淘汰出局造成的浪费,亦或是为了冗余多招几个进来培养,可见招新人的公司的成本真的是高的离谱。</p>
                     </div>
-                    <div class="rec_1">
-                        <div class="risk"><a><img src="./images/work/comer.jpg" alt=""></a></div>
+                    <div class="rec_1" id="rec_1">
+                        <div class="risk" id="risk_1"><img src="./images/work/comer.jpg" alt=""></div>
                         <p class="rec_p1">新人培养成本高</p>
                         <p class="rec_p2"><span>Newcomer training costs are high</span></p>
-                        <div class="more" id="more_1">了解详情</div>
+                        <div class="more" id="more_1" onclick="ydtopenchat();return false;">了解详情</div>
                     </div>
-                    <div class="rec_20">
+                    <div class="rec_20" id="rec_20">
                         <p class="rec_p11">能力定级困难项目风险大</p>
                         <p class="rec_p21"><span>Newcomer training costs are high</span></p>
                         <div class="div_item"></div>
                         <p class="rec_a11">在IT行业,招一个刚从众多培训机构刚出来的新人,纯招聘开销是xxx。另外不能做事的新人进入企业后需要培训3个月,一个月培训费用是多少,总培训费用共多少,额外加上新人的这段时间的工资照发费用大概多少,这都是最直接最明显的成本。还有的培养不出来还得放弃,淘汰出局造成的浪费,亦或是为了冗余多招几个进来培养,可见招新人的公司的成本真的是高的离谱。</p>
                     </div> 
-                    <div class="rec_2">
-                        <div class="risk"><a><img src="./images/work/ability.jpg" alt=""></a></div>
+                    <div class="rec_2"  id="rec_2">
+                        <div class="risk" id="risk_2"><img src="./images/work/ability.jpg" alt=""></div>
                         <p class="rec_p1">能力定级困难项目风险大</p>
                         <p class="rec_p2"><span>Ability to grade difficult projects is risky</span></p>
-                        <div class="more" id="more_2">了解详情</div>
+                        <div class="more" id="more_2" onclick="ydtopenchat();return false;">了解详情</div>
                     </div>
-                    <div class="rec_30">
+                    <div class="rec_30" id="rec_30">
                         <p class="rec_p11">人员流失率高</p>
                         <p class="rec_p21"><span>Newcomer training costs are high</span></p>
                         <div class="div_item"></div>
                         <p class="rec_a11">在IT行业,招一个刚从众多培训机构刚出来的新人,纯招聘开销是xxx。另外不能做事的新人进入企业后需要培训3个月,一个月培训费用是多少,总培训费用共多少,额外加上新人的这段时间的工资照发费用大概多少,这都是最直接最明显的成本。还有的培养不出来还得放弃,淘汰出局造成的浪费,亦或是为了冗余多招几个进来培养,可见招新人的公司的成本真的是高的离谱。</p>
                     </div>
-                    <div class="rec_3">
-                        <div class="risk"><a><img src="./images/work/rate.jpg" alt=""></a></div>
+                    <div class="rec_3" id="rec_3">
+                        <div class="risk" id="risk_3"><img src="./images/work/rate.jpg" alt=""></div>
                         <p class="rec_p1">人员流失率高</p>
                         <p class="rec_p2"><span>High turnover rate</span></p>
-                        <div class="more" id="more_3">了解详情</div>
+                        <div class="more" id="more_3" onclick="ydtopenchat();return false;">了解详情</div>
                     </div>
                 </div>
             </div>
@@ -136,7 +138,7 @@
                     </div>
                 </div>
             </div>
-        <div class="work2_point"></div>
+        <div class="work_point2"></div>
         <!-- IT人才供需矛盾的破冰者 -->
         <div class="it_ice">
             <div class="ice_body">
@@ -161,7 +163,7 @@
                                 <div class="dialog_gright" id="dialog_gright">
                                     <div id="gright_onclick">
                                             <p id="p20">解决人才（学员）学习</p>
-                                            <p id="p21">的痛点&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img id="img2" src="./images/black_row.png" alt=""></p>
+                                            <p id="p21">的痛点<img id="img2" src="./images/black_row.png" alt=""></p>
                                     </div> 
                                 </div>
                         </div>
@@ -176,8 +178,8 @@
                                         <li>兄弟会的“产学共建”模式，为我们直接输送可用或中高端人才，无需等待新人成长，人员流失率低。</li>
                                     </ul>
                                 </div>
-                            <div class="ice_rbottom" id="ice_rbottom">了解更多，一键为您解决学习痛点</div>
-                            <div class="ice_rbottom1" id="ice_rbottom1">立即报名，一键为您解决学习痛点</div>
+                            <div class="ice_rbottom" id="ice_rbottom" onclick="ydtopenchat();return false;">了解更多，一键为您解决学习痛点</div>
+                            <div class="ice_rbottom1" id="ice_rbottom1" onclick="ydtopenchat();return false;">立即报名，一键为您解决学习痛点</div>
                         </div>
                         <div class="ice_rdisplay2" id="ice_rdisplay2">
                                 <div class="ice_rtop1">
@@ -191,138 +193,141 @@
                                         <li>兄弟会的学员是有真实项目经验的,我们是“产学共建”模式,企业的真实项目或产品由我们的学员来完成,这种真实体验和感受不是模拟训练题能比得上的。</li>
                                     </ul>
                                 </div>
-                                <div class="ice_rbottom2">了解更多，一键为您解决学习痛点</div>
-                                <div class="ice_rbottom12">立即报名，一键为您解决学习痛点</div>
+                                <div class="ice_rbottom2" onclick="ydtopenchat();return false;">了解更多，一键为您解决学习痛点</div>
+                                <div class="ice_rbottom12" onclick="ydtopenchat();return false;">立即报名，一键为您解决学习痛点</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- 全方位服务你的学习 -->
-        <div class="it_serve">
-            <div class="serve_top"><p>兄弟会·全方位服务你的学习强势对比</p></div>
-            <div class="serve_body">
-                <div class="serve_lbody">
-                    <p>传统IT培训机构</p>
-                    <div class=" top_art">
-                        <p>1、知识教学体系</p>
-                        <p>众多培训机构都是知识点教学，而IT开发属于职业技能培训，强调动手能力。
-                                而知识点式培训培养出来的人不具备真正的项目交付能力，这与企业需求脱轨，
-                                企业还需再次培养。</p>
-                    </div>
-                    <div class="lbody_gray">
-                            <p>2、填鸭式被动学习</p>
-                            <p>众多培训机构都还是填鸭式教学方式，仅仅只是讲师单方面的讲授知识点，学
-                                    员很少有机会跟老师确认自己的理解，这种被动式学习，学习效果可想而知。</p>
-                    </div>
-                    <div >
-                        <p>3、按照学习级别分为基础班+就业班</p>
-                        <p>众多培训机构所谓的因材施教只是按照学生的基础划分成两种班级模式来上课，
-                                这种大的群体划分并不能实现对于个别学员的个性、特性进行针对性的指导，
-                                学得快的学员，会觉得没有激情和动力；学得慢的学员也易失去信心而放弃。</p>
-                    </div >
-                    <div class="lbody_gray">
-                        <p>4、模拟项目演练</p>
-                        <p>众多培训机构所谓的项目经验，只不过是把讲师的模拟项目重复做一遍。<br>
-                                （1）没有对项目的业务理解能力和技术的真正锻炼。<br>
-                                （2）所做项目得不到市场验证，学员也体会不到真实项目或产品的生产过程。<br>
-                                （3）甚至有的学员直接copy讲师的代码，就当作项目经验，请问这样的学员，
-                                企业敢要吗？答案当然是NO！</p>
-                    </div>
-                    <div>
-                        <p>5、几乎无素质培养</p>
-                        <p>众多培训机构没有提供学员锻炼素质的机会。<br>
-                                （1）模拟项目就像考试前老师划重点或提前公布考题一样，学员只需要记着答
-                                案或解题思路即可，无需思考，也很少出问题，导致没有机会锻炼独立思考和
-                                解决问题的能力。<br>
-                                （2）学员体会不到真实项目或产品的生产过程，没有对项目的业务理解能力和
-                                团队协作能力。</p>
-                    </div>
-                    <div class="lbody_gray">
-                        <p>6、谈不上团队协作，优秀者更没有机会锻炼管理能力</p>
-                        <p>众多培训机构的非真实项目经验，根本谈不上团队协作。选出的小组长也只是
-                                简单分配任务，挑战性很低。而真实商业社会需要的各方面的综合素养，这些
-                                培训机构却给不了，只能营造个假需求假的小世界，却“美”得不真实。</p>
-                    </div>
-                    <div class="lbody_end">
-                        <p>7、讲师都是10年以上“教学经验”，不满足职业教育需求</p>
-                        <p>（1）众多培训机构都声称自己的讲师拥有多年经验，他们的讲师不是研究最新
-                                技术有哪些，而是研究某个知识点能否再多细化出3天课，以彰显自己的实力。<br>
-                                （2）大家都知道IT技术更新非常快，当讲师的年数越久就会脱离现实技术和项
-                                目经验时间越长，也就意味着他教的技术已经与实际开发严重脱轨。</p>
-                    </div>
-                </div>
-                <div class="serve_vs"></div>   
-                <div class="serve_rbody">
-                    <div class="rbody_top">兄弟会</div>
-                    <div class="rbody_topy"><div><img src="./images/bottom_row.png" alt=""></div></div>
-                    <div class="rbody_footer">
-                        <div>
-                            <p><span>1</span>&nbsp;<span>真正以职业为导向的人才培养体系</span> </p>
-                            <p>兄弟会培养体系打破了传统讲师讲解知识点，学生被动听的传统方式，而是按
-                                    照企业岗位需求来进行人才培养，通过以任务考核来对职业能力进行定级。<br>
-                                    （1）兄弟会培养的是具备真实交付能力的程序员。对于学员而言，进项目组不
-                                    再心虚，能清楚知道自己能干什么事情，在企业中属于什么级别。对于企业而
-                                    言，不仅节省再次培养等诸多成本而且也用得放心，能力定级风险小。<br>
-                                    （2）对于一种技能培养我们更注重动手能力，而不是知识点的简单告知。</p>
+        <div class="it_servebody">
+            <div class="it_serve">
+                <div class="serve_top"><p>兄弟会·全方位服务你的学习强势对比</p></div>
+                <div class="serve_body">
+                    <div class="serve_lbody">
+                        <p>传统IT培训机构</p>
+                        <div class=" top_art">
+                            <p>1、知识教学体系</p>
+                            <p>众多培训机构都是知识点教学，而IT开发属于职业技能培训，强调动手能力。
+                                    而知识点式培训培养出来的人不具备真正的项目交付能力，这与企业需求脱轨，
+                                    企业还需再次培养。</p>
+                        </div>
+                        <div class="lbody_gray">
+                                <p>2、填鸭式被动学习</p>
+                                <p>众多培训机构都还是填鸭式教学方式，仅仅只是讲师单方面的讲授知识点，学
+                                        员很少有机会跟老师确认自己的理解，这种被动式学习，学习效果可想而知。</p>
+                        </div>
+                        <div >
+                            <p>3、按照学习级别分为基础班+就业班</p>
+                            <p>众多培训机构所谓的因材施教只是按照学生的基础划分成两种班级模式来上课，
+                                    这种大的群体划分并不能实现对于个别学员的个性、特性进行针对性的指导，
+                                    学得快的学员，会觉得没有激情和动力；学得慢的学员也易失去信心而放弃。</p>
+                        </div >
+                        <div class="lbody_gray">
+                            <p>4、模拟项目演练</p>
+                            <p>众多培训机构所谓的项目经验，只不过是把讲师的模拟项目重复做一遍。<br>
+                                    （1）没有对项目的业务理解能力和技术的真正锻炼。<br>
+                                    （2）所做项目得不到市场验证，学员也体会不到真实项目或产品的生产过程。<br>
+                                    （3）甚至有的学员直接copy讲师的代码，就当作项目经验，请问这样的学员，
+                                    企业敢要吗？答案当然是NO！</p>
                         </div>
                         <div>
-                                <p><span>2</span>&nbsp;<span>师徒制互动学习</span> </p>
-                                <p>兄弟会会有专门的教官来指导学生，就像企业里面的老师傅带徒弟的模式。<br>
-                                        （1）按照学员能力来分配任务，通过任务通关来培养学员的技能。<br>
-                                        （2）对学员的任务进行考核，不仅要求把任务真正做出来，还会考核其中的知
-                                        识点、遇到的困难以及开发思路，给予指导与点评并提供多种思路，让学员能开
-                                        拓思维，以确保学员能真正学会，并获取学习能力能持续快速成长。</p>
+                            <p>5、几乎无素质培养</p>
+                            <p>众多培训机构没有提供学员锻炼素质的机会。<br>
+                                    （1）模拟项目就像考试前老师划重点或提前公布考题一样，学员只需要记着答
+                                    案或解题思路即可，无需思考，也很少出问题，导致没有机会锻炼独立思考和
+                                    解决问题的能力。<br>
+                                    （2）学员体会不到真实项目或产品的生产过程，没有对项目的业务理解能力和
+                                    团队协作能力。</p>
                         </div>
-                        <div>
-                                <p><span>3</span>&nbsp;<span>依照学习进度，真正做到因材施教</span> </p>
-                                <p>教官根据学生不同的认知水平、学习能力、自身素质来针对性教学，会对学习
-                                        任务做细化切割，基础好的学习任务颗粒度大，基础弱的学习粒度小。并依据
-                                        学员学习的不同进度调整学习任务，真正做到对个体的因材施教，而不是群体。  </p>
+                        <div class="lbody_gray">
+                            <p>6、谈不上团队协作，优秀者更没有机会锻炼管理能力</p>
+                            <p>众多培训机构的非真实项目经验，根本谈不上团队协作。选出的小组长也只是
+                                    简单分配任务，挑战性很低。而真实商业社会需要的各方面的综合素养，这些
+                                    培训机构却给不了，只能营造个假需求假的小世界，却“美”得不真实。</p>
                         </div>
-                        <div>
-                                <p><span>4</span>&nbsp;<span>真实项目开发经验</span> </p>
-                                <p>兄弟会所倡导的全实战培养体系效果是模拟项目无法企及的。<br>
-                                        （1）完全按照企业能真正运营的交付标准来考核学生。<br>
-                                        （2）学员通过全程参与项目体验工作流程，为走上工作岗位做铺垫。<br>
-                                        （3）学员在学习技术的同时学习了业务，锻炼了主动学习、思维能力等。</p>
-                        </div>
-                        <div>
-                                <p><span>5</span>&nbsp;<span>素质培养，让步入职场的你更快人一步</span> </p>
-                                <p>（1）通过考核制度，培养学员的独立思考和发现问题并解决问题的能力。<br>
-                                        （2）通过分享经验和学习笔记，来提高学员的语言表达能力和沟通能力。<br>
-                                        （3）通过参与真实商业项目，培养学员团队协作能力及业务理解能力，全面
-                                        提高综合素质。</p>
-                        </div>
-                        <div>
-                                <p><span>6</span>&nbsp;<span>培养团队协作经验，优秀者可有机会带团队</span> </p>
-                                <p>只要你够优秀，就有机会胜任真实商业项目的Leader带团队，这可是职场新人
-                                        进入企业几年后才会有的机会，当然我们教官也会知道Leader去管理项目。</p>
-                        </div>
-                        <div>
-                                <p><span>7</span>&nbsp;<span>教官都来源一线“实战经验”的技术经理</span> </p>
-                                <p>兄弟会的教官（老师）均来自一线“实战经验”的技术经理，不仅懂知识，更有
-                                        丰富的项目经验并没有脱离开发。可以给你带来最新的技术去做项目开发。</p>
+                        <div class="lbody_end">
+                            <p>7、讲师都是10年以上“教学经验”，不满足职业教育需求</p>
+                            <p>（1）众多培训机构都声称自己的讲师拥有多年经验，他们的讲师不是研究最新
+                                    技术有哪些，而是研究某个知识点能否再多细化出3天课，以彰显自己的实力。<br>
+                                    （2）大家都知道IT技术更新非常快，当讲师的年数越久就会脱离现实技术和项
+                                    目经验时间越长，也就意味着他教的技术已经与实际开发严重脱轨。</p>
                         </div>
                     </div>
-                </div>
-                <div class="serve_footer">
-                    <div class="top_f"></div>
-                    <div class="top_dot"></div>
-                    <div class="top_w"></div>
-                    <div class="serve_banner">
-                        <nav>了解更多</nav>
-                        <nav>我要报名</nav>
+                    <div class="serve_vs"></div>   
+                    <div class="serve_rbody">
+                        <div class="rbody_top">兄弟会</div>
+                        <div class="rbody_topy"><div><img src="./images/bottom_row.png" alt=""></div></div>
+                        <div class="rbody_footer">
+                            <div>
+                                <p><span>1</span>&nbsp;<span>真正以职业为导向的人才培养体系</span> </p>
+                                <p>兄弟会培养体系打破了传统讲师讲解知识点，学生被动听的传统方式，而是按
+                                        照企业岗位需求来进行人才培养，通过以任务考核来对职业能力进行定级。<br>
+                                        （1）兄弟会培养的是具备真实交付能力的程序员。对于学员而言，进项目组不
+                                        再心虚，能清楚知道自己能干什么事情，在企业中属于什么级别。对于企业而
+                                        言，不仅节省再次培养等诸多成本而且也用得放心，能力定级风险小。<br>
+                                        （2）对于一种技能培养我们更注重动手能力，而不是知识点的简单告知。</p>
+                            </div>
+                            <div>
+                                    <p><span>2</span>&nbsp;<span>师徒制互动学习</span> </p>
+                                    <p>兄弟会会有专门的教官来指导学生，就像企业里面的老师傅带徒弟的模式。<br>
+                                            （1）按照学员能力来分配任务，通过任务通关来培养学员的技能。<br>
+                                            （2）对学员的任务进行考核，不仅要求把任务真正做出来，还会考核其中的知
+                                            识点、遇到的困难以及开发思路，给予指导与点评并提供多种思路，让学员能开
+                                            拓思维，以确保学员能真正学会，并获取学习能力能持续快速成长。</p>
+                            </div>
+                            <div>
+                                    <p><span>3</span>&nbsp;<span>依照学习进度，真正做到因材施教</span> </p>
+                                    <p>教官根据学生不同的认知水平、学习能力、自身素质来针对性教学，会对学习
+                                            任务做细化切割，基础好的学习任务颗粒度大，基础弱的学习粒度小。并依据
+                                            学员学习的不同进度调整学习任务，真正做到对个体的因材施教，而不是群体。  </p>
+                            </div>
+                            <div>
+                                    <p><span>4</span>&nbsp;<span>真实项目开发经验</span> </p>
+                                    <p>兄弟会所倡导的全实战培养体系效果是模拟项目无法企及的。<br>
+                                            （1）完全按照企业能真正运营的交付标准来考核学生。<br>
+                                            （2）学员通过全程参与项目体验工作流程，为走上工作岗位做铺垫。<br>
+                                            （3）学员在学习技术的同时学习了业务，锻炼了主动学习、思维能力等。</p>
+                            </div>
+                            <div>
+                                    <p><span>5</span>&nbsp;<span>素质培养，让步入职场的你更快人一步</span> </p>
+                                    <p>（1）通过考核制度，培养学员的独立思考和发现问题并解决问题的能力。<br>
+                                            （2）通过分享经验和学习笔记，来提高学员的语言表达能力和沟通能力。<br>
+                                            （3）通过参与真实商业项目，培养学员团队协作能力及业务理解能力，全面
+                                            提高综合素质。</p>
+                            </div>
+                            <div>
+                                    <p><span>6</span>&nbsp;<span>培养团队协作经验，优秀者可有机会带团队</span> </p>
+                                    <p>只要你够优秀，就有机会胜任真实商业项目的Leader带团队，这可是职场新人
+                                            进入企业几年后才会有的机会，当然我们教官也会知道Leader去管理项目。</p>
+                            </div>
+                            <div>
+                                    <p><span>7</span>&nbsp;<span>教官都来源一线“实战经验”的技术经理</span> </p>
+                                    <p>兄弟会的教官（老师）均来自一线“实战经验”的技术经理，不仅懂知识，更有
+                                            丰富的项目经验并没有脱离开发。可以给你带来最新的技术去做项目开发。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="serve_footer">
+                        <div class="top_f"></div>
+                        <div class="top_dot"></div>
+                        <div class="top_w"></div>
+                        <div class="serve_banner">
+                            <nav>了解更多</nav>
+                            <nav>我要报名</nav>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="it_servebg"></div>
         </div>
         <!-- 具备交付能力的程序员 -->
         <div class="pay">
-            <div class="paybody">
+            <div class="paybody" id="paybody">
                 <div class="pay_top"><p>“兄弟会” — 培养具备真实 交付能力的程序员</p></div>
                 <div class="pay_row"></div>
-                <div class="top_one" >
+                <div class="top_one" id="top_one">
                     <div class="top_onetop" id="top_onetop1"><img src="./images/ability/1.png" alt=""></div>
                     <div class="top_oneshadow" ></div>
                     <div class="top_onetitle" id="top_onetitle1"><p>一级</p><p>基础逻辑训练</p></div>
@@ -337,7 +342,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="top_two">
+                <div class="top_two" id="top_two">
                     <div class="top_onetop" id="top_onetop2"><img src="./images/ability/2.png" alt=""></div>
                     <div class="top_oneshadow"></div>
                     <div class="top_onetitle" id="top_onetitle2"><p>二级</p><p>前端组件训练</p></div>
@@ -352,7 +357,7 @@
                         </div>
                     </div> 
                 </div>
-                <div class="top_three">
+                <div class="top_three" id="top_three">
                     <div class="top_onetop" id="top_onetop3"><img src="./images/ability/3.png" alt=""></div>
                     <div class="top_oneshadow"></div>
                     <div class="top_onetitle" id="top_onetitle3"><p>三级</p><p>强化编程训练</p></div>
@@ -367,7 +372,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="top_four">
+                <div class="top_four" id="top_four">
                     <div class="top_onetop" id="top_onetop4"><img src="./images/ability/4.png" alt=""></div>
                     <div class="top_oneshadow"></div>
                     <div class="top_onetitle" id="top_onetitle4"><p>四级</p><p>结合开源社区生态</p><p>完成项目开发训练</p></div>
@@ -382,11 +387,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="top_five">
-                    <div class="top_onetopn" id="top_onetop5"><img src="./images/ability/5.png" alt=""></div>
+                <div class="top_five" id="top_five">
+                    <div class="top_onetop" id="top_onetop5"><img src="./images/ability/5.png" alt=""></div>
                     <div class="top_oneshadow"></div>
-                    <div class="top_onetitlen" id="top_onetitle5"><p>五级</p><p>国内常见第三方生态</p><p>使用，带领小型团队</p></div>
-                    <div class="top_onetxtn" id="top_onetxt5">
+                    <div class="top_onetitle" id="top_onetitle5"><p>五级</p><p>国内常见第三方生态</p><p>使用，带领小型团队</p></div>
+                    <div class="top_onetxt" id="top_onetxt5">
                         <div class="top_onejj">
                             <p>简介：</p>
                             <p>理解操作系统原理，熟悉常 见操作开发工具使用，培养 编程思想，建立编程信心。 成果： 理解编程逻辑，为后面做准 备。</p>
@@ -403,8 +408,8 @@
             <div class="pay3"></div>
             <div class="pay_footer">
                 <div class="serve_banner">
-                        <nav>了解更多</nav>
-                        <nav>我要报名</nav>
+                        <nav onclick="ydtopenchat();return false;">了解更多</nav>
+                        <nav onclick="ydtopenchat();return false;">我要报名</nav>
                 </div>
             </div>
         </div>
@@ -412,17 +417,17 @@
         <div class="language">
             <div class="lan_top"><p>“兄弟会” 六大语言学科融会贯通</p></div>
             <div class="lan_six">
-                <div><img src="./images/language/php.png" ></div>
-                <div><img src="./images/language/java.png" ></div>
-                <div><img src="./images/language/web.png" ></div>
-                <div><img src="./images/language/python.png"></div>
-                <div><img src="./images/language/data.png"  ></div>
-                <div><img src="./images/language/Linux.png"></div>
+                <div onclick="ydtopenchat();return false;"><img src="./images/language/php.png" ></div>
+                <div onclick="ydtopenchat();return false;"><img src="./images/language/java.png" ></div>
+                <div onclick="ydtopenchat();return false;"><img src="./images/language/web.png" ></div>
+                <div onclick="ydtopenchat();return false;"><img src="./images/language/python.png"></div>
+                <div onclick="ydtopenchat();return false;"><img src="./images/language/data.png"  ></div>
+                <div onclick="ydtopenchat();return false;"><img src="./images/language/Linux.png"></div>
             </div>
             <div class="lan_footer">
                     <div class="serve_banner">
-                            <nav>了解更多</nav>
-                            <nav>我要报名</nav>
+                            <nav onclick="ydtopenchat();return false;">了解更多</nav>
+                            <nav onclick="ydtopenchat();return false;">我要报名</nav>
                     </div>
             </div>
         </div>
@@ -430,13 +435,13 @@
         <div class="know">
             <div class="know_top"><p>你应该知道的事情</p></div>
             <div class="know_body">
-                <div class="know_left">
+                <div class="know_left" id="know_left">
                     <div class="kleft_one" id="kleft_one"><div>1</div><p>兄弟会的能力定级是什么？</p><img src="./images/white_row.png" alt=""></div>
                     <div class="kleft_two" id="kleft_two"><div>2</div><p>兄弟会的学习方式及周期</p><img src="./images/white_row.png" alt=""></div>
                     <div class="kleft_two" id="kleft_three"><div>3</div><p>兄弟会保薪资吗？</p><img src="./images/white_row.png" alt=""></div>
                     <div class="kleft_two" id="kleft_four"><div>4</div><p>兄弟会的学习方式及周期</p><img src="./images/white_row.png" alt=""></div>
                 </div>
-                <div class="know_right">
+                <div class="know_right" id="know_right">
                     <div id="kright_one">
                         <ul class="kright_ul">
                             <li>兄弟会的定级，参考百度及阿里技术定级策略，分为五个培养等级。</li>
@@ -481,8 +486,8 @@
             </div>
             <div class="know_footer">
                     <div class="serve_banner">
-                            <nav>了解更多</nav>
-                            <nav>我要报名</nav>
+                            <nav onclick="ydtopenchat();return false;">了解更多</nav>
+                            <nav onclick="ydtopenchat();return false;">我要报名</nav>
                     </div>
                     <div class="know_space"></div>
             </div>
@@ -490,73 +495,62 @@
         <!-- 合作企业 -->
         <div class="coop">
             <div class="coop_top"><p>“兄弟会”合作企业 不一样的实力</div>
-            <div class="coop_body">
-                <div class="cbody_1 cbody_main"></div>
-                <div class="cbody_2 cbody_main"></div>
-                <div class="cbody_3 cbody_main"></div>
-                <div class="cbody_4 cbody_main"></div>
-                <div class="cbody_5 cbody_main"></div>
-                <div class="cbody_6 cbody_main"></div>
-                <div class="cbody_1 cbody_main"></div>
-                <div class="cbody_2 cbody_main"></div>
-                <div class="cbody_3 cbody_main"></div>
-                <div class="cbody_4 cbody_main"></div>
-                <div class="cbody_5 cbody_main"></div>
-                <div class="cbody_6 cbody_main"></div>
-                <div class="cbody_1 cbody_main"></div>
-                <div class="cbody_2 cbody_main"></div>
-                <div class="cbody_3 cbody_main"></div>
-                <div class="cbody_4 cbody_main"></div>
-                <div class="cbody_5 cbody_main"></div>
-                <div class="cbody_6 cbody_main"></div>
+            <div class="coop_body" id="coop_body">
+                <!-- js添加企业 -->
             </div>
             <div class="coop_footer1"><p>（仅展示部分合作企业/机构）</p></div>
-            <div class="coop_footer2"><p>立即加入兄弟会，享优惠套餐</p></div>
+            <div class="coop_footer2" ><p onclick="ydtopenchat();return false;">立即加入兄弟会，享优惠套餐</p></div>
         </div>
     </main>
     <footer>
         <!-- 底部导航 -->
-        <div class="footer1">
-            <div class="footer_logo">
-                <p><img src="./images/footer/logo.png" alt=""></p>
-                <p>400-700-1307 </p>
-                <p>（全国免费咨询热线）</p>
+        <div class="footer" >
+            <div class="footer1">
+                <div class="footer_logo">
+                    <p><a target="_blank" href="http://www.itxdl.cn/"><img src="./images/footer/logo.png" alt=""></a></p>
+                    <p>400-700-1307 </p>
+                    <p>（全国免费咨询热线）</p>
+                </div>
+                <div class="footer_nav"></div>
+                <div class="footer_txt1">
+                    <p>兄弟会</p>
+                    <p><a target="_blank" href="http://www.itxdl.cn/aboutus/">兄弟会概况</a></p>
+                    <p><a target="_blank" href="http://www.itxdl.cn/aboutus/">企业合作</a></p>
+                    <p onclick="ydtopenchat();return false;">联系我们</p>
+                </div>
+                <div class="footer_txt1">
+                    <p>学习资料</p>
+                    <p><a target="_blank"  href="http://www.ydma.com/">免费公开课</a></p>
+                    <p><a target="_blank"  href="http://www.itxdl.cn/">免费视频下载</a></p>
+                    <p><a target="_blank"  href="http://www.itxdl.cn/jiaoxuefuwu/jiaoxuetixi/">学习路线图</a></p>
+                    <p><a target="_blank"  href="http://www.itxdl.cn/book/">学习工具</a></p>
+                </div>
+                <div class="footer_txt1">
+                    <p>兄弟会优势</p>
+                    <p><a target="_blank"  href="http://www.itxdl.cn/jiaoxuefuwu/jiaoxuetixi/">学习模式</a></p>
+                    <p><a target="_blank"  href="http://www.itxdl.cn/jiaoxuefuwu/jiaoxuetixi/">培养体系</a></p>
+                    <p><a target="_blank"  href="http://www.itxdl.cn/jiaoxuefuwu/jiaoyantuandui/">教官团队</a></p>
+                    <p><a target="_blank"  href="http://www.itxdl.cn/jiuyefuwu/xueyuangushi/">项目采访</a></p>
+                    <p><a target="_blank"  href="http://www.itxdl.cn/jiuyefuwu/jiuyebaozhang/">高薪就业</a></p>
+                </div>
+                <div class="footer_txt1">
+                    <p onclick="ydtopenchat();return false;">如何报名</p>
+                    <p onclick="ydtopenchat();return false;">报名须知</p>
+                    <p><a target="_blank"  href="http://www.itxdl.cn/laixiaoluxian/changjianwenti/">报名流程</a></p>
+                    <p><a target="_blank" href="http://www.itxdl.cn/laixiaoluxian/changjianwenti/">常见问题</a></p>
+                    <p onclick="ydtopenchat();return false;">校区分布</p>
+                    <p onclick="ydtopenchat();return false;">住宿安排</p>
+                </div>
+                <div class="footer_nav2"></div>
+                <div class="footer_wb"></div>
+                <div class="footer_wx"></div>
             </div>
-            <div class="footer_nav"></div>
-            <div class="footer_txt1">
-                <p>兄弟会</p>
-                <p>兄弟会概况</p>
-                <p>企业合作</p>
-                <p>联系我们</p>
-            </div>
-            <div class="footer_txt1">
-                <p>学习资料</p>
-                <p>免费公开课</p>
-                <p>免费视频下载</p>
-                <p>学习路线图</p>
-                <p>学习工具</p>
-            </div>
-            <div class="footer_txt1">
-                <p>兄弟会优势</p>
-                <p>学习模式</p>
-                <p>培养体系</p>
-                <p>教官团队</p>
-                <p>项目采访</p>
-                <p>高薪就业</p>
-            </div>
-            <div class="footer_txt1">
-                <p>如何报名</p>
-                <p>报名须知</p>
-                <p>报名流程</p>
-                <p>常见问题</p>
-                <p>校区分布</p>
-                <p>住宿安排</p>
-            </div>
-            <div class="footer_nav2"></div>
-            <div class="footer_wb"></div>
-            <div class="footer_wx"></div>
         </div>
-        <div class="footer2"><p>Copyright © 2007-2019   易第优（北京）科技股份有限公司 版权所有       京公网安备 110108</p></div>
+        <div class="footer2"><p>Copyright © 2007-2019   易第优（北京）科技股份有限公司 版权所有
+             <a href="javascript:void(0)" target="_blank" class="bg lazyBg" data-bg="url(/index/images/footer_icon.png)'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAMAAABxCz6aAAAB4FBMVEX///////////////////n///X////9//////v8+vv+//jpylzluFrnt0j+/f/++/f9/fL//vD//+39++r58t3v1o80RXntz2N4amLmvF//2VvFlU/xtUrmsEXemUXaoUDrSyDGJxrUFxbPBgb49vX98OXt29X26NPr2rbUwbHx36/jzaz47anBsaP276Ly3J/+258XLZvoyJpIbJrErZn/8pbt1JR9iJS8vZPErJIKNJDDo425roxziowsPYkbKoeckICbpX3fsHzmynsID3vltXoEBHrstXllY3jqwnbmvnbOrnbpyXUNHXLsz2+feW8AAG+6tG3gyWzntmyym2oaF2n/z2jmtmjquGX/72PpxWMXCGLbs2HBpmDHpV/qvFyJdFzSlFn7v1g2MFj/01f5y1cZAFfnw1Y+GVbkslXUkFSKbVJXUVH8uVDYn089K0/svEzgpkx8N0z+rUu6kUsbAEn0nEV2TkP3kULkpkD6qD/toD/fgz+9cj1POT3UlDz7sDvilzrahDrXbTjslTbXcjZsDzbnbzXYmTLojzHTey+pYy/NTC3tYCnNVSjBPyKwVR+kWR7QKB2zJBr/Vhn/VBjVIBjlNBP/SxLZJRHRChHmKxDsMQ69HA6NAA7pDwXHd3vuAAAABnRSTlPv8Prh8PApeqFuAAABBElEQVQY02NgZkAHQCEmNgzAxMCIKcgIE1TVdNBVQxM0KZ84oSTBXwhJkEO7rnu6gkJWjjUXQlAjP3vKrEnKc7yTLeGCgja+tfOVpikpV4h5gAxgBQqyG0jbS89WlK+ZWSwmYcrOxsYCEnQvNJTo7G9tLotzCUlSgWjnSqwyTpvR29c+tc0qvlEEIsjh1GDhNm/u5B7FUtuUcAGooKtcmHlodFFGgJ24DI8wVNCsvik3KDA91jGmpcMPqpKNQ1S+K1VKRiqyOs9ZEO54fW6eTMkoHjlJbh8umCC/DjdvgSxvpSyvuJ4wXCW7upFXcISnqJYIO3Io8XFy8nPywYIOa8hjjSMAF3g4HLv4GkgAAAAASUVORK5CYII=" data-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAMAAABxCz6aAAAB4FBMVEX///////////////////n///X////9//////v8+vv+//jpylzluFrnt0j+/f/++/f9/fL//vD//+39++r58t3v1o80RXntz2N4amLmvF//2VvFlU/xtUrmsEXemUXaoUDrSyDGJxrUFxbPBgb49vX98OXt29X26NPr2rbUwbHx36/jzaz47anBsaP276Ly3J/+258XLZvoyJpIbJrErZn/8pbt1JR9iJS8vZPErJIKNJDDo425roxziowsPYkbKoeckICbpX3fsHzmynsID3vltXoEBHrstXllY3jqwnbmvnbOrnbpyXUNHXLsz2+feW8AAG+6tG3gyWzntmyym2oaF2n/z2jmtmjquGX/72PpxWMXCGLbs2HBpmDHpV/qvFyJdFzSlFn7v1g2MFj/01f5y1cZAFfnw1Y+GVbkslXUkFSKbVJXUVH8uVDYn089K0/svEzgpkx8N0z+rUu6kUsbAEn0nEV2TkP3kULkpkD6qD/toD/fgz+9cj1POT3UlDz7sDvilzrahDrXbTjslTbXcjZsDzbnbzXYmTLojzHTey+pYy/NTC3tYCnNVSjBPyKwVR+kWR7QKB2zJBr/Vhn/VBjVIBjlNBP/SxLZJRHRChHmKxDsMQ69HA6NAA7pDwXHd3vuAAAABnRSTlPv8Prh8PApeqFuAAABBElEQVQY02NgZkAHQCEmNgzAxMCIKcgIE1TVdNBVQxM0KZ84oSTBXwhJkEO7rnu6gkJWjjUXQlAjP3vKrEnKc7yTLeGCgja+tfOVpikpV4h5gAxgBQqyG0jbS89WlK+ZWSwmYcrOxsYCEnQvNJTo7G9tLotzCUlSgWjnSqwyTpvR29c+tc0qvlEEIsjh1GDhNm/u5B7FUtuUcAGooKtcmHlodFFGgJ24DI8wVNCsvik3KDA91jGmpcMPqpKNQ1S+K1VKRiqyOs9ZEO54fW6eTMkoHjlJbh8umCC/DjdvgSxvpSyvuJ4wXCW7upFXcISnqJYIO3Io8XFy8nPywYIOa8hjjSMAF3g4HLv4GkgAAAAASUVORK5CYII=" src="/lib/images/loading.gif" data-was-processed="true" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAMAAABxCz6aAAAB4FBMVEX///////////////////n///X////9//////v8+vv+//jpylzluFrnt0j+/f/++/f9/fL//vD//+39++r58t3v1o80RXntz2N4amLmvF//2VvFlU/xtUrmsEXemUXaoUDrSyDGJxrUFxbPBgb49vX98OXt29X26NPr2rbUwbHx36/jzaz47anBsaP276Ly3J/+258XLZvoyJpIbJrErZn/8pbt1JR9iJS8vZPErJIKNJDDo425roxziowsPYkbKoeckICbpX3fsHzmynsID3vltXoEBHrstXllY3jqwnbmvnbOrnbpyXUNHXLsz2+feW8AAG+6tG3gyWzntmyym2oaF2n/z2jmtmjquGX/72PpxWMXCGLbs2HBpmDHpV/qvFyJdFzSlFn7v1g2MFj/01f5y1cZAFfnw1Y+GVbkslXUkFSKbVJXUVH8uVDYn089K0/svEzgpkx8N0z+rUu6kUsbAEn0nEV2TkP3kULkpkD6qD/toD/fgz+9cj1POT3UlDz7sDvilzrahDrXbTjslTbXcjZsDzbnbzXYmTLojzHTey+pYy/NTC3tYCnNVSjBPyKwVR+kWR7QKB2zJBr/Vhn/VBjVIBjlNBP/SxLZJRHRChHmKxDsMQ69HA6NAA7pDwXHd3vuAAAABnRSTlPv8Prh8PApeqFuAAABBElEQVQY02NgZkAHQCEmNgzAxMCIKcgIE1TVdNBVQxM0KZ84oSTBXwhJkEO7rnu6gkJWjjUXQlAjP3vKrEnKc7yTLeGCgja+tfOVpikpV4h5gAxgBQqyG0jbS89WlK+ZWSwmYcrOxsYCEnQvNJTo7G9tLotzCUlSgWjnSqwyTpvR29c+tc0qvlEEIsjh1GDhNm/u5B7FUtuUcAGooKtcmHlodFFGgJ24DI8wVNCsvik3KDA91jGmpcMPqpKNQ1S+K1VKRiqyOs9ZEO54fW6eTMkoHjlJbh8umCC/DjdvgSxvpSyvuJ4wXCW7upFXcISnqJYIO3Io8XFy8nPywYIOa8hjjSMAF3g4HLv4GkgAAAAASUVORK5CYII=&quot;);">京公网安备 11010802026987号</a>
+             <a href="http://www.miibeian.gov.cn/" target="_blank" rel="nofollow"> 京ICP备11018177号&nbsp;</a>
+             <img hspace="0" vspace="0" data-src="http://icon.cnzz.com/img/pic.gif" src="http://icon.cnzz.com/img/pic.gif" class="loaded" data-was-processed="true">
+        </p></div>
     </footer>
 
 

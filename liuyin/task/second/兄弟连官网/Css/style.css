@@ -3,9 +3,13 @@
     margin: 0;
 }
 body{
-    width: 1400px;
+    width: 100%;
+    min-width: 1400px;
     text-align: center;
     margin:0 auto;
+}
+a{
+    text-decoration: none;
 }
 ul{
     list-style: none;
@@ -14,9 +18,13 @@ ul{
 /* 导航样式 */
     header{
         background: #2b2b2b;
+    }
+     .navi{
         width: 1400px;
+        min-width: 1400px;
         height: 44px;
         overflow: hidden;
+        margin: 0 auto;
     }
     .nav{
         overflow: hidden;
@@ -33,7 +41,7 @@ ul{
 }
 .nav_left img{
     width: 70px;
-    height: 26px;
+    height: 22px;
 }
 
 .nav_right{
@@ -58,26 +66,25 @@ ul{
     color:#00c0a9;
 }
 
-/* .main{
-    position: relative;
-} */
 
 /* 轮播 */
 #banner{
-    width: 1400px;
+    width: 100%;
+    min-width: 1400px;
     height: 420px;
-    background: #E6E6E6;
+    background: url("../images/banner/bg.png");
 }
 #banner_img{
     width: 1400px;
     height: 420px;
     overflow: hidden;
     position: relative;
+    margin: 0 auto;
 }
 #ul_img{
     position: absolute;
     cursor: pointer;
-    width:5600px;
+    width: 5600px;;
     height: 420px;
 }
 #ul_img img{
@@ -119,10 +126,10 @@ ul{
     }
 /* work */
 .work_point{
-    width: 1400px;
+    width: 100%;
     height: 733px;
     background: url("../images/work/work_bg1.png");
-    background-size: 1400px 733px;
+    background-size: 100% 733px;
     background-repeat: no-repeat;
     overflow: hidden;
     position: relative;
@@ -264,14 +271,14 @@ ul{
     font-family: "Source Han Sans CN";
     text-align: left;
 }
-.work2_point{
+.work_point2{
     position: absolute;
-    top: 355px;
+    top: 470px;
     z-index: -1;
-    width: 1400px;
+    width: 100%;
     height: 734px;
     background: url("../images/work/work_bg2.png");
-    background-size: 1400px 734px;
+    background-size: 100% 734px;
 }
 .risk{
     width: 84px;
@@ -286,7 +293,7 @@ ul{
 .risk:hover{
     border-color: #00fffa;  
 }
-.risk a img{
+.risk img{
     width: 54px;
     height: 52px;
     margin-top: 17px;
@@ -496,15 +503,15 @@ ul{
 /* 破冰者 */
 .it_ice{    
     background-color: white;
-    width: 1400px;
+    width: 100%;
 }
 .ice_body{
     background:url("../images/ice_body.png");
-    width: 1400px;
+    width: 100%;
     height: 874px;
     background-repeat: no-repeat;
     margin-top: 62px;
-    background-size: 1400px 874px;
+    background-size: 100% 874px;
 }
 .ice_top{
     width:465px;
@@ -528,7 +535,7 @@ ul{
 
 .ice_childbody{
     width: 878px;
-    height: 340px;
+    height: 375px;
     margin:0 auto;
     margin-top:18px;
     border-radius: 7px; 
@@ -538,7 +545,7 @@ ul{
 .ice_left{
     float: left;
     width:408px;
-    height: 340px;
+    height: 375px;
     background-color: #fff;
 }
 .ice_ltop{
@@ -547,7 +554,7 @@ ul{
     margin-top: 34px;
 }
 .ice_ltop p:first-child{
-    width: 316px;
+    width: 320px;
     font-size: 15px;
     line-height: 29px;
     color: #0e0846;
@@ -557,7 +564,7 @@ ul{
     border-bottom: 1px solid #0e0846;
 }
 .ice_ltop p:last-child{
-    width: 308px;
+    width: 320px;
     font-size: 15px;
     line-height: 29px;
     color: #0e0846;
@@ -569,7 +576,7 @@ ul{
 .dialog{
     width: 229px;
     height: 84px;
-    margin-top: 25px;
+    margin-top: 35px;
     margin-left: 27px;
     overflow: hidden;
 }
@@ -646,6 +653,9 @@ ul{
     text-align: left;
     font-family: "Source Han Sans CN";
 }
+#img2{
+    margin-left: 13px;
+}
 #gright_onclick{
     cursor: pointer;
 }
@@ -654,7 +664,7 @@ ul{
     float: right;
     left: 408px;
     width: 470px;
-    height: 340px;
+    height: 375px;
     background-color: #081c50;
 }
 .ice_rdisplay2{
@@ -666,7 +676,7 @@ ul{
     margin-left: 53px;
     font-size: 15px;
     line-height: 20px;
-    color: #7d7d7d;
+    color: #fff;
     font-family: "Source Han Sans CN";
     font-weight: 500;
     padding-top: 31px;
@@ -723,13 +733,22 @@ ul{
     margin-left: 36px;
     font-size: 15px;
     line-height: 20px;
-    color: #7d7d7d;
+    color: #fff;
     font-family: "Source Han Sans CN";
     font-weight: 500;
     margin-top: 5px;
 }
 .ice_rtop1 > ul li{
+    /* width: 416px;
+    font-size: 12px;
+    list-style: disc;
+    color: #fff;
+    font-family: "Source Han Sans CN";
+    text-align: left;
+    margin-left: 36px;
+    margin-top: 6px; */
     width: 416px;
+    font-size: 12px;
     list-style: disc;
     color: #fff;
     font-family: "Source Han Sans CN";
@@ -747,7 +766,7 @@ ul{
     font-weight: 500;
     border-radius: 12px;
     margin-left: 53px;
-    margin-top: 4px;
+    margin-top: 10px;
     border: 1px solid #00ffff; 
     cursor: pointer;
 }
@@ -775,12 +794,26 @@ ul{
 }
 
 /* 全方位服务你的学习 */
-.it_serve{
+.it_servebody{
     margin-top: -372px;
-    width: 1400px;
+    width: 100%;
     overflow: hidden;
 }
-
+.it_servebg{
+    width: 100%;
+    height: 733px;
+    background-color: #090d43;
+    margin-top: -876px;
+    position: relative;
+    z-index: -2;
+}
+.it_serve{
+    width: 1400px;
+    margin: 0 auto;
+    background: url("../images/ice_body2.png");
+    background-size: 1400px 372px;
+    background-repeat: no-repeat;
+}
 .serve_top{
     width: 465px;
     background-image: url("../images/work/ice_top.png");
@@ -985,31 +1018,32 @@ margin-bottom: 39px;
 .paybody{
     width: 1400px;
     height: 602px;
-    /* overflow: hidden; */
     position: relative;
     z-index: 4;
-    float: left;
+    margin:0 auto;
+    /* float: left; */
 }
 .pay1{
     background-image: url("../images/ability/bg1.png");
-    background-size: 1400px 602px;
+    background-size: 100% 602px;
     height: 602px;
-    width: 1400px;
+    width: 100%;
     position: relative;
     z-index: 2;
+    margin-top: -602px;
 }
 .pay2{
     background-image: url("../images/ability/bg.png");
-    background-size: 1400px 580px;
+    background-size: 100% 580px;
     margin-top: -602px;
     height: 580px;
-    width: 1400px;
+    width: 100%;
     position: relative;
     z-index: 1;
 }
 .pay3{
     background-image: url("../images/ability/bg2.png");
-    background-size: 1400px 619px;
+    background-size: 100% 619px;
     height: 619px;
     margin-top: -378px;
     position: relative;
@@ -1127,12 +1161,14 @@ margin-bottom: 39px;
 }
 
 .top_onetxt{
+    padding: 4px 0;
     width: 200px;
-    height: 180px;
+    height: 190px;
     box-shadow: 0px 3px 10px rgba(22,136,201,0.1);
     background-color: #ffffff;
 }
 .top_onetxtn{
+    padding: 8px 0;
     width: 200px;
     height: 227px;
     box-shadow: 0px 3px 10px rgba(22,136,201,0.1);
@@ -1183,9 +1219,9 @@ margin-bottom: 39px;
 }
 /* 六大语言学科融会贯通 */
 .language{
-    width: 1400px;
+    width: 100%;
     height: 852px;
-    background-color: #090d43;
+    background-color: #0c1442;
     margin-top: -45px;
     position: relative;
     overflow: hidden;
@@ -1233,8 +1269,8 @@ margin-bottom: 39px;
 }
 /* 你应该知道的事 */
 .know{
-    width: 1400px;
-    background:#090d43;
+    width: 100%;
+    background:#0c1442;
     margin-top: -217px;
     position: relative;
     z-index: 0;
@@ -1406,16 +1442,16 @@ margin-bottom: 39px;
     margin-top: 22px;
 }
 .know_space{
-    width: 1400px;
+    width: 100%;
     height: 51px;
-    background:#090d43;
+    background:#0c1442;
 }
 /* 合作企业 */
 .coop{
-    width: 1400px;
+    width: 100%;
     height: 448px;
     background-image: url("../images/coop/bg1.png");
-    background-size: 1400px 448px;
+    background-size: 100% 448px;
     background-repeat: no-repeat;
     margin-top: -2px;
 }
@@ -1439,53 +1475,25 @@ margin-bottom: 39px;
     margin: 0 auto;
 }
 .coop_body{
-    width: 909px;
-    height: 192px;
+    width: 966px;
+    height: 214px;
     margin: 0 auto;
     overflow: hidden;
     margin-top: 69px;
 }
-.cbody_main{
+.coop_body >div{
+padding: 6px;
 width: 134px;
 height: 44px;
+border-radius: 5px;
 margin-left: 15px;
 margin-top: 15px;
+background-color: white;
+float: left;
 }
-.cbody_1{
-    background: url("../images/coop/1.png");
-    background-size: 134px 44px;
-    background-repeat: no-repeat;
-    float: left;
-}
-.cbody_2{
-    background: url("../images/coop/2.png");
-    background-size: 134px 44px;
-    background-repeat: no-repeat;
-    float: left;
-}
-.cbody_3{
-    background: url("../images/coop/3.png");
-    background-size: 134px 44px;
-    background-repeat: no-repeat;
-    float: left;
-}
-.cbody_4{
-    background: url("../images/coop/4.png");
-    background-size: 134px 44px;
-    background-repeat: no-repeat;
-    float: left;
-}
-.cbody_5{
-    background: url("../images/coop/5.png");
-    background-size: 134px 44px;
-    background-repeat: no-repeat;
-    float: left;
-}
-.cbody_6{
-    background: url("../images/coop/6.png");
-    background-size: 134px 44px;
-    background-repeat: no-repeat;
-    float: left;
+.coop_body > div img{
+    width: 120px;
+    height: 39px;
 }
 .coop_footer1{
     font-size: 12px;
@@ -1494,35 +1502,61 @@ margin-top: 15px;
     margin-top: 52px;
 }
 .coop_footer2{
-    width: 1400px;
+    width: 100%;
     height:85px;
-    line-height: 85px;
-    background-image: url("../images/coop/bg2.png");
+    background-image: url("../images/coop/bg3.png");
     background-repeat: no-repeat;
-    background-size:1400px 85px;
-    margin-top:64px;
+    background-size:100% 85px;
+    margin-top:53px;
+    overflow: hidden;
 }
 .coop_footer2 p{
+    margin:auto;
+    margin-top: 28px;
+    width: 182px;   
+    height: 24px;
+    line-height: 24px;
     font-size: 12px;
     color: #00c1de;
     font-family: "Source Han Sans CN";
+    background: #fff;
+    cursor: pointer;
 }
 /* 底部导航 */
+.footer{
+    margin-top: 73px;
+    width: 100%;
+    height: 220px;
+    background-color: #363d41;
+    overflow: hidden;
+}
 .footer1{
-    margin-top: 64px;
+    margin: 0 auto;
     width: 1400px;
     height: 220px;
     background-color: #363d41;
     overflow: hidden;
 }
 .footer2{
-width: 1400px;
+width: 100%;
 height: 28px;
 line-height: 28px;
 background-color: #282d30;
 font-size: 12px;
 color: #8b8b8b;
 font-family: "Source Han Sans CN";
+}
+.footer2 a{
+    background: #282d30;
+    font-size: 12px;
+    color: #8b8b8b;
+    font-family: "Source Han Sans CN";
+
+}
+.footer2 a.bg {
+    padding: 5px 25px;
+    background-repeat: no-repeat;
+    background-position-y: 5px;
 }
 .footer_logo{
     float: left;
@@ -1575,6 +1609,13 @@ font-family: "Source Han Sans CN";
     margin-top: 0px;
 }
 .footer_txt1 p{
+    font-size: 12px;
+    color: #8b8b8b;
+    font-family: "Source Han Sans CN";
+    margin-top: 8px;
+    cursor: pointer;
+}
+.footer_txt1 p a{
     font-size: 12px;
     color: #8b8b8b;
     font-family: "Source Han Sans CN";

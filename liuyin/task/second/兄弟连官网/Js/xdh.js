@@ -6,8 +6,8 @@ window.onload=function(){
     var cLis =div3_ul.children;
     var len=ul_img.children.length;
     var width=parent.offsetWidth;
-    var rate = 20;                        //一张图片的切换速度，单位为px
-    var gap = 2000;                       //自动切换间隙，单位为毫秒
+    var rate = 1400;                        //一张图片的切换速度，单位为px
+    var gap = 4000;                       //自动切换间隙，单位为毫秒
     var timer = null;                     //初始化一个定时器
     var picN = 0;                         //当前显示的图片下标
     var cirN = 0;                         //当前显示图片的小圆点下标
@@ -84,15 +84,21 @@ for(var i=0; i<len; i++){
 }
 // work
 var work_rec=document.getElementById('work_rec');
-var b=work_rec.childNodes;
-var more_1=document.getElementById('more_1');
-var more_2=document.getElementById('more_2');
-var more_3=document.getElementById('more_3');
-more_1.onclick=function(){setDisplay(more_1);}
-more_2.onclick=function(){setDisplay(more_2);}
-more_3.onclick=function(){setDisplay(more_3);}
-function setDisplay(a){
-    var parent=a.parentNode;
+var rec_1=document.getElementById('rec_1');
+var rec_10=document.getElementById('rec_10');
+var rec_2=document.getElementById('rec_2');
+var rec_20=document.getElementById('rec_20');
+var rec_3=document.getElementById('rec_3');
+var rec_30=document.getElementById('rec_30');
+rec_1.onmouseover=function(){setDisplay(risk_1);}
+rec_10.onmouseleave=function(){setDisplayn();}
+rec_20.onmouseleave=function(){setDisplayn();}
+rec_30.onmouseleave=function(){setDisplayn();}
+rec_2.onmouseover=function(){setDisplay(risk_2);}
+rec_3.onmouseover=function(){setDisplay(risk_3);}
+function setDisplay(setY){
+    var b=work_rec.childNodes; 
+    var parent=setY.parentNode;
     for(var i=0 ;i<b.length-1;i++){
         var s=i%2;
         if(parent==work_rec.children[i+1]){
@@ -106,13 +112,23 @@ function setDisplay(a){
         }
     }
 }   
+function setDisplayn(){
+        for(var i=0; i<6;i++){
+            var s=i%2;
+            if(s==0){           
+                work_rec.children[i].style.display='none';
+            }else{
+                work_rec.children[i].style.display='block';
+            }
+        }
+ }
 
 // IT行业就业/ 职场痛点
 var button_left=document.getElementById("button_left");
 var button_right=document.getElementById("button_right");
 var work_body1=document.getElementById("work_body1");
 var work_body2=document.getElementById("work_body2");
-button_left.onclick=function(){
+button_left.onmouseover=function(){
     work_body2.style.display='none';
     work_body1.style.display='block';
     button_left.style.backgroundImage="url('./images/work/button.png')";
@@ -120,7 +136,7 @@ button_left.onclick=function(){
     button_right.style.color='#82819f';
     button_left.style.color='#fff';
 }
-button_right.onclick=function(){
+button_right.onmouseover=function(){
     work_body1.style.display='none';
     work_body2.style.display='block';
     button_right.style.backgroundImage="url('./images/work/button.png')";
@@ -133,7 +149,7 @@ var right_onclick=document.getElementById("right_onclick");
 var gright_onclick=document.getElementById("gright_onclick");
 var ice_rdisplay1=document.getElementById("ice_rdisplay1");
 var ice_rdisplay2=document.getElementById("ice_rdisplay2");
-right_onclick.onclick=function(){
+right_onclick.onmouseover=function(){
     ice_rdisplay2.style.display='none';
     ice_rdisplay1.style.display='block';
     document.getElementById('img1').src="./images/white_row.png";
@@ -145,7 +161,7 @@ right_onclick.onclick=function(){
     document.getElementById('p10').style.color='#fff';
     document.getElementById('p11').style.color='#fff';
 }
-gright_onclick.onclick=function(){
+gright_onclick.onmouseover=function(){
     ice_rdisplay1.style.display='none';
     ice_rdisplay2.style.display='block';
     document.getElementById('img2').src="./images/white_row.png";
@@ -158,146 +174,63 @@ gright_onclick.onclick=function(){
     document.getElementById('p21').style.color='#fff';
 }
 // 培养具备真实交付能力的程序员
-var top_onetop1=document.getElementById("top_onetop1");
-var top_onetop2=document.getElementById("top_onetop2");
-var top_onetop3=document.getElementById("top_onetop3");
-var top_onetop4=document.getElementById("top_onetop4");
-var top_onetop5=document.getElementById("top_onetop5");
-var top_onetitle1=document.getElementById("top_onetitle1");
-var top_onetitle2=document.getElementById("top_onetitle2");
-var top_onetitle3=document.getElementById("top_onetitle3");
-var top_onetitle4=document.getElementById("top_onetitle4");
-var top_onetitle5=document.getElementById("top_onetitle5");
-var top_onetxt1=document.getElementById('top_onetxt1');
-var top_onetxt2=document.getElementById('top_onetxt2');
-var top_onetxt3=document.getElementById('top_onetxt3');
-var top_onetxt4=document.getElementById('top_onetxt4');
-var top_onetxt5=document.getElementById('top_onetxt5');
-top_onetop1.onclick=function(){
-    top_onetop1.className='top_onetopn';
-}
-function setOnetop(this){
-    var parent=this.parentNode;
-    var node=document.getElementById("paybody");
-    var nodes=node.childNodes;
-    for(var i=2;i<nodes.length-1;i++){
-        if(parent==nodes[i]){
-            
+var top_one=document.getElementById("top_one");
+var top_two=document.getElementById("top_two");
+var top_three=document.getElementById("top_three");
+var top_four=document.getElementById("top_four");
+var top_five=document.getElementById("top_five");
+top_one.onmouseover=function(){setOnetop(top_onetop1);}
+top_two.onmouseover=function(){setOnetop(top_onetop2);}
+top_three.onmouseover=function(){setOnetop(top_onetop3);}
+top_four.onmouseover=function(){setOnetop(top_onetop4);}
+top_five.onmouseover=function(){setOnetop(top_onetop5);}
+function setOnetop(b){
+    var par=b.parentNode;
+    var nd=document.getElementById("paybody");
+    var nds=nd.childNodes;
+    for(var i=2;i<nds.length-1;i++){
+        if(par==nd.children[i]){
+            nd.children[i].children[0].className='top_onetopn';
+            nd.children[i].children[2].className='top_onetitlen';
+            nd.children[i].children[3].className='top_onetxtn';
+        }else{
+            nd.children[i].children[0].className='top_onetop';
+            nd.children[i].children[2].className='top_onetitle';
+            nd.children[i].children[3].className='top_onetxt';
         }
     }
-
-}
-top_onetop2.onclick=function(){
-    top_onetop1.className='top_onetop';
-    top_onetop2.className='top_onetopn';
-    top_onetop3.className='top_onetop';
-    top_onetop4.className='top_onetop';
-    top_onetop5.className='top_onetop';
-    top_onetitle1.className='top_onetitle';
-    top_onetitle2.className='top_onetitlen';
-    top_onetitle3.className='top_onetitle';
-    top_onetitle4.className='top_onetitle';
-    top_onetitle5.className='top_onetitle';
-    top_onetxt1.className='top_onetxt';
-    top_onetxt2.className='top_onetxtn';
-    top_onetxt3.className='top_onetxt';
-    top_onetxt4.className='top_onetxt';
-    top_onetxt5.className='top_onetxt';
-}
-top_onetop3.onclick=function(){
-    top_onetop1.className='top_onetop';
-    top_onetop2.className='top_onetop';
-    top_onetop3.className='top_onetopn';
-    top_onetop4.className='top_onetop';
-    top_onetop5.className='top_onetop';
-    top_onetitle1.className='top_onetitle';
-    top_onetitle2.className='top_onetitle';
-    top_onetitle3.className='top_onetitlen';
-    top_onetitle4.className='top_onetitle';
-    top_onetitle5.className='top_onetitle';
-    top_onetxt1.className='top_onetxt';
-    top_onetxt2.className='top_onetxt';
-    top_onetxt3.className='top_onetxtn';
-    top_onetxt4.className='top_onetxt';
-    top_onetxt5.className='top_onetxt';
-}
-top_onetop4.onclick=function(){
-    top_onetop1.className='top_onetop';
-    top_onetop2.className='top_onetop';
-    top_onetop3.className='top_onetop';
-    top_onetop4.className='top_onetopn';
-    top_onetop5.className='top_onetop';
-    top_onetitle1.className='top_onetitle';
-    top_onetitle2.className='top_onetitle';
-    top_onetitle3.className='top_onetitle';
-    top_onetitle4.className='top_onetitlen';
-    top_onetitle5.className='top_onetitle';
-    top_onetxt1.className='top_onetxt';
-    top_onetxt2.className='top_onetxt';
-    top_onetxt3.className='top_onetxt';
-    top_onetxt4.className='top_onetxtn';
-    top_onetxt5.className='top_onetxt';
-}
-top_onetop5.onclick=function(){
-    top_onetop1.className='top_onetop';
-    top_onetop2.className='top_onetop';
-    top_onetop3.className='top_onetop';
-    top_onetop4.className='top_onetop';
-    top_onetop5.className='top_onetopn';
-    top_onetitle1.className='top_onetitle';
-    top_onetitle2.className='top_onetitle';
-    top_onetitle3.className='top_onetitle';
-    top_onetitle4.className='top_onetitle';
-    top_onetitle5.className='top_onetitlen';
-    top_onetxt1.className='top_onetxt';
-    top_onetxt2.className='top_onetxt';
-    top_onetxt3.className='top_onetxt';
-    top_onetxt4.className='top_onetxt';
-    top_onetxt5.className='top_onetxtn';
 }
 //你应该知道的事情
 var kleft_one=document.getElementById('kleft_one');
 var kleft_two=document.getElementById('kleft_two');
 var kleft_three=document.getElementById('kleft_three');
 var kleft_four=document.getElementById('kleft_four');
-kleft_one.onclick=function(){
-    kleft_one.className='kleft_one';
-    kleft_two.className='kleft_two';
-    kleft_three.className='kleft_two';
-    kleft_four.className='kleft_two';
-    document.getElementById('kright_one').style.display='block';
-    document.getElementById('kright_two').style.display='none';
-    document.getElementById('kright_three').style.display='none';
-    document.getElementById('kright_four').style.display='none';
+kleft_one.onmouseover=function(){setKnow('kleft_one');}
+kleft_two.onmouseover=function(){setKnow('kleft_two');}
+kleft_three.onmouseover=function(){setKnow('kleft_three');}
+kleft_four.onmouseover=function(){setKnow('kleft_four');}
+function setKnow(c){
+    var know_left=document.getElementById('know_left');
+    for(var i=0;i<4;i++){
+        if(know_left.children[i].id==c){
+            know_left.children[i].className='kleft_one';
+            document.getElementById('know_right').children[i].style.display='block';
+        }else{
+            know_left.children[i].className='kleft_two';
+            document.getElementById('know_right').children[i].style.display='none';
+        }
+
+    }
 }
-kleft_two.onclick=function(){
-    kleft_one.className='kleft_two';
-    kleft_two.className='kleft_one';
-    kleft_three.className='kleft_two';
-    kleft_four.className='kleft_two';
-    document.getElementById('kright_one').style.display='none';
-    document.getElementById('kright_two').style.display='block';
-    document.getElementById('kright_three').style.display='none';
-    document.getElementById('kright_four').style.display='none';
+//合作企业
+var coop_body=document.getElementById('coop_body')
+for(var i=1;i<19;i++){
+    var setdiv=document.createElement('div');
+    setdiv.innerHTML="<img src='./images/coop/"+ i +".png'/>";
+    coop_body.appendChild(setdiv);
 }
-kleft_three.onclick=function(){
-    kleft_one.className='kleft_two';
-    kleft_two.className='kleft_two';
-    kleft_three.className='kleft_one';
-    kleft_four.className='kleft_two';
-    document.getElementById('kright_one').style.display='none';
-    document.getElementById('kright_two').style.display='none';
-    document.getElementById('kright_three').style.display='block';
-    document.getElementById('kright_four').style.display='none';
-}
-kleft_four.onclick=function(){
-    kleft_one.className='kleft_two';
-    kleft_two.className='kleft_two';
-    kleft_three.className='kleft_two';
-    kleft_four.className='kleft_one';
-    document.getElementById('kright_one').style.display='none';
-    document.getElementById('kright_two').style.display='none';
-    document.getElementById('kright_three').style.display='none';
-    document.getElementById('kright_four').style.display='block';
+window.ydtopenchat=function()
+{
+  window.open("https://tb.53kf.com/code/client/10143228/1");
 }
 }
