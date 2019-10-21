@@ -151,6 +151,12 @@
 
 ​	网页访问：127.0.0.1:8090，可以访问到index.php网页
 
+​	终端访问mysql：docker exec -it ID/名字 bash
+
+​										mysql -uroot -p : 进入mysql
+
+​										
+
 ### 设置信息
 
 端口号：8090
@@ -164,3 +170,66 @@ MySql的root密码：1
 用户名：Kss
 
 用户密码：1
+
+
+
+
+
+#### 搭建PHPCMS
+
+##### 设置nginx：
+
+​	docker run --name myNginx -p 8088:80 -d nginx
+
+​	mkdir -p ~/nginx/www ~/nginx/logs ~/nginx/conf
+
+
+​	docker cp 6dd4380ba708:/etc/nginx/nginx.conf ~/nginx/conf
+
+目录结构：
+
+​	**www**: 目录将映射为 nginx 容器配置的虚拟目录。
+
+​	**logs**: 目录将映射为 nginx 容器的日志目录。
+
+​	**conf**: 目录里的配置文件将映射为 nginx 容器的配置文件。
+
+部署命令：
+
+
+docker run -d -p 8087:80 --name myWeb -v ~/nginx/www:/usr/share/nginx/html -v ~/nginx/conf/nginx.conf:/etc/nginx/nginx.conf -v ~/nginx/logs:/var/log/nginx nginx
+
+命令说明：
+
+-   **-p 8087:80：** 将容器的 80 端口映射到主机的 8087端口。
+-   **--name myWeb：**将容器命名为 myWeb。
+-   **-v ~/nginx/www:/usr/share/nginx/html：**将我们自己创建的 www 目录挂载到容器的 /usr/share/nginx/html。
+-   **-v ~/nginx/conf/nginx.conf:/etc/nginx/nginx.conf：**将我们自己创建的 nginx.conf 挂载到容器的 /etc/nginx/nginx.conf。
+-   **-v ~/nginx/logs:/var/log/nginx：**将我们自己创建的 logs 挂载到容器的 /var/log/nginx。
+
+相关命令：
+
+如果要重新载入 NGINX 可以使用以下命令发送 HUP 信号到容器：
+
+```
+$ docker kill -s HUP container-name
+```
+
+重启 NGINX 容器命令：
+
+```
+$ docker restart container-name
+```
+
+
+
+#### 安装PHP
+
+
+
+安装mysql5.6.46
+
+用户mysql
+
+密码1
+
