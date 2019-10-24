@@ -229,7 +229,19 @@ $ docker restart container-name
 
 安装mysql5.6.46
 
-用户mysql
+数据库主机：localhost
 
-密码1
+端口3306
+
+账号mysql
+
+密码:1
+
+名称phpcms
+
+表前缀v9_
+
+超级用户：phpcms密码同
+
+
 
