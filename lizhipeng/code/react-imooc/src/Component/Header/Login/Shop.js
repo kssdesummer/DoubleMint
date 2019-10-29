@@ -9,7 +9,7 @@ class Shop extends Component{
                 onMouseLeave = {onMouseLeaveShop}
             >
                 <li className="shop-cart">
-                    <a href="https://www.imooc.com/" className="shop-cart-icon">
+                    <a href="https://www.imooc.com/" className="shop-cart-icon"style={{color:shopShow?'red':'#71777d'}}>
                         <span className="icon-shopping-cart js-endcart"></span>
                         <span >购物车</span>
                     </a>

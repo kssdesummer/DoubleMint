@@ -1,9 +1,6 @@
 import React, { Component } from "react"
 
 class Download extends Component{
-    constructor(props){
-        super(props)
-    }
     render(){
         const {onMouseEnter,onMouseLeave,show} = this.props
         return(
@@ -14,7 +11,7 @@ class Download extends Component{
                 >
                     <div className="mobile-load-box">
                         <h4>慕课网APP - 随时随地学编程</h4>
-                        <img src={require('../img/appload.png')} className="l" />
+                        <img src={require('../img/appload.png')} alt='' className="l" />
                         <div className="r">
                             <a href="https://www.imooc.com/" className="app-load-btn">
                                 <i className="icon-apple"></i>

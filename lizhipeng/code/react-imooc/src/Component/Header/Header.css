@@ -240,9 +240,9 @@ fieldset, img {
     line-height: 36px;
     margin: 18px 0;
 }
-.shop-cart-icon:hover{
+/* .shop-cart-icon:hover{
     color: red;
-}
+} */
 .shop-cart-icon {
     display: inline-block;
     padding: 0 18px;
