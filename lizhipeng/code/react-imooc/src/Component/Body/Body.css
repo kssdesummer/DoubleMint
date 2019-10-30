@@ -36,6 +36,19 @@
     color: #fff !important;
     background: rgba(7, 17, 27, 0.6); 
 }
+.a,.b,.c,.d,.e,.f,.g{
+    display: block;
+}
+.menuwrap {
+    background-color: rgba(7, 17, 27, 0.5);
+    opacity: 0.502;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 216px;
+    height: 444px;
+    z-index: 1; 
+}
 .menuContent {
     position: relative;
     float: left;
@@ -77,3 +90,128 @@
     content: "\e5cb";
 }
 
+/* 侧边栏 */
+.submenu {
+    background: #fff;
+    position: absolute;
+    left: 216px;
+    top: 0px;
+    width: 768px;
+    height: 382px;
+    z-index: 581;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+.innerBox {
+    background-color: #fff;
+    padding: 26px 36px 32px;
+    position: relative;
+    min-height: 150px;
+}
+.subinnerBox {
+    overflow: hidden;
+    box-sizing: border-box; 
+}
+.fe-base-box {
+    overflow: hidden; 
+}
+.banner-line {
+    line-height: 22px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+.banner-line span {
+    font-size: 14px;
+    color: #1C1F21;
+    letter-spacing: 0;
+    line-height: 22px;
+    font-weight: bold;
+}
+.bold {
+    font-weight: 700!important;
+}
+.mr10 {
+    margin-right: 10px!important;
+}
+.tag-box {
+    font-size: 0; 
+}
+.tag-box a {
+    margin-bottom: 16px;
+    font-size: 14px;
+    color: #4D555D;
+    line-height: 22px;
+    margin-right: 24px;
+    display: inline-block; 
+}
+.tag-box a:hover {
+    color: red; 
+}
+.tag-box a:last-child {
+    margin-right: 0; 
+}
+.submenu .l {
+    float: left; 
+}
+.recomment-box {
+    position: absolute;
+    bottom: 0;
+    background: #F8FAFC;
+    padding: 27px 0 0px 36px;
+}
+.banner-course-card {
+    width: 312px;
+    margin-right: 48px;
+    margin-bottom: 27px;
+}
+.recomment-box a {
+    display: block;
+    width: 100%;
+    height: 100%; 
+}
+.recomment-box a img {
+    width: 64px;
+    height: 42px;
+    border-radius: 4px;
+    background-color: #ccc; 
+}
+.course-card {
+    margin-left: 16px; 
+}
+.course-card-name {
+    width: 232px;
+    font-size: 12px;
+    color: #07111B;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+}
+.course-card-info,.course-card-price {
+    font-size: 12px;
+    color: #4D555D;
+    line-height: 20px; 
+}
+.course-card-price {
+    font-weight: bold; 
+}
+.sales {
+    color: #f01414; 
+}
+.sales-tip {
+    box-sizing: border-box;
+    background: rgba(242, 13, 13, 0.6);
+    border-radius: 4px;
+    color: #fff;
+    padding: 0 4px;
+    display: inline-block;
+    text-align: center;
+    position: relative; 
+}
+.course-card-dot i:before {
+    content: "\e94c";
+}
+.icon-set_sns:before {
+    content: "\e923";
+    font-family: 'icomoon';
+}

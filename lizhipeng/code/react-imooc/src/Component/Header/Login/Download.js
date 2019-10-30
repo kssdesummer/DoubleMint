@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-
+import img from "./data"
 class Download extends Component{
     render(){
         const {onMouseEnter,onMouseLeave,show} = this.props

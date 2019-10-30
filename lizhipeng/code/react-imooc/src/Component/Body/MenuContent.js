@@ -5,7 +5,7 @@ const menuData = ['前沿 / 区块链 / 人工智能','前端 / 小程序 / JS',
 const menu = menuData.map((data)=>{
     return(
         <div className="item" data-id="a">
-            <a href="javascript:void(0)">
+            <a href="https://www.imooc.com/">
                 <span className="group">{data}</span>
                 <i className="imv2-arrow1_r"></i>
             </a>
