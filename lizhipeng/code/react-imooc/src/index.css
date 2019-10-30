@@ -31,6 +31,11 @@ h1, h2, h3, h4, h5, h6 {
   font-style:normal
 }
 
+@font-face {
+  font-family: 'icomoon';
+  src: url("icomoon.ttf");
+}
+
 html,body {
   font: 16px/1.5 "PingFang SC", "微软雅黑", "Microsoft YaHei", Helvetica, "Helvetica Neue", Tahoma, Arial, sans-serif;
   color: #1c1f21;
@@ -74,6 +79,16 @@ ul,ol{
 
 [class^="imv2-"], [class*=" imv2-"] {
   font-family: 'imv2' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
   font-style: normal;
   font-weight: normal;
   font-variant: normal;

@@ -4,16 +4,13 @@ import MenuContent from './MenuContent'
 import Submenu from './Submenu/Submenu'
 
 class Body extends Component {
-    constructor(props){
-        super(props)
-    }
-    
     render(){
         return(
             <div id = 'main'>
                 <div className='bk'> </div>
                 <div className = 'bgfff banner-box'>
                     <div className = 'g-banner pr'>
+                        <div class="menuwrap"></div>
                         <MenuContent />
                         <Submenu />
                     </div>
