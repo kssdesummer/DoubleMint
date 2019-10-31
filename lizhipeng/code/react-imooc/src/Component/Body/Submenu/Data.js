@@ -1,5 +1,8 @@
 const subList = [
-    {
+    {   
+        item:'前沿 / 区块链 / 人工智能',
+        id:"0",
+        subClassName:'submenu a hide',
         tagBoxList:[            
             {        
                 title:'前沿技术',
@@ -43,6 +46,9 @@ const subList = [
         ]
     },
     {   
+        item:'前端 / 小程序 / JS',
+        id:'1',
+        subClassName:'submenu b hide',
         tagBoxList:[            
             {        
                 title:'前沿开发',
@@ -85,7 +91,11 @@ const subList = [
             }
         ]
     },
-    {   tagBoxList:[
+    {   
+        item:'后端 / JAVA / Python',
+        id:'2',
+        subClassName:'submenu c hide',
+        tagBoxList:[
             {        
                 title:'后端开发',
                 href : 'https://www.imooc.com/',
@@ -127,7 +137,10 @@ const subList = [
             }
         ]
     },
-    {
+    {   
+        item:'移动 / Android / iOS',
+        id:'3',
+        subClassName:'submenu d hide',
         tagBoxList:[
             {
                 title:'移动开发',
@@ -170,7 +183,11 @@ const subList = [
             }
         ]
     },
-    {   tagBoxList:[
+    {   
+        item:'云计算 / 大数据 / 容器',
+        id:'4',
+        subClassName:'submenu e hide',
+        tagBoxList:[
             {        
                 title:'计算机基础',
                 href : 'https://www.imooc.com/',
@@ -218,6 +235,9 @@ const subList = [
         ]
     },
     {
+        item:'运维 / 测试 / 数据库',
+        id:'5',
+        subClassName:'submenu f hide',
         tagBoxList:[
             {
                 title:'运维&测试',
@@ -249,7 +269,10 @@ const subList = [
             }
         ]
     },
-    {   
+    {
+        item:'UI设计 / 3D动画 / 游戏',
+        id:'6',
+        subClassName:'submenu g hide',   
         tagBoxList:[
         {        
             title:'UI设计&多媒体',

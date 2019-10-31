@@ -4,11 +4,23 @@ import Box from './Box'
 import RecommentBox from './RecommentBox'
  
 class Submenu extends Component{
+    constructor(props){
+        super(props)
+        this.state={
+            
+        }
+    }
+
     render() {
+        const setId = this.props.setId
         return(
-            subList.map(subList => {
+            subList.map((subList,i) => {
                 return(          
-                    <div className="submenu a hide">
+                    <div className={subList.subClassName} id = {i}
+                        style = {{display:setId == i?'block':'none'}}
+                        onMouseEnter = {this.onMouseEnter}
+                        onMouseLeave = {this.onMouseLeave}
+                    >
                         <div className="innerBox clearfix">
                             <div className="subinnerBox">
                                 <div className="cates-box">

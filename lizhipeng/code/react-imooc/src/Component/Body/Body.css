@@ -37,7 +37,7 @@
     background: rgba(7, 17, 27, 0.6); 
 }
 .a,.b,.c,.d,.e,.f,.g{
-    display: block;
+    display: none;
 }
 .menuwrap {
     background-color: rgba(7, 17, 27, 0.5);
@@ -48,6 +48,9 @@
     width: 216px;
     height: 444px;
     z-index: 1; 
+}
+.submenu:hover{
+    display: block;
 }
 .menuContent {
     position: relative;
@@ -69,6 +72,10 @@
     padding-left: 12px;
     position: relative;
 }
+.menuContent .item:hover a{
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+} 
 .menuContent .item  >a {
     display: block;
     color: rgba(255, 255, 255, 0.6);
@@ -147,6 +154,7 @@
 .tag-box a:hover {
     color: red; 
 }
+
 .tag-box a:last-child {
     margin-right: 0; 
 }
@@ -163,6 +171,9 @@
     width: 312px;
     margin-right: 48px;
     margin-bottom: 27px;
+}
+.banner-course-card:hover .imv2-dot_samll{
+    color: red;
 }
 .recomment-box a {
     display: block;
@@ -215,3 +226,5 @@
     content: "\e923";
     font-family: 'icomoon';
 }
+
+/* 轮播图 */
