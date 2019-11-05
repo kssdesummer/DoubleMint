@@ -1,7 +1,7 @@
 const subList = [
     {   
         item:'前沿 / 区块链 / 人工智能',
-        id:"0",
+        id:0,
         subClassName:'submenu a hide',
         tagBoxList:[            
             {        
@@ -47,7 +47,7 @@ const subList = [
     },
     {   
         item:'前端 / 小程序 / JS',
-        id:'1',
+        id:1,
         subClassName:'submenu b hide',
         tagBoxList:[            
             {        
@@ -93,7 +93,7 @@ const subList = [
     },
     {   
         item:'后端 / JAVA / Python',
-        id:'2',
+        id:2,
         subClassName:'submenu c hide',
         tagBoxList:[
             {        
@@ -139,7 +139,7 @@ const subList = [
     },
     {   
         item:'移动 / Android / iOS',
-        id:'3',
+        id:3,
         subClassName:'submenu d hide',
         tagBoxList:[
             {
@@ -185,7 +185,7 @@ const subList = [
     },
     {   
         item:'云计算 / 大数据 / 容器',
-        id:'4',
+        id:4,
         subClassName:'submenu e hide',
         tagBoxList:[
             {        
@@ -236,7 +236,7 @@ const subList = [
     },
     {
         item:'运维 / 测试 / 数据库',
-        id:'5',
+        id:5,
         subClassName:'submenu f hide',
         tagBoxList:[
             {
@@ -271,7 +271,7 @@ const subList = [
     },
     {
         item:'UI设计 / 3D动画 / 游戏',
-        id:'6',
+        id:6,
         subClassName:'submenu g hide',   
         tagBoxList:[
         {        

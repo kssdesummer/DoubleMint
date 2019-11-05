@@ -8,7 +8,7 @@ class Submenu extends Component{
         const setId = this.props.setId
         return(
             subList.map((subList,i) => {
-                return(          
+                return( 
                     <div className={subList.subClassName} id = {i}
                         style = {{display:setId === i?'block':'none'}}
                         onMouseEnter = {this.onMouseEnter}

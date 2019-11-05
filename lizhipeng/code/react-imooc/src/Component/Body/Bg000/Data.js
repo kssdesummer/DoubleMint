@@ -186,7 +186,7 @@ const PathData = [
             },
             {   
                 id:8,
-                img:require('./img/hk1.png'),
+                img:require('./img/fr1.jpg'),
                 new:false,
                 label:['C'],
                 cardname:'C语言入门',
@@ -195,7 +195,7 @@ const PathData = [
             },
             {
                 id :9,
-                img:require('./img/hk2.png'),
+                img:require('./img/fr2.jpg'),
                 new:false,
                 label:['Python'],
                 cardname:'初识Python',
@@ -204,7 +204,7 @@ const PathData = [
             },
             {
                 id :10,
-                img:require('./img/hk3.jpg'),
+                img:require('./img/fr3.jpg'),
                 new:false,
                 label:['Java'],
                 cardname:'Java入门第一季',
@@ -213,7 +213,7 @@ const PathData = [
             },
             {
                 id:11,
-                img:require('./img/hk4.png'),
+                img:require('./img/fr4.jpg'),
                 new:false,
                 label:['HTML/CSS'],
                 cardname:'初识HTML+CSS',
@@ -222,7 +222,7 @@ const PathData = [
             },
             {
                 id:12,
-                img:require('./img/hk5.png'),
+                img:require('./img/fr5.jpg'),
                 new:false,
                 label:['JavaScript'],
                 cardname:'JavaScript入门篇',
@@ -231,7 +231,7 @@ const PathData = [
             },
             {
                 id:13,
-                img:require('./img/hk6.jpg'),
+                img:require('./img/fr6.jpg'),
                 new:false,
                 label:['设计工具'],
                 cardname:'PS入门教程——新手过招',
@@ -240,7 +240,7 @@ const PathData = [
             },
             {   
                 id:14,
-                img:require('./img/hk7.png'),
+                img:require('./img/fr7.jpg'),
                 new:false,
                 label:['区块链','以太坊'],
                 cardname:'PS入门教程——新手过招',
@@ -249,7 +249,7 @@ const PathData = [
             },
             {   
                 id:15,
-                img:require('./img/hk8.png'),
+                img:require('./img/fr8.jpg'),
                 new:false,
                 label:['Vue.js'],
                 cardname:'vue-cli全集',

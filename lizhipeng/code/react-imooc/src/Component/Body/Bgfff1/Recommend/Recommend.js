@@ -17,7 +17,7 @@ class Recommend extends Component {
                                         i === 0?
                                         datas.tag.map(
                                             (data,x) => 
-                                                <a href="#" target="_blank" key = {x}>
+                                                <a href="https://www.imooc.com/" key = {x}>
                                                     <i className={data[0]}></i>
                                                     <p className="tit">{data[1]}</p>
                                                     <p className="desc">{data[2]}</p>
@@ -26,9 +26,9 @@ class Recommend extends Component {
                                         :
                                         datas.img.map(
                                             (data,j) => 
-                                                <a href="#" target="_blank" key = {j}>
+                                                <a href="https://www.imooc.com/" key = {j}>
                                                     <div className = 'l'>
-                                                        <img className = 'recommend l' src = {data} alt = '' target="_blank"/>
+                                                        <img className = 'recommend l' src = {data} alt = ''/>
                                                     </div>
                                                 </a>
                                         )

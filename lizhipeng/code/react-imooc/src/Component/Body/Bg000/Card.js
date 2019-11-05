@@ -26,20 +26,20 @@ class Card extends Component {
             card.map((data,i) =>{
                 return(
                     <div className = 'index-card-container course-card-container container' key = {i}  style={ID===1? {display:curr?i<8?'block':'none':i>=8?'block':'none'}:null} >  
-                        <a target="_blank" className="course-card" href = 'https://www.imooc.com/'>
+                        <a className="course-card" href = 'https://www.imooc.com/'>
                         {data.new?
                             ID ===0?                        
                                 <div className="course-stat new">
                                     新课
                                 </div>
                             :
-                                <div class="course-stat upgrade">
+                                <div className="course-stat upgrade">
                                     升级
                                 </div>
                         :null
                         }
                             <div className="course-card-top hashadow">
-                                <img className="course-banner" src={data.img}/>
+                                <img className="course-banner" src={data.img} alt = ''/>
                                 <div className="course-label">
                                     {data.label.map(
                                         (label) =><label>{label}</label>
@@ -53,11 +53,11 @@ class Card extends Component {
                                             <span>{data.cardinfo[0]}</span>
                                             <span><i className="imv2-set-sns"></i>{data.cardinfo[1]}</span>
                                             {ID === 1&&i>=8?
-                                                <p class="desc">{data.carddesc}</p>
+                                                <p className="desc">{data.carddesc}</p>
                                             :
                                             <span className="r js-hover-evaluation" id = {data.id}
                                                 onMouseEnter = {()=>this.onMouseEnter(data.id)}
-                                                onMouseLeave = {()=>this.onMouseEnter(-1)}
+                                                onMouseLeave = {()=>this.onMouseLeave(-1)}
                                             >{data.cardinfo[2]}</span>
                                             }
                                         </div>

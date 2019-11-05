@@ -178,6 +178,9 @@
     margin-right: 48px;
     margin-bottom: 27px;
 }
+.recomment-box .banner-course-card .course-card {
+    margin-left: 16px;
+}
 .banner-course-card:hover .imv2-dot_samll{
     color: red;
 }
@@ -192,13 +195,14 @@
     border-radius: 4px;
     background-color: #ccc; 
 }
-.course-card-name {
+.recomment-box .banner-course-card .course-card-name {
+    width: 226px;
     font-size: 12px;
     color: #07111B;
     line-height: 20px;
     overflow: hidden;
     text-overflow: ellipsis;
-    height: 46px;
+    white-space: nowrap;
 }
 .course-card-info,.course-card-price {
     font-size: 12px;
@@ -516,6 +520,7 @@ fieldset, img {
     -webkit-box-orient: vertical;
     transition: all .3s;
     font-weight: bold;
+    height: 46px;
 }
 .course-card-container .course-card-content .course-card-bottom {
     position: relative;
@@ -641,6 +646,9 @@ fieldset, img {
     cursor: pointer;
     color: #545C63;
 }
+.types-title ul li:hover{
+    color: red;
+}
 .types-title ul li.curr {
     color: #F20D0D;
     border-bottom: 2px solid #F20D0D;
@@ -652,4 +660,82 @@ fieldset, img {
     background: url(./Bg000/img/banner_weike.png) no-repeat;
     background-size: 100% 100%;
     background-position: center;
+}
+/* 
+bg0002 
+*/
+.types-title .more {
+    float: right;
+    margin-top: 2px;
+    line-height: 24px;
+    color: #1C1F21;
+}
+.more{
+    color: #4d555d;
+    font-size: 14px;
+    font-weight: normal;
+    position: relative;
+    top: -4px;
+}
+.types-title .more:hover {
+    color: 
+    #383D42;
+}
+.imv2-right2:before {
+    content: "\e925";
+}
+.container-types .types-content {
+    margin-top: 24px;
+    margin-left: -24px;
+}
+.course-path-container {
+    float: left;
+    margin-left: 24px;
+    margin-bottom: 24px;
+    width: 564px;
+    height: 148px;
+}
+.container-path .types-content .course-path-container .course-banner {
+    float: left;
+    position: relative;
+    transition: all .3s;
+    width: 140px;
+    height: 140px;
+    background-color: #f3f5f7;
+    border-radius: 8px;
+}
+.img-up {
+    left: 0px;
+    top: 0;
+    width: 140px;
+    height: 140px;
+    z-index: 3;
+}
+.img-mid {
+    top: 4px;
+    left: 4px;
+    width: 132px;
+    height: 140px;
+    opacity: 0.4;
+    z-index: 2;
+}
+.img-down {
+    top: 8px;
+    left: 8px;
+    width: 124px;
+    height: 140px;
+    opacity: 0.2;
+    z-index: 1;
+}
+.container-path .types-content .course-path-container .course-banner .img-up, .container-path .types-content .course-path-container .course-banner .img-mid, .container-path .types-content .course-path-container .course-banner .img-down {
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 8px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
 }

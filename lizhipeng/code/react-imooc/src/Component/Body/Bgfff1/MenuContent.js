@@ -4,7 +4,10 @@ import subList from './Submenu/Data'
 
 class MenuContent extends Component {
     onMouseEnter = (target) =>{
-        this.props.callBackEnter&&this.props.callBackEnter(target)
+        return(
+            this.props.callBackEnter&&this.props.callBackEnter(target)
+        )
+
     }
     render(){
         return(
