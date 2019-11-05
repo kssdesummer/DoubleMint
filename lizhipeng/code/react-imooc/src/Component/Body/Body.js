@@ -1,20 +1,18 @@
 import React ,{Component} from 'react'
 import './Body.css'
-import MenuContent from './MenuContent'
-import Submenu from './Submenu/Submenu'
-
+import Bgfff1 from './Bgfff1/Bgfff1'
+import Bg000 from './Bg000/Bg000'
+import Bg0001 from './Bg000/Bg0001'
+import Bgfff2 from './Bgfff2/Bgfff2'
 class Body extends Component {
     render(){
         return(
             <div id = 'main'>
                 <div className='bk'> </div>
-                <div className = 'bgfff banner-box'>
-                    <div className = 'g-banner pr'>
-                        <div class="menuwrap"></div>
-                        <MenuContent />
-                        <Submenu />
-                    </div>
-                </div>
+                <Bgfff1 />
+                <Bg000 />
+                <Bgfff2 />
+                <Bg0001 />
             </div>
         )
     }
