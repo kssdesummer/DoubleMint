@@ -1,0 +1,75 @@
+ .elevator {
+    position: fixed;
+    padding: 0 16px;
+    top: 55%;
+    margin-top: -140px;
+    right: 0;
+    z-index: 899;
+    background-color: #fff;
+    box-shadow: 0px 4px 12px 0px rgba(7, 17, 27, 0.1); }
+     .elevator a:hover i {
+      display: none; }
+     .elevator a:hover span {
+      display: block; }
+     .elevator .elevator-weixin:hover .elevator-weixin-box {
+      display: block; }
+     .elevator .elevator-app:hover .elevator-app-box {
+      display: block; }
+     .elevator a {
+      display: block;
+      width: 26px;
+      padding: 18px 0;
+      font-size: 22px;
+      line-height: 20px;
+      color: #b5b9bc;
+      box-sizing: border-box;
+      text-align: center;
+      border-bottom: 1px solid #edf1f2; }
+       .elevator a i {
+        font-size: 24px;
+        color: #D9DDE1; }
+       .elevator a span {
+        display: none;
+        font-size: 12px;
+        color: #07111b;
+        line-height: 14px; }
+       .elevator a .icon-feedback:before {
+        content: "\e906";
+        font-family: 'icomoon';
+        font-style: normal; }
+       .elevator a .icon-ques:before {
+        content: "\e615";
+        font-family: 'icomoon';
+        font-style: normal; }
+       .elevator a .icon-appdownload:before {
+        content: "\e908";
+        font-family: 'icomoon';
+        font-style: normal; }
+       .elevator a .icon-wxgzh:before {
+        content: "\e907";
+        font-family: 'icomoon';
+        font-style: normal; }
+       .elevator a .icon-up2:before {
+        content: "\e904";
+        font-family: 'icomoon';
+        font-style: normal; }
+       .elevator a .elevator-app-box {
+        position: absolute;
+        display: none;
+        width: 172px;
+        height: 212px;
+        bottom: -2px;
+        right: 56px;
+        transition: opacity 0.25s, transform .3s;
+        transform-origin: 100% 95%;
+        background: url(./img/elevator.png) no-repeat 0 -220px; }
+       .elevator a .elevator-weixin-box {
+        position: absolute;
+        display: none;
+        width: 172px;
+        height: 212px;
+        bottom: -4px;
+        right: 56px;
+        transition: opacity 0.25s, transform .3s;
+        transform-origin: 100% 95%;
+        background: url(./img/elevator.png) no-repeat 0 0; }
