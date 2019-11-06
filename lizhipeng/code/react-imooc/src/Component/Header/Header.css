@@ -1,11 +1,17 @@
+.fix-header {
+
+    width: 100%;
+    z-index: 900;
+    box-shadow: 0 4px 8px 0 rgba(7,17,27,0.1);
+}
 #header .page-container {
     background-color: #fff;
-    padding-right: 10px;
     height: 72px;
     width: 100%;
     z-index: 900;
     box-shadow: 0 4px 8px 0 rgba(7, 17, 27, 0.1);
-    position: relative; 
+    position: fixed;
+    top: 0;
 }
 .logo {
     float: left;
@@ -142,6 +148,7 @@
 #login-area {
     float: right;
     position: relative;
+    padding-right: 10px;
 }
 .header-unlogin > li {
     float: left;

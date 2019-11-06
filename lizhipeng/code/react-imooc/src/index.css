@@ -42,7 +42,7 @@ html,body {
 }
 body {
   font: 16px/1.5 "PingFang SC", "微软雅黑", "Microsoft YaHei", Helvetica, "Helvetica Neue", Tahoma, Arial, sans-serif;
-  background-color: #fff;
+  background-color: #f8fafc;
   overflow-y: scroll;
   padding-top: 0;
   transition: transform 0.3s ;

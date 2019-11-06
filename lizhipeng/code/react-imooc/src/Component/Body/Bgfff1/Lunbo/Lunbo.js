@@ -1,23 +1,22 @@
 import React, {Component} from 'react';
-
-const img = [require('../img/lunbo/lb1.jpg'),require('../img/lunbo/lb2.jpg'),require('../img/lunbo/lb3.jpg'),require('../img/lunbo/lb4.jpg'),require('../img/lunbo/lb5.jpg'),require('../img/lunbo/lb6.jpg'),]
+import LunboData from'./Data'
 
 class Lunbo extends Component{
     render() {
         return(
             <div className="g-banner-content">
                 <div className="g-banner-box">
-                    {img.map(src => 
+                    {LunboData.map(src => 
                         <a href="https://www.imooc.com/" className="click-help ">
                             <div className="banner-slide">
-                                <img src={src} alt = ''/>
+                                <img src={src.img} alt = ''/>
                             </div>
                         </a>
                     )}
 
                     <div className="banner-dots">
                         {
-                            img.map(() =>
+                            LunboData.map(() =>
                                 <span className="tab"></span>
                             )
                         }
