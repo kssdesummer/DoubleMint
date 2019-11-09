@@ -1,9 +1,3 @@
-.fix-header {
-
-    width: 100%;
-    z-index: 900;
-    box-shadow: 0 4px 8px 0 rgba(7,17,27,0.1);
-}
 #header .page-container {
     background-color: #fff;
     height: 72px;
@@ -12,6 +6,7 @@
     box-shadow: 0 4px 8px 0 rgba(7, 17, 27, 0.1);
     position: fixed;
     top: 0;
+    overflow: hidden;
 }
 .logo {
     float: left;
@@ -32,6 +27,9 @@
 }
 .nav-item li {
     float: left; 
+}
+.nav-item li:hover a{
+    color: #000;
 }
 .nav-item li a {
     padding: 0 20px;

@@ -46,6 +46,7 @@ body {
   overflow-y: scroll;
   padding-top: 0;
   transition: transform 0.3s ;
+  min-width: 1200px;
 }
 /*链接样式*/
 
@@ -97,3 +98,40 @@ ul,ol{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+@media screen and (max-width: 1500px) {
+  body #header .page-container .nav-item li a {
+    padding: 0 5px; }
+  body #header .page-container .search-warp .search-Tags {
+    display: none; }
+  body #header .page-container .search-warp .search-area .search-input {
+    width: 150px; } }
+
+@media screen and (max-width: 1100px) {
+  body #header .page-container .nav-item li a {
+    padding: 0 5px; }
+  body #header .page-container .search-warp .search-Tags {
+    display: none; }
+  body #header .page-container .search-warp .search-area .search-input {
+    width: 150px; }
+  body #header #login-area .header-unlogin .app-download {
+    display: none; }
+  body #header #login-area .header-unlogin .shop-cart {
+    display: none; } }
+
+@media screen and (max-width: 786px) {
+  body .elevator {
+    display: none; }
+  body #header .page-container .nav-item li a {
+    padding: 0 5px; }
+  body #header .page-container .search-warp {
+    display: none; }
+    body #header .page-container .search-warp .search-Tags {
+      display: none; }
+    body #header .page-container .search-warp .search-area .search-input {
+      width: 150px; }
+  body #header #login-area {
+    float: none; }
+    body #header #login-area .header-unlogin .app-download {
+      display: none; }
+    body #header #login-area .header-unlogin .shop-cart {
+      display: none; } }
